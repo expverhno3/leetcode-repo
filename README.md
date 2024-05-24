@@ -23,6 +23,9 @@
 - id: 86
 - name: partition-list
 - tag: Linked List, Two Pointers
+- how
+  - traverse given list and based on the partition value construct two list (one list with nodes > x, one list with nodes <= x)
+  - connect two list together & **point end node to none**
 
 ### 删除链表中的节点
 
