@@ -1,3 +1,6 @@
+NOTE: if there's **MARK** in tag, need to revisit this question
+
+
 ## 链表
 
 ### 合并两个有序链表
@@ -32,12 +35,21 @@
 - id: 237
 - name: delete-node-in-a-linked-list
 - tag: Linked List
+- how
+  - !trick: no need to copy each node one by one
+  - just copy the value of next node, then skip the next node!
 
 ### 随机链表的复制
 
 - id: 138
 - name: copy-list-with-random-pointer
-- tag: Hash Table, Linked List
+- tag: Hash Table, Linked List, MARK
+- how
+  - Sol 1 (2 pass):
+    - iterate original list to construct hash table mapping old list node -> copied new list node
+    - iterate original list again to build pointers (next & random)
+  - Sol 2 (1 pass):
+    - iterate original list, and maintain a "visited" hash table (mapping: original node -> copied new node): current node, next node, random node at first, then construct the link of current copied node
 
 
 --- 
