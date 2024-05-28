@@ -62,24 +62,39 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 20
 - name: valid-parentheses
 - tag: Stack, String
+- how
+  - push open parentheses into stack
+  - if found close parentheses, check if it matches top of stack
+    - if matched: pop stack and go on
 
 ### 最小栈
 
 - id: 155
 - name: min-stack
 - tag: Stack, Design
+- how:
+  - use space to trade time
+  - maintain two stacks: one keep the order of "push", one keep the min value at top of stack
+  - check if popped value is the same as top of min stack, if true, pop the min stack.
 
 ### 用栈实现队列
 
 - id: 232
 - name: implement-queue-using-stacks
 - tag: Stack, Design, Queue
+- how:
+  - stack: FILO; pop stack and use another stack to take the popped value: FIFO (== reverse order of stack == queue)
 
 ### 字符串解码
 
 - id: 394
 - name: decode-string
-- tag: Stack, Recursion, String
+- tag: Stack, Recursion, String, MARK
+- how
+  - first: how we deal with "()"?
+    - keep looking util the most inner ), then "unpack" operation from inner to outer
+  - use stack to save previous states, then pop back when we get to its corresponding ")"
+  - must maintain the relationship between number and the kept string in stack (if # of number > # of string: will make previous string being copied more)
 
 ### 数据流的中位数
 
