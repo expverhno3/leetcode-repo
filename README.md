@@ -100,7 +100,8 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 - id: 295
 - name: find-median-from-data-stream
-- tag: Design, Two Pointers, Data Stream, Sorting, Heap (Priority Queue)
+- tag: Design, Two Pointers, Data Stream, Sorting, Heap (Priority Queue), MARK
+- how: [check code](295.find-median-from-data-stream.py)
 
 
 --- 
