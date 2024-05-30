@@ -114,30 +114,48 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 242
 - name: valid-anagram
 - tag: Hash Table, String, Sorting
+- how
+  - construct two hash table, and compare
+  - hash table: char as key and frequency as value
 
 ### 字符串中的第一个唯一字符
 
 - id: 387
 - name: first-unique-character-in-a-string
 - tag: Queue, Hash Table, String, Counting
+- how
+  - make a frequency table then check it.
 
 ### 同构字符串
 
 - id: 205
 - name: isomorphic-strings
 - tag: Hash Table, String
+- how
+  - (please don't use frequency table again!)
+  - since they can replace each char with another corresponding char: build two table to save this mapping relationship: s2t and t2s
+  - then iterate to build table and check if there's conflict
 
 ### 回文排列
 
 - id: 266
 - name: palindrome-permutation
 - tag: Bit Manipulation, Hash Table, String
+- how
+  - observe property: chars in palindrome appear in pair, only one char in the middle can be single.
+  - make a frequency table, then calculate the frequency % 2 to check its parity
+  - sum over parity and if there's more than 1 odd number: False
 
 ### 最长回文串
 
 - id: 409
 - name: longest-palindrome
 - tag: Greedy, Hash Table, String
+- how
+  - can only keep one odd char
+  - sum even frequency and odd frequency -1
+  - if no odd frequency: sum is result
+  - if there's odd frequency: sum + 1
 
 
 --- 
