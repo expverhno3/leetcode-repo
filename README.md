@@ -168,6 +168,9 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 392
 - name: is-subsequence
 - tag: Two Pointers, String, Dynamic Programming
+- how
+  - iterate the target string, use pointer to track which char we are going to track
+  - by the end of iteration, we should be able to take out the same s string
 
 ### 链表的中间结点
 
