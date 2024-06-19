@@ -177,30 +177,46 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 908
 - name: middle-of-the-linked-list
 - tag: Linked List, Two Pointers
+- how
+  - two pointers, one go 2 steps, one go 1 step. then the slow one will point to the middle
 
 ### 相交链表
 
 - id: 160
 - name: intersection-of-two-linked-lists
 - tag: Hash Table, Linked List, Two Pointers
+- how
+  - create a table of one linked list, then iterate through the other
 
 ### 两数之和 II - 输入有序数组
 
 - id: 167
 - name: two-sum-ii-input-array-is-sorted
 - tag: Array, Two Pointers, Binary Search
+- how
+  - use two pointers, one start at the beginning, the other starts at the end
 
 ### 环形链表 II
 
 - id: 142
 - name: linked-list-cycle-ii
 - tag: Hash Table, Linked List, Two Pointers
+- how
+  - check this & comment of "Shinkyu" [solution](https://leetcode.com/problems/linked-list-cycle-ii/solutions/1701128/c-java-python-slow-and-fast-image-explanation-beginner-friendly) 
+  - basically: `fast` has step size 2 and `slow` has step size 1
+    - if meet: there's a circular connection
+      - how long is the circle: `x` denotes # of step before start of circle, `y` denotes # of step between start of circle until `fast` and `slow` meet
+        - `slow`: x + y
+        - `fast`: 2*(x+y) if considering 2x step size; if considering circle (because `fast` has repeat circle multiple times ahead of slow so they can meet), then it's x + y + C ("C" is # of steps to repeat multiple circles)
+        - from here we can calculate $C = x + y$
+        - therefore, we can reset `fast` to the beginning, then both `fast` and `slow` run $x$ steps, they can meet together again at the beginning of circle.
 
 ### 反转字符串中的单词
 
 - id: 151
 - name: reverse-words-in-a-string
 - tag: Two Pointers, String
+- how
 
 ### 无重复字符的最长子串
 
