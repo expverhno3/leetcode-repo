@@ -217,12 +217,18 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - name: reverse-words-in-a-string
 - tag: Two Pointers, String
 - how
+  - two methods
+    1. use a list to save where the word begins and ends (my solution)
+    2. reverse entire string, then reverse word, using two pointers, one at the beginning, one at the end, swap with each other
 
 ### 无重复字符的最长子串
 
 - id: 3
 - name: longest-substring-without-repeating-characters
 - tag: Hash Table, String, Sliding Window
+- how
+  - use two pointer: one points at the beginning of sub-string, one at the end of substring
+  - then maintain a table to keep track of index of each character, if found two same character within the scope of two pointer, move left to the right of previous repeated character
 
 ### 三数之和
 
