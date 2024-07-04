@@ -235,12 +235,23 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 15
 - name: 3sum
 - tag: Array, Two Pointers, Sorting
+- how
+  - fix one and find the other two using two pointer
+  - fix left pointer, then find middle and right
 
 ### 滑动窗口最大值
 
 - id: 239
 - name: sliding-window-maximum
-- tag: Queue, Array, Sliding Window, Monotonic Queue, Heap (Priority Queue)
+- tag: Queue, Array, Sliding Window, Monotonic Queue, Heap (Priority Queue), MARK
+- how
+  - [ref here](https://leetcode.com/problems/sliding-window-maximum/solutions/3918847/video-ex-amazon-explains-a-solution-with-python-javascript-java-and-c/)
+  - build a queue stores idx of "potential" max value
+    - on the left side of queue, the idx correspond larger value
+    - on the left side of queue, the idx is also smaller
+    - therefore, the leftmost idx will be the max value of this window
+    - how to build: compare the last value and the right pointer, if last value is smaller, then it can't be the wanted max value, pop out
+  - after the windows length is reach, left pointer need to move, and compare it with leftmost idx
 
 
 --- 
