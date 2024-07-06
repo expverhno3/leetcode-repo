@@ -291,12 +291,18 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 6
 - name: zigzag-conversion
 - tag: String
+- how
+  - still: simulate this process
 
 ### 螺旋矩阵
 
 - id: 54
 - name: spiral-matrix
 - tag: Array, Matrix, Simulation
+- how
+  - always pop the first row of matrix
+  - then **rotate** the matrix my counterclockwise for 90 degree
+  - NOTE: zip(*matrix) can transpose the matrix, then reverse the order of row -> 90 degree counterclockwise rotation!
 
 ### 螺旋矩阵 II
 
