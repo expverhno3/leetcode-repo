@@ -280,9 +280,11 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 ### 验证栈序列
 
-- id: 983
+- id: 946
 - name: validate-stack-sequences
-- tag: Stack, Array, Simulation
+- tag: Stack, Array, Simulation, MARK
+- how
+  - basically keep pushing into stack, until we meet the element that needs to be pushed into "popped". Then keep popping. After that continue pushing element. we just need to know when to pop, so if this operation is viable, stack temporarily store numbers should be empty
 
 ### Z 字形变换
 
