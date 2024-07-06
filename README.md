@@ -264,12 +264,19 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 415
 - name: add-strings
 - tag: Math, String, Simulation
+- how
+  - padding two string to the same length
+  - convert int digit by digit
+  - deal with carry digit
 
 ### 旋转字符串
 
 - id: 812
 - name: rotate-string
 - tag: String, String Matching
+- how
+  - move original string until first char of goal == rotated original string
+  - compare entire string
 
 ### 验证栈序列
 
