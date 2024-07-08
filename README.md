@@ -298,7 +298,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 - id: 54
 - name: spiral-matrix
-- tag: Array, Matrix, Simulation
+- tag: Array, Matrix, Simulation, MARK
 - how
   - always pop the first row of matrix
   - then **rotate** the matrix my counterclockwise for 90 degree
@@ -308,19 +308,30 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 - id: 59
 - name: spiral-matrix-ii
-- tag: Array, Matrix, Simulation
+- tag: Array, Matrix, Simulation, MARK
+- how
+  - fill in matrix with invalid values
+  - define different direction update rules
+  - when updating meets boundary (out of index OR run into valid value), change direction
 
 ### 旋转图像
 
 - id: 48
 - name: rotate-image
 - tag: Array, Math, Matrix
+- how
+  - transpose then reverse order of each row
+  - NOTE: use `A[:]` to modify the list, if use `A=...`, it will copy things to another place
 
 ### 字符串转换整数 (atoi)
 
 - id: 8
 - name: string-to-integer-atoi
 - tag: String
+- how
+  - use state machine
+    - there's 3 cases: space, number, sign
+    - as long as how states are transferred, it can automatically parse
 
 
 --- 
@@ -330,21 +341,30 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 ### 二分查找
 
-- id: 792
+- id: 704
 - name: binary-search
 - tag: Array, Binary Search
+- how
+  - NOTE: while condition is <=, not just <
 
 ### 第一个错误的版本
 
 - id: 278
 - name: first-bad-version
 - tag: Binary Search, Interactive
+- how
+  - binary search
+  - return `left` value: finally there will be `left` at the first bad version position, and `left > right`
 
 ### 寻找数组的中心下标
 
 - id: 724
 - name: find-pivot-index
-- tag: Array, Prefix Sum
+- tag: Array, Prefix Sum, MARK
+- how
+  - sum up the entire array
+  - then linearly search from the left side: move out the current value, check if right sum == left sum, if not, put that value to the left sum
+  - keep comparing until we iterate the entire array
 
 ### 寻找重复数
 
