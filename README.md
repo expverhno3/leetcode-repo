@@ -371,12 +371,22 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 287
 - name: find-the-duplicate-number
 - tag: Bit Manipulation, Array, Two Pointers, Binary Search
+- how
+  - duplicate number will generate a cycle (if considered values as index), then we can use fast-slow pointers to find the start of cycle to find the duplicate number
 
 ### 寻找旋转排序数组中的最小值 II
 
 - id: 154
 - name: find-minimum-in-rotated-sorted-array-ii
 - tag: Array, Binary Search
+- how
+  - 1. linear search
+    - sort the array, then compare the element with the next element
+  - 2. binary search (MARK)
+    - compare the middle element with the last element
+      - if `nums[middle] > nums[right]`: min value at the right half, let `left = middle + 1`
+      - if `nums[right] > nums[middle]`: min value at the left half, let `right = middle` (why not `middle - 1`? because `middle` can point at the min)
+      - if `nums[right] == nums[right]`: don't know what's going on, but we are sure we can move `right` pointer back (no way it can increase!)
 
 
 --- 
