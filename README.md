@@ -399,6 +399,10 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 102
 - name: binary-tree-level-order-traversal
 - tag: Tree, Breadth-First Search, Binary Tree
+- how
+  - put nodes in a queue, append new nodes at the end, popleft to indicate traverse
+  - how to know how many nodes at each level? (MARK)
+    - length of queue == number of nodes at each level 
 
 ### 二叉树的锯齿形层序遍历
 
