@@ -409,18 +409,33 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 103
 - name: binary-tree-zigzag-level-order-traversal
 - tag: Tree, Breadth-First Search, Binary Tree
+- how
+  - use a flag to indicate level order (need to use `.reverse()` or not)
 
 ### 二叉树的最近公共祖先
 
 - id: 236
 - name: lowest-common-ancestor-of-a-binary-tree
-- tag: Tree, Depth-First Search, Binary Tree
+- tag: Tree, Depth-First Search, Binary Tree, MARK
+- how
+  - recursively find:
+    - end condition: if p or q is at root: root is LCA -> return LCA
+    - return LCA of both branch (left and right)
+      - if p and q at same branch && one is the other's parent node: whatever q or q at the top level is LCA
+      - if p and q at same branch && their direct parent is not the same -> root is LCA
+      - if p and q at different branch: both branch will have return value -> root is LCA
 
 ### 二叉搜索树中第K小的元素
 
 - id: 230
 - name: kth-smallest-element-in-a-bst
 - tag: Tree, Depth-First Search, Binary Search Tree, Binary Tree
+- how
+  1. In-order traverse (MARK)
+     1. return values from left to middle to right
+     2. since it's binary search tree -> left node > root > right node
+     3. in-order traverse will return nodes in ascending order
+     4. optimization: no need to save all the values -> just return the one we want!
 
 ### 二叉搜索树的最近公共祖先
 
