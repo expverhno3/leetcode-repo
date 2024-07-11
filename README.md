@@ -442,24 +442,44 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 235
 - name: lowest-common-ancestor-of-a-binary-search-tree
 - tag: Tree, Depth-First Search, Binary Search Tree, Binary Tree
+- how
+  - since it's binary search tree, we only need to compare the value of p and q with root:
+    - if at the same side: both q an p are > or < than root value: find at that single branch
+    - if at different sides: root is LCA
 
 ### 将二叉搜索树转化为排序的双向链表
 
 - id: 758
 - name: convert-binary-search-tree-to-sorted-doubly-linked-list
 - tag: Stack, Tree, Depth-First Search, Binary Search Tree, Linked List, Binary Tree, Doubly-Linked List
+- problem
+  - convert binary search tree into a sorted circular doubly-linked list using inplace transformation
+- how
+  - in order traverse
+  - use head to pin first node (smallest, aka first node of traverse), then keep updating node.left (since we are in-order traverse, start operating after left all used)
+
 
 ### 数组中的第K个最大元素
 
 - id: 215
 - name: kth-largest-element-in-an-array
 - tag: Array, Divide and Conquer, Quickselect, Sorting, Heap (Priority Queue)
+- how
+  - push previous k numbers into a heap
+  - then pushpop the following elements (push new element in, then pop the smallest number out)
+    - heap maintains top k largest numbers
+    - heap top is the smallest number of k largest numbers, the result wanted
 
 ### 课程表
 
 - id: 207
 - name: course-schedule
-- tag: Depth-First Search, Breadth-First Search, Graph, Topological Sort
+- tag: Depth-First Search, Breadth-First Search, Graph, Topological Sort, MARK
+- how
+  - based on (course, prerequisite) vector, build a **adj list**: index is prerequisite and saved a list that with this prerequisite finished, this course can be done next
+  - need info from the other direction: maintain a **number_prerequisite** that states the number of prerequisite course of each course, can be used to indicate if this course can be started
+  - use a queue to save all courses can be finished
+  - use a counter to count number of courses finished
 
 
 --- 
