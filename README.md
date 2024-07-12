@@ -492,12 +492,19 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 104
 - name: maximum-depth-of-binary-tree
 - tag: Tree, Depth-First Search, Breadth-First Search, Binary Tree
+- how
+  - level order traverse
+  - recursion: return max depth of left and right nodes; if root doesn't exist, return 0
 
 ### 路径总和 II
 
 - id: 113
 - name: path-sum-ii
 - tag: Tree, Depth-First Search, Backtracking, Binary Tree
+- how
+  - depth first, pre-order, accumulate previous nodes' values
+  - check if it's leaf node (no children), then sum up and check if == target
+  - pop out and continue
 
 ### 全排列
 
