@@ -510,7 +510,14 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 - id: 46
 - name: permutations
-- tag: Array, Backtracking
+- tag: Array, Backtracking, MARK
+- how
+  - what is permutation?
+    - all numbers are distinct, so permutation just like swap with each other to get
+  - how to find all permutation in certain order?
+    - find permutation from left to right (**decide order**)
+    - fixed first digit first, then find permutation of the remaining digits (where recursion kicks in) (**make choice**)
+    - swap current digit with other digits at right (left are considered as fixed digits, and right are changeable digits) (**undo choice**)
 
 ### 全排列 II
 
