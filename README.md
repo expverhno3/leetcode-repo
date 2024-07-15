@@ -534,12 +534,17 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 39
 - name: combination-sum
 - tag: Array, Backtracking
+- how
+  - choose number from 0 to (len(nums)-1), and you can only look forward (can't choose previous numbers)
+  - choose -> subtract this number from target -> next decision -> undo decision
 
 ### 组合总和 II
 
 - id: 40
 - name: combination-sum-ii
-- tag: Array, Backtracking
+- tag: Array, Backtracking, MARK
+- how
+  - focus on how to prune! (sorted + don't choose same value at the same level repeatedly)
 
 ### 单词搜索
 
