@@ -524,6 +524,10 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 47
 - name: permutations-ii
 - tag: Array, Backtracking
+- how
+  - same as previous question, but use a `set` to record when fixed one digit, what kind of element has been used.
+    - if not be used: swap as above
+    - if used: pass, continue find other digit to swap
 
 ### 组合总和
 
