@@ -550,7 +550,11 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 - id: 79
 - name: word-search
-- tag: Array, String, Backtracking, Matrix
+- tag: Array, String, Backtracking, Matrix, MARK
+- how
+  - backtracking basically is an "optimized" brute-force searching.
+  - Optimization done by pruning
+  - modify element in-place is far more efficient than create a new object to save paths to avoid accessing repeatedly
 
 
 --- 
