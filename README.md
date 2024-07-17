@@ -567,24 +567,41 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 226
 - name: invert-binary-tree
 - tag: Tree, Depth-First Search, Breadth-First Search, Binary Tree
+- how
+  - easy!
+  - method 1: recursion
+  - method 2: use stack to save nodes, pop out node and inverse its children
 
 ### 对称二叉树
 
 - id: 101
 - name: symmetric-tree
-- tag: Tree, Depth-First Search, Breadth-First Search, Binary Tree
+- tag: Tree, Depth-First Search, Breadth-First Search, Binary Tree, MARK
+- how
+  - [ref](https://leetcode.cn/problems/symmetric-tree/solutions/2361627/101-dui-cheng-er-cha-shu-fen-zhi-qing-xi-8oba/?envType=study-plan-v2&envId=selected-coding-interview)
+  - use a recursion function to test if values of corresponding nodes are equal
 
 ### Pow(x, n)
 
 - id: 50
 - name: powx-n
-- tag: Recursion, Math
+- tag: Recursion, Math, MARK
+- how
+  - fast power analysis (check your Obsidian note!)
 
 ### 平衡二叉树
 
 - id: 110
 - name: balanced-binary-tree
-- tag: Tree, Depth-First Search, Binary Tree
+- tag: Tree, Depth-First Search, Binary Tree, MARK
+- how
+  - from bottom to top
+    - calculate the depth of current node
+      - None -> 0
+      - leave node -> 1
+      - leave node's parent node -> max(left, right) + 1
+    - prune
+      - if depth diff > 1: terminate, return False
 
 ### 从前序与中序遍历序列构造二叉树
 
