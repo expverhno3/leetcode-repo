@@ -594,7 +594,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 110
 - name: balanced-binary-tree
 - tag: Tree, Depth-First Search, Binary Tree, MARK
-- how
+- [how](https://leetcode.cn/problems/balanced-binary-tree/solutions/8737/balanced-binary-tree-di-gui-fang-fa-by-jin40789108/?envType=study-plan-v2&envId=selected-coding-interview)
   - from bottom to top
     - calculate the depth of current node
       - None -> 0
@@ -608,12 +608,19 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 105
 - name: construct-binary-tree-from-preorder-and-inorder-traversal
 - tag: Tree, Array, Hash Table, Divide and Conquer, Binary Tree
+- how
+  - construct a recursion function to build tree
+    - parameter: root value & where root value is in inorder list & left boundary & right boundary
+    - use dictionary to enhance efficient
+      - dict\[value of node\] = index in inorder list
 
 ### 二叉树的序列化与反序列化
 
 - id: 297
 - name: serialize-and-deserialize-binary-tree
-- tag: Tree, Depth-First Search, Breadth-First Search, Design, String, Binary Tree
+- tag: Tree, Depth-First Search, Breadth-First Search, Design, String, Binary Tree, MARK
+- how
+  - serialize & deserialize with same method (BFS or DFS)
 
 
 --- 
@@ -623,57 +630,93 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 ### 斐波那契数
 
-- id: 1013
+- id: 509
 - name: fibonacci-number
 - tag: Recursion, Memoization, Math, Dynamic Programming
+- how
+  - recursion -> use dp table to avoid repeated calculation -> use only 2 variable to update
 
 ### 爬楼梯
 
 - id: 70
 - name: climbing-stairs
 - tag: Memoization, Math, Dynamic Programming
+- how
+  - same as fib
 
 ### 一维数组的动态和
 
-- id: 1603
+- id: 1480
 - name: running-sum-of-1d-array
 - tag: Array, Prefix Sum
+- how
+  - append sum of last number in `res` and current `num` in nums
 
 ### 买卖股票的最佳时机
 
 - id: 121
 - name: best-time-to-buy-and-sell-stock
 - tag: Array, Dynamic Programming
+- how
+  - use two variable to track lowest price and largest profit
+    - cost: min(current_price, cost)
+    - profit: max(current_price - cost, profit)
 
 ### 最小路径和
 
 - id: 64
 - name: minimum-path-sum
 - tag: Array, Dynamic Programming, Matrix
+- how
+  - change grid into min path sum to each box
+  - init first row and first column (only update from one direction)
+  - compare up and left, choose min to sum
 
 ### 最大子数组和
 
 - id: 53
 - name: maximum-subarray
-- tag: Array, Divide and Conquer, Dynamic Programming
+- tag: Array, Divide and Conquer, Dynamic Programming, MARK
+- how
+  - define `dp[i]` as max sum of subarray that ends at index i
+  - update: compare `nums[i]` and `dp[i-1] + nums[i]` 
 
 ### 打家劫舍
 
 - id: 198
 - name: house-robber
 - tag: Array, Dynamic Programming
+- how
+  - meaning of `dp[i]`: if house i is the last house, max money can be robbed
+  - init: `dp[0]=nums[0]`, `dp[1]=max(nums[0], nums[1])`
+  - update
+    - `dp[i] = max(nums[i] + nums[i-2], nums[i-1])`
+      - meaning: rob current house, or rob the neighboring house & give up current house
 
 ### 打家劫舍 II
 
 - id: 213
 - name: house-robber-ii
-- tag: Array, Dynamic Programming
+- tag: Array, Dynamic Programming, MARK
+- how
+  - what's the difference with previous question: first and last house is connected (circular)
+    - either rob first house OR last house
+    - apply solution of previous question to `nums[0:len(nums)-1]` and `nums[1:]`, then taking the MAX value
 
 ### 最长递增子序列
 
 - id: 300
 - name: longest-increasing-subsequence
-- tag: Array, Binary Search, Dynamic Programming
+- tag: Array, Binary Search, Dynamic Programming, MARK
+- how
+  - use `tails` list to save strict increasing subsequence of `nums`
+  - how to update `tails` during iterating `nums`
+    - `tails` is empty -> put `num` to `tails[0]`
+    - use dichotomy to find the position where `num` should be placed (use `left` pointer to indicate, and it's 1 step right or at same position with `right` pointer), then put new `num` there
+      - property of this update rule
+        - if there's smaller number than last numbers in `tails`, it will be placed, but the result will stay the same (length of `tails` doesn't change)
+        - last number strictly larger than previous number in `tails`, but will use smallest possible number (eg. `tails` is (1,2,5), and `num` is 3, `tails` will become (1,2,3))
+    - after iteration, just return the valid length of `tails` (aka longest increasing subsequence)
 
 ### 正则表达式匹配
 
