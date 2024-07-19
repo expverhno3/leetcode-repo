@@ -745,7 +745,11 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 - id: 264
 - name: ugly-number-ii
-- tag: Hash Table, Math, Dynamic Programming, Heap (Priority Queue)
+- tag: Hash Table, Math, Dynamic Programming, Heap (Priority Queue), MARK
+- how
+  - essence of question: how to generate a list of number that only has factor of certain prime number and avoid repeatedly generating them?
+  - use a list to save result, and newer number only comes from previous result times certain factor (say x)
+  - avoid generating duplicates: **use pointer to indicate potential base of each factor**, if used -> move forward
 
 
 --- 
