@@ -722,7 +722,24 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 - id: 10
 - name: regular-expression-matching
-- tag: Recursion, String, Dynamic Programming
+- tag: Recursion, String, Dynamic Programming, MARK
+- how
+  - intuition: start from first char
+    - if they are the same -> matched! 
+    - if not: how about check next char?
+  - use dp table
+    - definition: `dp[i][j]` means: if previous i chars of `s` can be matched with previous j chars of `p`
+      - from `dp[i-1][j]` to `dp[i][j]` -> add char `s[i-1]`
+    - dp table init
+      - `dp[0][0]`: true (empty strings are matched)
+      - only when all even positions of `p` are `*`, first row can be true
+    - state transition:
+      - if new `p` char is not `*`
+        - if `dp[i-1][j-1]==1 && s[i-1]==p[i-1]`: previous string are matched & add a same char -> true
+        - if `dp[i-1][j-1]==1 && p[i-1] == "."`: previous string are matched & "*" matched any char -> true
+      - if new `p` char is `*`
+        - `dp[i][j-2]==1`: previous i-1 chars of `s` string is matched, and we can safely consider any char with `*` to be ignored -> true
+        - `dp[i - 1][j]==1 && (p[j-1] == s[i-1] or p[j-1] == ".")`: previous i-1 chars are matched, and new char is also matched
 
 ### 丑数 II
 
