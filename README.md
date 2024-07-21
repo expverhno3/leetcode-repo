@@ -784,7 +784,12 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 - id: 11
 - name: container-with-most-water
-- tag: Greedy, Array, Two Pointers
+- tag: Greedy, Array, Two Pointers, MARK
+- how
+  - intuitive: use two pointers, and put them at 2 ends
+  - how to move
+    - if move the long one: no way the volume can be larger
+    - if move the short one: possible to get larger volume, but not sure -> need to keep the largest value and compare
 
 ### 最大数
 
