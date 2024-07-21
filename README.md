@@ -761,13 +761,24 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 - id: 122
 - name: best-time-to-buy-and-sell-stock-ii
-- tag: Greedy, Array, Dynamic Programming
+- tag: Greedy, Array, Dynamic Programming, MARK
+- how
+  - calculate price difference of each day
+    - if > 0: we make profit from this diff
+    - if < 0: no operation, no loss
+  - idea behind this: holding stock for a long time can be divided into buy-sell in the same day
 
 ### 搜索二维矩阵 II
 
 - id: 240
 - name: search-a-2d-matrix-ii
-- tag: Array, Binary Search, Divide and Conquer, Matrix
+- tag: Array, Binary Search, Divide and Conquer, Matrix, MARK
+- how
+  - where to start
+    - intuitive: corner, but which corner?
+    - matrix rotate -> binary search tree -> choose root node (top right or bottom left)
+  - why choose these nodes are efficient
+    - once flag number is compared, a row / column can be safely ignored (reduce search space most)
 
 ### 盛最多水的容器
 
