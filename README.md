@@ -795,7 +795,12 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 - id: 179
 - name: largest-number
-- tag: Greedy, Array, String, Sorting
+- tag: Greedy, Array, String, Sorting, MARK
+- how
+  - ALL ABOUT SORTING!! PLEASE REVIEW "QUICK SORTING"
+  - define your sorting rule:
+    - x, y are `str` type, and if `xy > yx`, then `x > y`
+    - sort entire list of str under this rule, then concatenate to a string in reverse order
 
 ### 分发糖果
 
