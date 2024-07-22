@@ -1,6 +1,5 @@
 NOTE: if there's **MARK** in tag, need to revisit this question
 
-
 ## 链表
 
 ### 合并两个有序链表
@@ -19,7 +18,6 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - how
   - use two pointers
   - construct result linked list by pointing back
-
 
 ### 分隔链表
 
@@ -51,9 +49,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
   - Sol 2 (1 pass):
     - iterate original list, and maintain a "visited" hash table (mapping: original node -> copied new node): current node, next node, random node at first, then construct the link of current copied node
 
-
---- 
-
+---
 
 ## 栈与队列
 
@@ -103,9 +99,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - tag: Design, Two Pointers, Data Stream, Sorting, Heap (Priority Queue), MARK
 - how: [check code](295.find-median-from-data-stream.py)
 
-
---- 
-
+---
 
 ## 哈希表
 
@@ -157,9 +151,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
   - if no odd frequency: sum is result
   - if there's odd frequency: sum + 1
 
-
---- 
-
+---
 
 ## 双指针
 
@@ -202,12 +194,12 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - name: linked-list-cycle-ii
 - tag: Hash Table, Linked List, Two Pointers
 - how
-  - check this & comment of "Shinkyu" [solution](https://leetcode.com/problems/linked-list-cycle-ii/solutions/1701128/c-java-python-slow-and-fast-image-explanation-beginner-friendly) 
+  - check this & comment of "Shinkyu" [solution](https://leetcode.com/problems/linked-list-cycle-ii/solutions/1701128/c-java-python-slow-and-fast-image-explanation-beginner-friendly)
   - basically: `fast` has step size 2 and `slow` has step size 1
     - if meet: there's a circular connection
       - how long is the circle: `x` denotes # of step before start of circle, `y` denotes # of step between start of circle until `fast` and `slow` meet
         - `slow`: x + y
-        - `fast`: 2*(x+y) if considering 2x step size; if considering circle (because `fast` has repeat circle multiple times ahead of slow so they can meet), then it's x + y + C ("C" is # of steps to repeat multiple circles)
+        - `fast`: 2\*(x+y) if considering 2x step size; if considering circle (because `fast` has repeat circle multiple times ahead of slow so they can meet), then it's x + y + C ("C" is # of steps to repeat multiple circles)
         - from here we can calculate $C = x + y$
         - therefore, we can reset `fast` to the beginning, then both `fast` and `slow` run $x$ steps, they can meet together again at the beginning of circle.
 
@@ -253,9 +245,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
     - how to build: compare the last value and the right pointer, if last value is smaller, then it can't be the wanted max value, pop out
   - after the windows length is reach, left pointer need to move, and compare it with leftmost idx
 
-
---- 
-
+---
 
 ## 模拟
 
@@ -302,7 +292,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - how
   - always pop the first row of matrix
   - then **rotate** the matrix my counterclockwise for 90 degree
-  - NOTE: zip(*matrix) can transpose the matrix, then reverse the order of row -> 90 degree counterclockwise rotation!
+  - NOTE: zip(\*matrix) can transpose the matrix, then reverse the order of row -> 90 degree counterclockwise rotation!
 
 ### 螺旋矩阵 II
 
@@ -333,9 +323,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
     - there's 3 cases: space, number, sign
     - as long as how states are transferred, it can automatically parse
 
-
---- 
-
+---
 
 ## 查找
 
@@ -388,9 +376,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
       - if `nums[right] > nums[middle]`: min value at the left half, let `right = middle` (why not `middle - 1`? because `middle` can point at the min)
       - if `nums[right] == nums[right]`: don't know what's going on, but we are sure we can move `right` pointer back (no way it can increase!)
 
-
---- 
-
+---
 
 ## 搜索
 
@@ -402,7 +388,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - how
   - put nodes in a queue, append new nodes at the end, popleft to indicate traverse
   - how to know how many nodes at each level? (MARK)
-    - length of queue == number of nodes at each level 
+    - length of queue == number of nodes at each level
 
 ### 二叉树的锯齿形层序遍历
 
@@ -425,7 +411,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
       - if p and q at same branch && their direct parent is not the same -> root is LCA
       - if p and q at different branch: both branch will have return value -> root is LCA
 
-### 二叉搜索树中第K小的元素
+### 二叉搜索树中第 K 小的元素
 
 - id: 230
 - name: kth-smallest-element-in-a-bst
@@ -458,8 +444,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
   - in order traverse
   - use head to pin first node (smallest, aka first node of traverse), then keep updating node.left (since we are in-order traverse, start operating after left all used)
 
-
-### 数组中的第K个最大元素
+### 数组中的第 K 个最大元素
 
 - id: 215
 - name: kth-largest-element-in-an-array
@@ -481,9 +466,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
   - use a queue to save all courses can be finished
   - use a counter to count number of courses finished
 
-
---- 
-
+---
 
 ## 回溯
 
@@ -556,9 +539,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
   - Optimization done by pruning
   - modify element in-place is far more efficient than create a new object to save paths to avoid accessing repeatedly
 
-
---- 
-
+---
 
 ## 分治
 
@@ -622,9 +603,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - how
   - serialize & deserialize with same method (BFS or DFS)
 
-
---- 
-
+---
 
 ## 动态规划
 
@@ -679,7 +658,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - tag: Array, Divide and Conquer, Dynamic Programming, MARK
 - how
   - define `dp[i]` as max sum of subarray that ends at index i
-  - update: compare `nums[i]` and `dp[i-1] + nums[i]` 
+  - update: compare `nums[i]` and `dp[i-1] + nums[i]`
 
 ### 打家劫舍
 
@@ -725,7 +704,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - tag: Recursion, String, Dynamic Programming, MARK
 - how
   - intuition: start from first char
-    - if they are the same -> matched! 
+    - if they are the same -> matched!
     - if not: how about check next char?
   - use dp table
     - definition: `dp[i][j]` means: if previous i chars of `s` can be matched with previous j chars of `p`
@@ -736,7 +715,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
     - state transition:
       - if new `p` char is not `*`
         - if `dp[i-1][j-1]==1 && s[i-1]==p[i-1]`: previous string are matched & add a same char -> true
-        - if `dp[i-1][j-1]==1 && p[i-1] == "."`: previous string are matched & "*" matched any char -> true
+        - if `dp[i-1][j-1]==1 && p[i-1] == "."`: previous string are matched & "\*" matched any char -> true
       - if new `p` char is `*`
         - `dp[i][j-2]==1`: previous i-1 chars of `s` string is matched, and we can safely consider any char with `*` to be ignored -> true
         - `dp[i - 1][j]==1 && (p[j-1] == s[i-1] or p[j-1] == ".")`: previous i-1 chars are matched, and new char is also matched
@@ -751,9 +730,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
   - use a list to save result, and newer number only comes from previous result times certain factor (say x)
   - avoid generating duplicates: **use pointer to indicate potential base of each factor**, if used -> move forward
 
-
---- 
-
+---
 
 ## 贪心
 
@@ -809,8 +786,8 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - tag: Greedy, Array, MARK
 - how
   - when value of index `i` needs to be determined by its neighboring elements -> iterate forward and backward (two times, but still LINEAR time)
-    - compare rating with previous one, `if ratings[i - 1] < ratings[i]` -> `i` needs to get one more candy 
-    - compare rating with next one, `if ratings[i] < ratings[i+1]` -> `i` needs to get one more candy 
+    - compare rating with previous one, `if ratings[i - 1] < ratings[i]` -> `i` needs to get one more candy
+    - compare rating with next one, `if ratings[i] < ratings[i+1]` -> `i` needs to get one more candy
   - how to combine two iteration result: need to satisfy both rules
     - choose `max` in the results (no matter what, larger ensure obeying the rule)
 
@@ -821,32 +798,38 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - tag: Stack, Greedy, Array, Sorting, Monotonic Stack, MARK
 - how
   - use a stack to save head of "chunks"
-  - heads of chunks should be *ascending*
+  - heads of chunks should be _ascending_
     - if new number is smaller than previous head -> need to merge current chunk and previous chunk
 
-
---- 
-
+---
 
 ## 位运算
 
-### 位1的个数
+### 位 1 的个数
 
 - id: 191
 - name: number-of-1-bits
 - tag: Bit Manipulation, Divide and Conquer
+- how
+  - easy! in while loop until number == 0
+    - take remainder, if == 1 -> counter increment
+    - number // 2
 
 ### 2 的幂
 
 - id: 231
 - name: power-of-two
 - tag: Bit Manipulation, Recursion, Math
+- how
+  - two's power has property: $(n-1) & n == 0$
 
 ### 两整数之和
 
 - id: 371
 - name: sum-of-two-integers
 - tag: Bit Manipulation, Math
+- how
+  - ((a & b) << 1) + (a ^ b)
 
 ### 只出现一次的数字
 
@@ -860,9 +843,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - name: single-number-ii
 - tag: Bit Manipulation, Array
 
-
---- 
-
+---
 
 ## 数学
 
@@ -914,7 +895,4 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - name: number-of-digit-one
 - tag: Recursion, Math, Dynamic Programming
 
-
---- 
-
-
+---
