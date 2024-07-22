@@ -836,12 +836,21 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 136
 - name: single-number
 - tag: Bit Manipulation, Array
+- how
+  - XOR: same number -> 0; number showing once stays
 
 ### 只出现一次的数字 II
 
 - id: 137
 - name: single-number-ii
-- tag: Bit Manipulation, Array
+- tag: Bit Manipulation, Array, MARK
+- how
+  - use Finite State Machine
+  - just focus on one bit
+    - if one number shows 3 times -> set its x bit is 1, then at position x, 1 will shows 3 times
+    - use two variable: `one` to indicate this position 1 shows one time, `two` to indicate this position shows two time
+    - draw truth table, and write state transition expression
+  - same rules apply to all bit positions
 
 ---
 
