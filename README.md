@@ -816,9 +816,13 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 ### 最多能完成排序的块 II
 
-- id: 779
+- id: 768
 - name: max-chunks-to-make-sorted-ii
-- tag: Stack, Greedy, Array, Sorting, Monotonic Stack
+- tag: Stack, Greedy, Array, Sorting, Monotonic Stack, MARK
+- how
+  - use a stack to save head of "chunks"
+  - heads of chunks should be *ascending*
+    - if new number is smaller than previous head -> need to merge current chunk and previous chunk
 
 
 --- 
