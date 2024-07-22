@@ -860,7 +860,11 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 - id: 238
 - name: product-of-array-except-self
-- tag: Array, Prefix Sum
+- tag: Array, Prefix Sum, MARK
+- how
+  - use prefix product, but during iterating array, **OFFSET** by 1 position (both backward and forward)
+    - iterate from left to right: `[1, x[0], x[0]*x[1], x[0]*x[1]*x[2]]`, from right to left: `[x[1]x[2]x[3], x[2]x[3], x[3], 1]`
+    - point-wise multiplication to get result
 
 ### 多数元素
 
