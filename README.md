@@ -870,7 +870,16 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 - id: 169
 - name: majority-element
-- tag: Array, Hash Table, Divide and Conquer, Counting, Sorting
+- tag: Array, Hash Table, Divide and Conquer, Counting, Sorting, MARK
+- how
+  - voting algo!
+    - assume first number as majority number (M):
+      - if current_number == M -> votes += 1
+      - else -> votes -= 1
+      - votes == 0 -> assign a new M
+      - last M is just answer
+    - why
+      - assume vote majority number +1, and vote non-majority number as -1, if get votes==0 -> remaining numbers has the same majority number as the entire array
 
 ### 整数拆分
 
