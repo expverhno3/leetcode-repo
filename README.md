@@ -806,7 +806,13 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 - id: 135
 - name: candy
-- tag: Greedy, Array
+- tag: Greedy, Array, MARK
+- how
+  - when value of index `i` needs to be determined by its neighboring elements -> iterate forward and backward (two times, but still LINEAR time)
+    - compare rating with previous one, `if ratings[i - 1] < ratings[i]` -> `i` needs to get one more candy 
+    - compare rating with next one, `if ratings[i] < ratings[i+1]` -> `i` needs to get one more candy 
+  - how to combine two iteration result: need to satisfy both rules
+    - choose `max` in the results (no matter what, larger ensure obeying the rule)
 
 ### 最多能完成排序的块 II
 
