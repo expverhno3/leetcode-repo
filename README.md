@@ -900,9 +900,12 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 ### 找出游戏的获胜者
 
-- id: 1951
+- id: 1823
 - name: find-the-winner-of-the-circular-game
-- tag: Recursion, Queue, Array, Math, Simulation
+- tag: Recursion, Queue, Array, Math, Simulation, MARK
+- how
+  - simulation: top to bottom
+  - solution: bottom to top -> where the only element when $n=1$ goes when $n$ goes up (how index changes)
 
 ### 有效数字
 
