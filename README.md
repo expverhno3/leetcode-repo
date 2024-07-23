@@ -885,7 +885,10 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 - id: 343
 - name: integer-break
-- tag: Math, Dynamic Programming
+- tag: Math, Dynamic Programming, MARK
+- how
+  - [ref](https://leetcode.cn/problems/integer-break/solutions/29098/343-zheng-shu-chai-fen-tan-xin-by-jyd/?envType=study-plan-v2&envId=selected-coding-interview)
+  - basically, break numbers into combination of 3, or 2 is sub-optimal
 
 ### 格雷编码
 
