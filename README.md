@@ -894,7 +894,9 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 - id: 89
 - name: gray-code
-- tag: Bit Manipulation, Math, Backtracking
+- tag: Bit Manipulation, Math, Backtracking, MARK
+- how
+  - n-th gray code formula: gray(n) = n ^ (n >> 1)
 
 ### 找出游戏的获胜者
 
