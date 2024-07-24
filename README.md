@@ -929,5 +929,10 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 233
 - name: number-of-digit-one
 - tag: Recursion, Math, Dynamic Programming
+- how
+  - hard but:
+    - classification: deal with different cases
+    - summarize from some examples
+    - [solution here](https://leetcode.cn/problems/number-of-digit-one/solutions/2362053/233-shu-zi-1-de-ge-shu-qing-xi-tu-jie-by-pgb1/?envType=study-plan-v2&envId=selected-coding-interview)
 
 ---
