@@ -911,7 +911,9 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 - id: 65
 - name: valid-number
-- tag: String
+- tag: String, MARK
+- how
+  - finite state machine
 
 ### 第 N 位数字
 
