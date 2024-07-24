@@ -920,6 +920,9 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 400
 - name: nth-digit
 - tag: Math, Binary Search
+- how
+  - fuck! this is insane (how to store previous number, how to manipulate carefully with +1 or -1, // or % or \*\*)
+  - PLEASE use detailed example(s?) to derive assignment equation
 
 ### 数字 1 的个数
 
