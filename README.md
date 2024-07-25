@@ -957,6 +957,8 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 49
 - name: group-anagrams
 - tag: Array, Hash Table, String, Sorting
+- how
+  - hash each char -> get sum -> use as key, mapping to a list of anagrams
 
 ### 最长连续序列
 
