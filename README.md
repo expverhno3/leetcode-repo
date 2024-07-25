@@ -1,5 +1,7 @@
 NOTE: if there's **MARK** in tag, need to revisit this question
 
+# interview selected 88 questions
+
 ## 链表
 
 ### 合并两个有序链表
@@ -936,3 +938,706 @@ NOTE: if there's **MARK** in tag, need to revisit this question
     - [solution here](https://leetcode.cn/problems/number-of-digit-one/solutions/2362053/233-shu-zi-1-de-ge-shu-qing-xi-tu-jie-by-pgb1/?envType=study-plan-v2&envId=selected-coding-interview)
 
 ---
+
+# hot 100
+
+## 哈希
+
+### 两数之和
+
+- id: 1
+- name: two-sum
+- tag: Array, Hash Table
+
+### 字母异位词分组
+
+- id: 49
+- name: group-anagrams
+- tag: Array, Hash Table, String, Sorting
+
+### 最长连续序列
+
+- id: 128
+- name: longest-consecutive-sequence
+- tag: Union Find, Array, Hash Table
+
+
+--- 
+
+
+## 双指针
+
+### 移动零
+
+- id: 283
+- name: move-zeroes
+- tag: Array, Two Pointers
+
+### 盛最多水的容器
+
+- id: 11
+- name: container-with-most-water
+- tag: Greedy, Array, Two Pointers
+
+### 三数之和
+
+- id: 15
+- name: 3sum
+- tag: Array, Two Pointers, Sorting
+
+### 接雨水
+
+- id: 42
+- name: trapping-rain-water
+- tag: Stack, Array, Two Pointers, Dynamic Programming, Monotonic Stack
+
+
+--- 
+
+
+## 滑动窗口
+
+### 无重复字符的最长子串
+
+- id: 3
+- name: longest-substring-without-repeating-characters
+- tag: Hash Table, String, Sliding Window
+
+### 找到字符串中所有字母异位词
+
+- id: 438
+- name: find-all-anagrams-in-a-string
+- tag: Hash Table, String, Sliding Window
+
+
+--- 
+
+
+## 子串
+
+### 和为 K 的子数组
+
+- id: 560
+- name: subarray-sum-equals-k
+- tag: Array, Hash Table, Prefix Sum
+
+### 滑动窗口最大值
+
+- id: 239
+- name: sliding-window-maximum
+- tag: Queue, Array, Sliding Window, Monotonic Queue, Heap (Priority Queue)
+
+### 最小覆盖子串
+
+- id: 76
+- name: minimum-window-substring
+- tag: Hash Table, String, Sliding Window
+
+
+--- 
+
+
+## 普通数组
+
+### 最大子数组和
+
+- id: 53
+- name: maximum-subarray
+- tag: Array, Divide and Conquer, Dynamic Programming
+
+### 合并区间
+
+- id: 56
+- name: merge-intervals
+- tag: Array, Sorting
+
+### 轮转数组
+
+- id: 189
+- name: rotate-array
+- tag: Array, Math, Two Pointers
+
+### 除自身以外数组的乘积
+
+- id: 238
+- name: product-of-array-except-self
+- tag: Array, Prefix Sum
+
+### 缺失的第一个正数
+
+- id: 41
+- name: first-missing-positive
+- tag: Array, Hash Table
+
+
+--- 
+
+
+## 矩阵
+
+### 矩阵置零
+
+- id: 73
+- name: set-matrix-zeroes
+- tag: Array, Hash Table, Matrix
+
+### 螺旋矩阵
+
+- id: 54
+- name: spiral-matrix
+- tag: Array, Matrix, Simulation
+
+### 旋转图像
+
+- id: 48
+- name: rotate-image
+- tag: Array, Math, Matrix
+
+### 搜索二维矩阵 II
+
+- id: 240
+- name: search-a-2d-matrix-ii
+- tag: Array, Binary Search, Divide and Conquer, Matrix
+
+
+--- 
+
+
+## 链表
+
+### 相交链表
+
+- id: 160
+- name: intersection-of-two-linked-lists
+- tag: Hash Table, Linked List, Two Pointers
+
+### 反转链表
+
+- id: 206
+- name: reverse-linked-list
+- tag: Recursion, Linked List
+
+### 回文链表
+
+- id: 234
+- name: palindrome-linked-list
+- tag: Stack, Recursion, Linked List, Two Pointers
+
+### 环形链表
+
+- id: 141
+- name: linked-list-cycle
+- tag: Hash Table, Linked List, Two Pointers
+
+### 环形链表 II
+
+- id: 142
+- name: linked-list-cycle-ii
+- tag: Hash Table, Linked List, Two Pointers
+
+### 合并两个有序链表
+
+- id: 21
+- name: merge-two-sorted-lists
+- tag: Recursion, Linked List
+
+### 两数相加
+
+- id: 2
+- name: add-two-numbers
+- tag: Recursion, Linked List, Math
+
+### 删除链表的倒数第 N 个结点
+
+- id: 19
+- name: remove-nth-node-from-end-of-list
+- tag: Linked List, Two Pointers
+
+### 两两交换链表中的节点
+
+- id: 24
+- name: swap-nodes-in-pairs
+- tag: Recursion, Linked List
+
+### K 个一组翻转链表
+
+- id: 25
+- name: reverse-nodes-in-k-group
+- tag: Recursion, Linked List
+
+### 随机链表的复制
+
+- id: 138
+- name: copy-list-with-random-pointer
+- tag: Hash Table, Linked List
+
+### 排序链表
+
+- id: 148
+- name: sort-list
+- tag: Linked List, Two Pointers, Divide and Conquer, Sorting, Merge Sort
+
+### 合并 K 个升序链表
+
+- id: 23
+- name: merge-k-sorted-lists
+- tag: Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort
+
+### LRU 缓存
+
+- id: 146
+- name: lru-cache
+- tag: Design, Hash Table, Linked List, Doubly-Linked List
+
+
+--- 
+
+
+## 二叉树
+
+### 二叉树的中序遍历
+
+- id: 94
+- name: binary-tree-inorder-traversal
+- tag: Stack, Tree, Depth-First Search, Binary Tree
+
+### 二叉树的最大深度
+
+- id: 104
+- name: maximum-depth-of-binary-tree
+- tag: Tree, Depth-First Search, Breadth-First Search, Binary Tree
+
+### 翻转二叉树
+
+- id: 226
+- name: invert-binary-tree
+- tag: Tree, Depth-First Search, Breadth-First Search, Binary Tree
+
+### 对称二叉树
+
+- id: 101
+- name: symmetric-tree
+- tag: Tree, Depth-First Search, Breadth-First Search, Binary Tree
+
+### 二叉树的直径
+
+- id: 543
+- name: diameter-of-binary-tree
+- tag: Tree, Depth-First Search, Binary Tree
+
+### 二叉树的层序遍历
+
+- id: 102
+- name: binary-tree-level-order-traversal
+- tag: Tree, Breadth-First Search, Binary Tree
+
+### 将有序数组转换为二叉搜索树
+
+- id: 108
+- name: convert-sorted-array-to-binary-search-tree
+- tag: Tree, Binary Search Tree, Array, Divide and Conquer, Binary Tree
+
+### 验证二叉搜索树
+
+- id: 98
+- name: validate-binary-search-tree
+- tag: Tree, Depth-First Search, Binary Search Tree, Binary Tree
+
+### 二叉搜索树中第K小的元素
+
+- id: 230
+- name: kth-smallest-element-in-a-bst
+- tag: Tree, Depth-First Search, Binary Search Tree, Binary Tree
+
+### 二叉树的右视图
+
+- id: 199
+- name: binary-tree-right-side-view
+- tag: Tree, Depth-First Search, Breadth-First Search, Binary Tree
+
+### 二叉树展开为链表
+
+- id: 114
+- name: flatten-binary-tree-to-linked-list
+- tag: Stack, Tree, Depth-First Search, Linked List, Binary Tree
+
+### 从前序与中序遍历序列构造二叉树
+
+- id: 105
+- name: construct-binary-tree-from-preorder-and-inorder-traversal
+- tag: Tree, Array, Hash Table, Divide and Conquer, Binary Tree
+
+### 路径总和 III
+
+- id: 437
+- name: path-sum-iii
+- tag: Tree, Depth-First Search, Binary Tree
+
+### 二叉树的最近公共祖先
+
+- id: 236
+- name: lowest-common-ancestor-of-a-binary-tree
+- tag: Tree, Depth-First Search, Binary Tree
+
+### 二叉树中的最大路径和
+
+- id: 124
+- name: binary-tree-maximum-path-sum
+- tag: Tree, Depth-First Search, Dynamic Programming, Binary Tree
+
+
+--- 
+
+
+## 图论
+
+### 岛屿数量
+
+- id: 200
+- name: number-of-islands
+- tag: Depth-First Search, Breadth-First Search, Union Find, Array, Matrix
+
+### 腐烂的橘子
+
+- id: 1036
+- name: rotting-oranges
+- tag: Breadth-First Search, Array, Matrix
+
+### 课程表
+
+- id: 207
+- name: course-schedule
+- tag: Depth-First Search, Breadth-First Search, Graph, Topological Sort
+
+### 实现 Trie (前缀树)
+
+- id: 208
+- name: implement-trie-prefix-tree
+- tag: Design, Trie, Hash Table, String
+
+
+--- 
+
+
+## 回溯
+
+### 全排列
+
+- id: 46
+- name: permutations
+- tag: Array, Backtracking
+
+### 子集
+
+- id: 78
+- name: subsets
+- tag: Bit Manipulation, Array, Backtracking
+
+### 电话号码的字母组合
+
+- id: 17
+- name: letter-combinations-of-a-phone-number
+- tag: Hash Table, String, Backtracking
+
+### 组合总和
+
+- id: 39
+- name: combination-sum
+- tag: Array, Backtracking
+
+### 括号生成
+
+- id: 22
+- name: generate-parentheses
+- tag: String, Dynamic Programming, Backtracking
+
+### 单词搜索
+
+- id: 79
+- name: word-search
+- tag: Array, String, Backtracking, Matrix
+
+### 分割回文串
+
+- id: 131
+- name: palindrome-partitioning
+- tag: String, Dynamic Programming, Backtracking
+
+### N 皇后
+
+- id: 51
+- name: n-queens
+- tag: Array, Backtracking
+
+
+--- 
+
+
+## 二分查找
+
+### 搜索插入位置
+
+- id: 35
+- name: search-insert-position
+- tag: Array, Binary Search
+
+### 搜索二维矩阵
+
+- id: 74
+- name: search-a-2d-matrix
+- tag: Array, Binary Search, Matrix
+
+### 在排序数组中查找元素的第一个和最后一个位置
+
+- id: 34
+- name: find-first-and-last-position-of-element-in-sorted-array
+- tag: Array, Binary Search
+
+### 搜索旋转排序数组
+
+- id: 33
+- name: search-in-rotated-sorted-array
+- tag: Array, Binary Search
+
+### 寻找旋转排序数组中的最小值
+
+- id: 153
+- name: find-minimum-in-rotated-sorted-array
+- tag: Array, Binary Search
+
+### 寻找两个正序数组的中位数
+
+- id: 4
+- name: median-of-two-sorted-arrays
+- tag: Array, Binary Search, Divide and Conquer
+
+
+--- 
+
+
+## 栈
+
+### 有效的括号
+
+- id: 20
+- name: valid-parentheses
+- tag: Stack, String
+
+### 最小栈
+
+- id: 155
+- name: min-stack
+- tag: Stack, Design
+
+### 字符串解码
+
+- id: 394
+- name: decode-string
+- tag: Stack, Recursion, String
+
+### 每日温度
+
+- id: 739
+- name: daily-temperatures
+- tag: Stack, Array, Monotonic Stack
+
+### 柱状图中最大的矩形
+
+- id: 84
+- name: largest-rectangle-in-histogram
+- tag: Stack, Array, Monotonic Stack
+
+
+--- 
+
+
+## 堆
+
+### 数组中的第K个最大元素
+
+- id: 215
+- name: kth-largest-element-in-an-array
+- tag: Array, Divide and Conquer, Quickselect, Sorting, Heap (Priority Queue)
+
+### 前 K 个高频元素
+
+- id: 347
+- name: top-k-frequent-elements
+- tag: Array, Hash Table, Divide and Conquer, Bucket Sort, Counting, Quickselect, Sorting, Heap (Priority Queue)
+
+### 数据流的中位数
+
+- id: 295
+- name: find-median-from-data-stream
+- tag: Design, Two Pointers, Data Stream, Sorting, Heap (Priority Queue)
+
+
+--- 
+
+
+## 贪心算法
+
+### 买卖股票的最佳时机
+
+- id: 121
+- name: best-time-to-buy-and-sell-stock
+- tag: Array, Dynamic Programming
+
+### 跳跃游戏
+
+- id: 55
+- name: jump-game
+- tag: Greedy, Array, Dynamic Programming
+
+### 跳跃游戏 II
+
+- id: 45
+- name: jump-game-ii
+- tag: Greedy, Array, Dynamic Programming
+
+### 划分字母区间
+
+- id: 768
+- name: partition-labels
+- tag: Greedy, Hash Table, Two Pointers, String
+
+
+--- 
+
+
+## 动态规划
+
+### 爬楼梯
+
+- id: 70
+- name: climbing-stairs
+- tag: Memoization, Math, Dynamic Programming
+
+### 杨辉三角
+
+- id: 118
+- name: pascals-triangle
+- tag: Array, Dynamic Programming
+
+### 打家劫舍
+
+- id: 198
+- name: house-robber
+- tag: Array, Dynamic Programming
+
+### 完全平方数
+
+- id: 279
+- name: perfect-squares
+- tag: Breadth-First Search, Math, Dynamic Programming
+
+### 零钱兑换
+
+- id: 322
+- name: coin-change
+- tag: Breadth-First Search, Array, Dynamic Programming
+
+### 单词拆分
+
+- id: 139
+- name: word-break
+- tag: Trie, Memoization, Array, Hash Table, String, Dynamic Programming
+
+### 最长递增子序列
+
+- id: 300
+- name: longest-increasing-subsequence
+- tag: Array, Binary Search, Dynamic Programming
+
+### 乘积最大子数组
+
+- id: 152
+- name: maximum-product-subarray
+- tag: Array, Dynamic Programming
+
+### 分割等和子集
+
+- id: 416
+- name: partition-equal-subset-sum
+- tag: Array, Dynamic Programming
+
+### 最长有效括号
+
+- id: 32
+- name: longest-valid-parentheses
+- tag: Stack, String, Dynamic Programming
+
+
+--- 
+
+
+## 多维动态规划
+
+### 不同路径
+
+- id: 62
+- name: unique-paths
+- tag: Math, Dynamic Programming, Combinatorics
+
+### 最小路径和
+
+- id: 64
+- name: minimum-path-sum
+- tag: Array, Dynamic Programming, Matrix
+
+### 最长回文子串
+
+- id: 5
+- name: longest-palindromic-substring
+- tag: Two Pointers, String, Dynamic Programming
+
+### 最长公共子序列
+
+- id: 1250
+- name: longest-common-subsequence
+- tag: String, Dynamic Programming
+
+### 编辑距离
+
+- id: 72
+- name: edit-distance
+- tag: String, Dynamic Programming
+
+
+--- 
+
+
+## 技巧
+
+### 只出现一次的数字
+
+- id: 136
+- name: single-number
+- tag: Bit Manipulation, Array
+
+### 多数元素
+
+- id: 169
+- name: majority-element
+- tag: Array, Hash Table, Divide and Conquer, Counting, Sorting
+
+### 颜色分类
+
+- id: 75
+- name: sort-colors
+- tag: Array, Two Pointers, Sorting
+
+### 下一个排列
+
+- id: 31
+- name: next-permutation
+- tag: Array, Two Pointers
+
+### 寻找重复数
+
+- id: 287
+- name: find-the-duplicate-number
+- tag: Bit Manipulation, Array, Two Pointers, Binary Search
+
+
+--- 
