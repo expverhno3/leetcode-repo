@@ -965,6 +965,11 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 128
 - name: longest-consecutive-sequence
 - tag: Union Find, Array, Hash Table
+- how
+  - core problem: how do you know this is the right beginning number of longest consecutive sequence?
+    - because (current_number - 1) doesn't exist in this array!
+  - how do i know its length:
+    - keep tracking if (current_number + 1) is in array
 
 
 --- 
