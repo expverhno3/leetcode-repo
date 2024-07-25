@@ -948,6 +948,9 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 1
 - name: two-sum
 - tag: Array, Hash Table
+- how
+  - use a hash table to save (value -> index)
+  - iterate again, test if (target - current_number) is in the hash table
 
 ### 字母异位词分组
 
