@@ -981,7 +981,15 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 - id: 283
 - name: move-zeroes
-- tag: Array, Two Pointers
+- tag: Array, Two Pointers, MARK
+- how
+  - use two pointers, `anchor` and `explorer`, they start at the same position (0)
+  - update rule:
+    - if `explorer` points to a non-zero number -> swap number `explorer` points to with `anchor`'s, and `anchor` moves one step forward
+  - why this work?
+    - they begin at the same place: swap with non-zero self
+    - if meets 1 zero: `explorer` just pass it, `anchor` points to the zero, after update, `anchor` still points to the first zero
+    - if meets multiple zero: `anchor` still points to them
 
 ### 盛最多水的容器
 
