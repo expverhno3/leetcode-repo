@@ -996,18 +996,26 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 11
 - name: container-with-most-water
 - tag: Greedy, Array, Two Pointers
+- duplicate, check: [here](#盛最多水的容器)
 
 ### 三数之和
 
 - id: 15
 - name: 3sum
 - tag: Array, Two Pointers, Sorting
+- duplicate, [check](#三数之和)
 
 ### 接雨水
 
 - id: 42
 - name: trapping-rain-water
 - tag: Stack, Array, Two Pointers, Dynamic Programming, Monotonic Stack
+- how
+  - pattern: high1 -> low -> high2, where high2 >= high1
+  - $O(N)$
+  - iterate from left to right, maintain the highest, count "sinks" in (1,0,2,1,3)
+  - iterate from right to left, count sinks like (3,0,2,0,1)
+  - sum left result and right result
 
 
 --- 
