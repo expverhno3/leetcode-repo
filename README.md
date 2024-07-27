@@ -1052,7 +1052,10 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 - id: 560
 - name: subarray-sum-equals-k
-- tag: Array, Hash Table, Prefix Sum
+- tag: Array, Hash Table, Prefix Sum, MARK
+- how
+  - combine prefix sum with frequency table
+  - check how many times the prefix sum == (current_prefix_sum - target_value), and add this frequency to result
 
 ### 滑动窗口最大值
 
