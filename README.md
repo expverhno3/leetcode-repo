@@ -1028,12 +1028,19 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 3
 - name: longest-substring-without-repeating-characters
 - tag: Hash Table, String, Sliding Window
+- duplicate, [check here](#无重复字符的最长子串)
 
 ### 找到字符串中所有字母异位词
 
 - id: 438
 - name: find-all-anagrams-in-a-string
 - tag: Hash Table, String, Sliding Window
+- how
+  - hash map: use frequency check
+  - sliding window -> only consider chars within window
+  - if char out of window in `p`: char_freq ++
+  - if char in window in `p`: char_freq --
+  - each time check if char_freq values are all 0: anagrams, record `i`
 
 
 --- 
