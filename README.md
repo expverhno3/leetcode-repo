@@ -1112,12 +1112,18 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 238
 - name: product-of-array-except-self
 - tag: Array, Prefix Sum
+- [duplicate](#除自身以外数组的乘积)
 
 ### 缺失的第一个正数
 
 - id: 41
 - name: first-missing-positive
-- tag: Array, Hash Table
+- tag: Array, Hash Table, MARK
+- how
+  - about how to use array itself to indicate presence of certain element and avoid destroying original data
+  - start from ideal situation: array ranges from \[1,n\] -> missing element can't be greater than n!
+  - how to indicate presence: at `nums[i]`, its value should be `i+1`
+  - but at place `i+1`, its value is modified -> use swap
 
 
 --- 
