@@ -1102,7 +1102,10 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 - id: 189
 - name: rotate-array
-- tag: Array, Math, Two Pointers
+- tag: Array, Math, Two Pointers, MARK
+- how
+  - use "reverse" to achieve $O(N)$ operations and $O(1)$ space
+  - from ----->--> to <--<------ to --->------> (reverse all, then reverse first $k$ elements and the remaining elements)
 
 ### 除自身以外数组的乘积
 
