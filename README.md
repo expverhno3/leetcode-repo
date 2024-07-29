@@ -1062,12 +1062,19 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 239
 - name: sliding-window-maximum
 - tag: Queue, Array, Sliding Window, Monotonic Queue, Heap (Priority Queue)
+- [duplicate](#滑动窗口最大值) (MARK)
 
 ### 最小覆盖子串
 
 - id: 76
 - name: minimum-window-substring
-- tag: Hash Table, String, Sliding Window
+- tag: Hash Table, String, Sliding Window, MARK
+- how
+  1. init hash table to save frequency of chars in `t`
+  2. use two pointers to represent window
+  3. expand sliding window by move `end` pointer
+     1. use a `counter` to "count" how many chars are remained to be matched
+     2. once matched, calculate the width of window. then shrink the window while keep it valid by moving `start` pointer
 
 
 --- 
