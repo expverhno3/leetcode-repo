@@ -1087,12 +1087,16 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 53
 - name: maximum-subarray
 - tag: Array, Divide and Conquer, Dynamic Programming
+- [duplicate](#最大子数组和)
 
 ### 合并区间
 
 - id: 56
 - name: merge-intervals
 - tag: Array, Sorting
+- how
+  - sort based on left bound
+  - compare left bound and right bound to check if interval i can be merged with interval (i-1)
 
 ### 轮转数组
 
