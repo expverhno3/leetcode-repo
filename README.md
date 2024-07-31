@@ -1136,24 +1136,29 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 73
 - name: set-matrix-zeroes
 - tag: Array, Hash Table, Matrix
+- how
+  - use first row and first column to save "state" of the row or column (if this row or column should be all zero)
 
 ### 螺旋矩阵
 
 - id: 54
 - name: spiral-matrix
 - tag: Array, Matrix, Simulation
+- [duplicate](#螺旋矩阵)
 
 ### 旋转图像
 
 - id: 48
 - name: rotate-image
 - tag: Array, Math, Matrix
+- [duplicate](#旋转图像)
 
 ### 搜索二维矩阵 II
 
 - id: 240
 - name: search-a-2d-matrix-ii
 - tag: Array, Binary Search, Divide and Conquer, Matrix
+- [duplicate](#搜索二维矩阵-ii)
 
 
 --- 
