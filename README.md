@@ -1195,24 +1195,30 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 141
 - name: linked-list-cycle
 - tag: Hash Table, Linked List, Two Pointers
+- how
+  - fast-slow pointers
 
 ### 环形链表 II
 
 - id: 142
 - name: linked-list-cycle-ii
 - tag: Hash Table, Linked List, Two Pointers
+- [duplicate](#环形链表-II)
 
 ### 合并两个有序链表
 
 - id: 21
 - name: merge-two-sorted-lists
 - tag: Recursion, Linked List
+- [duplicate](#合并两个有序链表)
 
 ### 两数相加
 
 - id: 2
 - name: add-two-numbers
 - tag: Recursion, Linked List, Math
+- how
+  - use a `carry` variable
 
 ### 删除链表的倒数第 N 个结点
 
