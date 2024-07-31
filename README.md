@@ -1171,18 +1171,24 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 160
 - name: intersection-of-two-linked-lists
 - tag: Hash Table, Linked List, Two Pointers
+- [duplicate](#相交链表)
 
 ### 反转链表
 
 - id: 206
 - name: reverse-linked-list
 - tag: Recursion, Linked List
+- [duplicate](#反转链表)
 
 ### 回文链表
 
 - id: 234
 - name: palindrome-linked-list
-- tag: Stack, Recursion, Linked List, Two Pointers
+- tag: Stack, Recursion, Linked List, Two Pointers, MARK
+- how
+  - fast-slow pointers + reverse linked list
+    - fast-slow pointers -> used for finding where middle of linked list is
+    - reverse linked list -> made it easier to compare
 
 ### 环形链表
 
