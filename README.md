@@ -1233,6 +1233,11 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 24
 - name: swap-nodes-in-pairs
 - tag: Recursion, Linked List
+- how
+  - use three variables:
+    - `cur`: start from `head`, move 2 nodes/step
+    - `cur_next`: indicate node to be swapped with `cur`
+    - `prev`: one node before `cur`, need to update its `next` once next cycle of swap was done
 
 ### K 个一组翻转链表
 
