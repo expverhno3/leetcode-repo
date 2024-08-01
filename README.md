@@ -1252,12 +1252,19 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 138
 - name: copy-list-with-random-pointer
 - tag: Hash Table, Linked List
+- [duplicate](#随机链表的复制)
 
 ### 排序链表
 
 - id: 148
 - name: sort-list
-- tag: Linked List, Two Pointers, Divide and Conquer, Sorting, Merge Sort
+- tag: Linked List, Two Pointers, Divide and Conquer, Sorting, Merge Sort, MARK
+- how
+  - merge sort: split array into 2 units, merge two units with order. unit increase at each iteration, start from 1.
+    - eg. (4,2,3,1,5), iter1: split into single digit, merge two digits, (2,4 / 1,3 / 5); iter2: (1,2,3,4/5); iter3: (1,2,3,4,5)
+  - iterate linked list once for length
+  - split (disconnect link)
+  - merge (sort and connect)
 
 ### 合并 K 个升序链表
 
