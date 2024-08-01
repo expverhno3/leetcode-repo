@@ -1244,6 +1244,8 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 25
 - name: reverse-nodes-in-k-group
 - tag: Recursion, Linked List
+- how
+  - move pointer, cut connection between groups, reverse
 
 ### 随机链表的复制
 
