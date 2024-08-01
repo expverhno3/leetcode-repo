@@ -1225,6 +1225,8 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 19
 - name: remove-nth-node-from-end-of-list
 - tag: Linked List, Two Pointers
+- how
+  - use two pointers, they spaced with (n+1), when `fast` hit the None at the end, `slow` points to just before the node to be deleted
 
 ### 两两交换链表中的节点
 
