@@ -21,7 +21,8 @@ class Solution:
         cur = dummy
         heap = []
         for i, l in enumerate(lists):
-            heapq.heappush(heap, (l.val, i))
+            if l:
+                heapq.heappush(heap, (l.val, i))
         while heap:
             val, list_idx = heapq.heappop(heap)
             node = lists[list_idx]

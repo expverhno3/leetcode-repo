@@ -1281,7 +1281,13 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 - id: 146
 - name: lru-cache
-- tag: Design, Hash Table, Linked List, Doubly-Linked List
+- tag: Design, Hash Table, Linked List, Doubly-Linked List, MARK
+- how
+  - use two dict to indicate "linked list"
+    - `before` and `next`: key -> next/before key (next and before refer to if this key is "recently used")
+  - `_delete`: reconnect and remove from all dict
+  - `_connect`: connect linked list in two dictionary
+  - `_append`: add new key to the "end" of linked list (where just before the `tail`)
 
 
 --- 
