@@ -1270,7 +1270,12 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 - id: 23
 - name: merge-k-sorted-lists
-- tag: Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort
+- tag: Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort, MARK
+- how
+  - push heads of all linked list into the heap (min-heap)
+  - pop out `node`, linked it to `result` linked list
+  - if out `node` has a "next", push it into heap
+  - complexity: $O(n\times k \times lg(k))$
 
 ### LRU 缓存
 
