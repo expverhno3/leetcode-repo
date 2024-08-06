@@ -1346,6 +1346,9 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 108
 - name: convert-sorted-array-to-binary-search-tree
 - tag: Tree, Binary Search Tree, Array, Divide and Conquer, Binary Tree
+- how
+  - use number at the middle as root
+  - recursively use sub-array until sub-array is empty
 
 ### 验证二叉搜索树
 
