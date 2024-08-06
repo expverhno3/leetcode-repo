@@ -1379,6 +1379,14 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 114
 - name: flatten-binary-tree-to-linked-list
 - tag: Stack, Tree, Depth-First Search, Linked List, Binary Tree
+- how
+  - M1
+    - recursion
+    - find tail node of left branch, connect it to `root.right`, then connect `root.right` to head node of left branch
+  - M2
+    - no recursion
+    - just find rightmost node of left branch, connect it to right branch, connect root to start of left branch
+    - move `root` to right
 
 ### 从前序与中序遍历序列构造二叉树
 
