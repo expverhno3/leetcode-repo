@@ -1363,12 +1363,16 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 230
 - name: kth-smallest-element-in-a-bst
 - tag: Tree, Depth-First Search, Binary Search Tree, Binary Tree
+- [duplicate](#二叉搜索树中第K小的元素)
 
 ### 二叉树的右视图
 
 - id: 199
 - name: binary-tree-right-side-view
 - tag: Tree, Depth-First Search, Breadth-First Search, Binary Tree
+- how
+  - breadth first search (level-order)
+  - take the last element of each level
 
 ### 二叉树展开为链表
 
