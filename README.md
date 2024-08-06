@@ -1300,36 +1300,46 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 94
 - name: binary-tree-inorder-traversal
 - tag: Stack, Tree, Depth-First Search, Binary Tree
+- how
+  - easy...
 
 ### 二叉树的最大深度
 
 - id: 104
 - name: maximum-depth-of-binary-tree
 - tag: Tree, Depth-First Search, Breadth-First Search, Binary Tree
+- [duplicate](#二叉树的最大深度)
+
 
 ### 翻转二叉树
 
 - id: 226
 - name: invert-binary-tree
 - tag: Tree, Depth-First Search, Breadth-First Search, Binary Tree
+- [duplicate](#翻转二叉树)
 
 ### 对称二叉树
 
 - id: 101
 - name: symmetric-tree
 - tag: Tree, Depth-First Search, Breadth-First Search, Binary Tree
+- [duplicate](#对称二叉树)
 
 ### 二叉树的直径
 
 - id: 543
 - name: diameter-of-binary-tree
-- tag: Tree, Depth-First Search, Binary Tree
+- tag: Tree, Depth-First Search, Binary Tree, MARK
+- how
+  - find depth of each sub-tree
+  - keep `diameter` as global variable during finding the depth
 
 ### 二叉树的层序遍历
 
 - id: 102
 - name: binary-tree-level-order-traversal
 - tag: Tree, Breadth-First Search, Binary Tree
+- [duplicate](#二叉树的层序遍历)
 
 ### 将有序数组转换为二叉搜索树
 
