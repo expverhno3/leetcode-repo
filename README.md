@@ -1354,7 +1354,9 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 - id: 98
 - name: validate-binary-search-tree
-- tag: Tree, Depth-First Search, Binary Search Tree, Binary Tree
+- tag: Tree, Depth-First Search, Binary Search Tree, Binary Tree, MARK
+- how
+  - don't just compare left or right with root, use upper_bound and lower_bound to compare
 
 ### 二叉搜索树中第K小的元素
 
