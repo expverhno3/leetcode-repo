@@ -1393,12 +1393,16 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 105
 - name: construct-binary-tree-from-preorder-and-inorder-traversal
 - tag: Tree, Array, Hash Table, Divide and Conquer, Binary Tree
+- [duplicate](#从前序与中序遍历序列构造二叉树)
 
 ### 路径总和 III
 
 - id: 437
 - name: path-sum-iii
-- tag: Tree, Depth-First Search, Binary Tree
+- tag: Tree, Depth-First Search, Binary Tree, MARK
+- how
+  - backtracking: calculate path sum, save its frequency in a hash table, look up table if there's a previous_path_sum == (current_path_sum - target_sum), undo this node (decrease 1 in frequency table)
+    - meaning: there's a path that can be "deleted" from the current path so that partial path sum is equal to target_sum
 
 ### 二叉树的最近公共祖先
 
