@@ -1433,7 +1433,12 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 - id: 200
 - name: number-of-islands
-- tag: Depth-First Search, Breadth-First Search, Union Find, Array, Matrix
+- tag: Depth-First Search, Breadth-First Search, Union Find, Array, Matrix, MARK
+- how
+  - iterate through all positions
+  - implement dfs
+    - look around, and keep finding until it's not part of island
+    - make a sign to indicate visited
 
 ### 腐烂的橘子
 
