@@ -1409,12 +1409,19 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 236
 - name: lowest-common-ancestor-of-a-binary-tree
 - tag: Tree, Depth-First Search, Binary Tree
+- [duplicate](#二叉树的最近公共祖先)
 
 ### 二叉树中的最大路径和
 
 - id: 124
 - name: binary-tree-maximum-path-sum
-- tag: Tree, Depth-First Search, Dynamic Programming, Binary Tree
+- tag: Tree, Depth-First Search, Dynamic Programming, Binary Tree, MARK
+- how
+  - find max gain can get from root's sub-tree
+    - if all sub-trees are negative -> max gain can get is 0
+    - if both sub-trees are positive -> choose max from left or right
+  - but we also want max path (no necessarily passing root) -> max path sum = node.val + left_gain + right_gain
+    - then update a "global" variable keep track of max value
 
 
 --- 
