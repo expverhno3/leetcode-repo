@@ -1454,12 +1454,17 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 207
 - name: course-schedule
 - tag: Depth-First Search, Breadth-First Search, Graph, Topological Sort
+- [duplicate](#课程表)
 
 ### 实现 Trie (前缀树)
 
 - id: 208
 - name: implement-trie-prefix-tree
 - tag: Design, Trie, Hash Table, String
+- how
+  - use different structure to save full words and to match its prefix
+    - full words -> use set (hash table)
+    - prefix chars -> nested dictionary
 
 
 --- 
