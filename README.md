@@ -1442,9 +1442,12 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 ### 腐烂的橘子
 
-- id: 1036
+- id: 994
 - name: rotting-oranges
-- tag: Breadth-First Search, Array, Matrix
+- tag: Breadth-First Search, Array, Matrix, MARK
+- how
+  - SIMULATION: keep track of newly rotten at current time step, make adjacent ones rotten and track (**BFS**)
+  - cannot use DFS!!
 
 ### 课程表
 
