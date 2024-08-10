@@ -1495,6 +1495,11 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 17
 - name: letter-combinations-of-a-phone-number
 - tag: Hash Table, String, Backtracking
+- how
+  - backtracking
+    - state: current combination
+    - range_restrict: which digit
+  - fix one digit's letter selection, then iterate other digits' all choices
 
 ### 组合总和
 
