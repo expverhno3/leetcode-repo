@@ -1477,12 +1477,18 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 46
 - name: permutations
 - tag: Array, Backtracking
+- [duplicate](#全排列)
 
 ### 子集
 
 - id: 78
 - name: subsets
-- tag: Bit Manipulation, Array, Backtracking
+- tag: Bit Manipulation, Array, Backtracking, MARK
+- how
+  - CLASSIC backtracking, what we need for dfs function:
+    - current state
+    - range of sub-problem
+  - notes: copy Python list: `arr[:]`
 
 ### 电话号码的字母组合
 
