@@ -1506,24 +1506,31 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 39
 - name: combination-sum
 - tag: Array, Backtracking
+- [duplicate](#组合总和)
 
 ### 括号生成
 
 - id: 22
 - name: generate-parentheses
 - tag: String, Dynamic Programming, Backtracking
+- how
+  - keep track of number of parentheses that are open OR closed
 
 ### 单词搜索
 
 - id: 79
 - name: word-search
 - tag: Array, String, Backtracking, Matrix
+- [duplicate](#单词搜索)
 
 ### 分割回文串
 
 - id: 131
 - name: palindrome-partitioning
-- tag: String, Dynamic Programming, Backtracking
+- tag: String, Dynamic Programming, Backtracking, MARK
+- how
+  - consider a string as two parts: `prefix` + `suffix`
+  - check if `prefix` is a palindrome, if it is -> take that as part of the answer then partition the `suffix` -> concatenate `prefix` with answers returned from partition `suffix`
 
 ### N 皇后
 
