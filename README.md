@@ -1536,7 +1536,16 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 - id: 51
 - name: n-queens
-- tag: Array, Backtracking
+- tag: Array, Backtracking, MARK
+- how
+  - parameters of backtracking
+    - row state: record which row includes
+    - col state
+    - diag state
+    - counter diag state
+    - current row
+  - each row -> a new depth of recursion
+  - at each depth of recursion: try one column that is valid (not occurring in previous "state")
 
 
 --- 
