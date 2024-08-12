@@ -1558,24 +1558,34 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 35
 - name: search-insert-position
 - tag: Array, Binary Search
+- how
+  - use some examples to understand in the end, where each pointer is, and the relation between answer and them
 
 ### 搜索二维矩阵
 
 - id: 74
 - name: search-a-2d-matrix
 - tag: Array, Binary Search, Matrix
+- how
+  - binary search row or col
 
 ### 在排序数组中查找元素的第一个和最后一个位置
 
 - id: 34
 - name: find-first-and-last-position-of-element-in-sorted-array
 - tag: Array, Binary Search
+- how
+  - found mid, then slide to both direction
 
 ### 搜索旋转排序数组
 
 - id: 33
 - name: search-in-rotated-sorted-array
 - tag: Array, Binary Search
+- how
+  - find how many digits are rotated (also binary search)
+  - then convert it back to sorted list
+  - another binary search :)
 
 ### 寻找旋转排序数组中的最小值
 
