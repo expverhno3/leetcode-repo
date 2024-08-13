@@ -1592,12 +1592,22 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 153
 - name: find-minimum-in-rotated-sorted-array
 - tag: Array, Binary Search
+- how
+  - still binary search
+  - rotated array looks like `[↗️↘️]`, so we want `left` moved to min
 
 ### 寻找两个正序数组的中位数
 
 - id: 4
 - name: median-of-two-sorted-arrays
-- tag: Array, Binary Search, Divide and Conquer
+- tag: Array, Binary Search, Divide and Conquer, MARK
+- how (this is hardest of binary search so far)
+  - to find median -> which element is at the middle of two merged array (which divide merged array into 2 parts, i.e. `left` half and `right` half)
+    - but merge and sort two arrays cost too much, how to avoid?
+  - use two pointers to indicate the beginning of `right` half of array at `nums1` and `nums2`
+    - how to init pointers? put first pointer (`partition_x`) at middle of shorter array (let's say `nums1` is shorter), then second includes remaining amount of elements at `nums2`
+    - so the assuming max of left half should between `(nums1[partition_x-1], nums2[partition_y-1])`, and min of left half should be in `(nums1[partition_x], nums2[partition_y])`
+  - if left_max < right_min -> our guess succeed! we can find median!
 
 
 --- 
