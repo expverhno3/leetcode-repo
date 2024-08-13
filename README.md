@@ -1620,24 +1620,30 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 20
 - name: valid-parentheses
 - tag: Stack, String
+- [duplicate](#有效的括号)
 
 ### 最小栈
 
 - id: 155
 - name: min-stack
 - tag: Stack, Design
+- [duplicate](#最小栈)
 
 ### 字符串解码
 
 - id: 394
 - name: decode-string
 - tag: Stack, Recursion, String
+- [duplicate](#字符串解码)
 
 ### 每日温度
 
 - id: 739
 - name: daily-temperatures
-- tag: Stack, Array, Monotonic Stack
+- tag: Stack, Array, Monotonic Stack, MARK
+- how
+  - keep the stack as *index of higher temp*
+  - if found a temp > temperature at index of top of stack: pop stack, calculate how many days since it to today
 
 ### 柱状图中最大的矩形
 
