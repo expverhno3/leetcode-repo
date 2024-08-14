@@ -1649,7 +1649,11 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 - id: 84
 - name: largest-rectangle-in-histogram
-- tag: Stack, Array, Monotonic Stack
+- tag: Stack, Array, Monotonic Stack, MARK
+- how
+  - keep track of height that in *ascending* order
+  - so when height start to drop, we can know that at the from top of stack to previous bar, the limiting height is the height at top of stack
+  - width: previous bar (i-1) - one bar before top of stack (stack\[-1\])
 
 
 --- 
