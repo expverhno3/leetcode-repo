@@ -1694,18 +1694,28 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 121
 - name: best-time-to-buy-and-sell-stock
 - tag: Array, Dynamic Programming
+- [duplicate](#买卖股票的最佳时机)
 
 ### 跳跃游戏
 
 - id: 55
 - name: jump-game
 - tag: Greedy, Array, Dynamic Programming
+- how
+  - keep track of farthest index can reach of visited indexes
+    - if it's current index and the value is 0 -> never goes out
+    - if it's greater than length of nums -> definitely reach end
 
 ### 跳跃游戏 II
 
 - id: 45
 - name: jump-game-ii
-- tag: Greedy, Array, Dynamic Programming
+- tag: Greedy, Array, Dynamic Programming, MARK
+- how
+  - DP is too slow :(
+  - use greedy:
+    - calculate boundary of current jump (aka farthest idx of current jump)
+    - when reach the boundary of current jump: update boundary, number of jumps ++
 
 ### 划分字母区间
 
