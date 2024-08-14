@@ -1666,19 +1666,23 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 215
 - name: kth-largest-element-in-an-array
 - tag: Array, Divide and Conquer, Quickselect, Sorting, Heap (Priority Queue)
+- [duplicate](#数组中的第K个最大元素)
 
 ### 前 K 个高频元素
 
 - id: 347
 - name: top-k-frequent-elements
 - tag: Array, Hash Table, Divide and Conquer, Bucket Sort, Counting, Quickselect, Sorting, Heap (Priority Queue)
+- how
+  - construct frequency table
+  - use a custom class to contain both key and value, and implement `__lt__` to use heap (only compare value)
 
 ### 数据流的中位数
 
 - id: 295
 - name: find-median-from-data-stream
 - tag: Design, Two Pointers, Data Stream, Sorting, Heap (Priority Queue)
-
+- [duplicate](#数据流的中位数)
 
 --- 
 
