@@ -1719,9 +1719,12 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 ### 划分字母区间
 
-- id: 768
+- id: 763
 - name: partition-labels
 - tag: Greedy, Hash Table, Two Pointers, String
+- how
+  - build a dict to save where each character last shows (rightmost position)
+  - keep track of one partition's rightmost, when reach that: create a new partition
 
 
 --- 
@@ -1734,24 +1737,32 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 70
 - name: climbing-stairs
 - tag: Memoization, Math, Dynamic Programming
+- [duplicate](#爬楼梯)
 
 ### 杨辉三角
 
 - id: 118
 - name: pascals-triangle
 - tag: Array, Dynamic Programming
+- how
+  - move left and move right of previous row with padding 0
 
 ### 打家劫舍
 
 - id: 198
 - name: house-robber
 - tag: Array, Dynamic Programming
+- [duplicate](#打家劫舍)
 
 ### 完全平方数
 
 - id: 279
 - name: perfect-squares
-- tag: Breadth-First Search, Math, Dynamic Programming
+- tag: Breadth-First Search, Math, Dynamic Programming, MARK
+- how
+  - init with calculating all squares less than `n`
+  - init `dp` table with all `inf`, meaning of dp table: `dp[i]` -> minimum number of perfect square numbers that sum to n
+  - update dp table: at each i from 1 to n, `dp[i] = min(dp[i], dp[i-square] + 1)`, `square` need to iterate through all `square < i`
 
 ### 零钱兑换
 
