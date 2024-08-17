@@ -1780,18 +1780,33 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 139
 - name: word-break
 - tag: Trie, Memoization, Array, Hash Table, String, Dynamic Programming
+- how
+  - `dp` table
+    - represent whether the substring of s from index 0 to i-1 (i.e., `s[:i]`) can be segmented into words from the dictionary
+    - init with `False`
+    - update: at `j` it's True, and `s[j:i]` is one of the words: then `dp[i] = True`
 
 ### 最长递增子序列
 
 - id: 300
 - name: longest-increasing-subsequence
 - tag: Array, Binary Search, Dynamic Programming
+- [duplicate](#最长递增子序列)
 
 ### 乘积最大子数组
 
 - id: 152
 - name: maximum-product-subarray
 - tag: Array, Dynamic Programming
+- how
+  - maximum product comes from
+    - num itself
+    - previous max product * self
+    - previous min product (very negative) * self (which is also a negative)
+  - all we need to track:
+    - max_product_so_far
+    - min_product_so_far
+    - global max product, i.e. the final result
 
 ### 分割等和子集
 
