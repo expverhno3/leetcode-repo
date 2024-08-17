@@ -1768,7 +1768,12 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 - id: 322
 - name: coin-change
-- tag: Breadth-First Search, Array, Dynamic Programming
+- tag: Breadth-First Search, Array, Dynamic Programming, MARK
+- how
+  - build `dp` table
+    - length: `amount+1` (to include when `amount == 0`)
+    - init value: `dp[0]=0`, else: inf
+    - update rule: `dp[i] = min(dp[i],dp[i-coin] + 1)`, which means at amount `i`, min amount of coins depends on amount of `i-coin` + 1 coin
 
 ### 单词拆分
 
