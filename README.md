@@ -1812,7 +1812,10 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 - id: 416
 - name: partition-equal-subset-sum
-- tag: Array, Dynamic Programming
+- tag: Array, Dynamic Programming, MARK
+- how
+  - iterate dp table backward -> use number once
+  - iterate dp table forward -> use one element repeatedly
 
 ### 最长有效括号
 
