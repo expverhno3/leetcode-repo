@@ -1821,7 +1821,16 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 - id: 32
 - name: longest-valid-parentheses
-- tag: Stack, String, Dynamic Programming
+- tag: Stack, String, Dynamic Programming, MARK
+- how
+  - most important: what does `dp[i]` represent?
+    - longest valid parentheses *ends* at i
+  - how can we know? when to update?
+    - only two cases:
+      - meet ")", and there's "(" just before it
+      - meet ")", but its previous char is also ")"
+        - why: meet the end of like ...())
+        - what's the case dp can update: there's a "(" at the very beginning to wrap ...()
 
 
 --- 
