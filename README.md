@@ -1843,24 +1843,36 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 62
 - name: unique-paths
 - tag: Math, Dynamic Programming, Combinatorics
+- how
+  - just simulate -> number of paths of cell (i,j) depends on cell at its top and cell at its left
 
 ### 最小路径和
 
 - id: 64
 - name: minimum-path-sum
 - tag: Array, Dynamic Programming, Matrix
+- [duplicate](#最小路径和)
 
 ### 最长回文子串
 
 - id: 5
 - name: longest-palindromic-substring
 - tag: Two Pointers, String, Dynamic Programming
+- how
+  - iterate through entire string
+  - two kinds of palindrome: odd ("aba") and even ("abba")
+    - odd: assume `i` at `b`
+    - even: assume `i` and `i+1` at `b`
+  - then use two pointers to move towards two directions to extend palindrome
 
 ### 最长公共子序列
 
-- id: 1250
+- id: 1143
 - name: longest-common-subsequence
-- tag: String, Dynamic Programming
+- tag: String, Dynamic Programming, MARK
+- how
+  - build a table to record matched
+  - increment based on diagonal element
 
 ### 编辑距离
 
