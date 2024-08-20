@@ -1878,7 +1878,11 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 - id: 72
 - name: edit-distance
-- tag: String, Dynamic Programming
+- tag: String, Dynamic Programming, MARK
+- how
+  - construct dp table
+    - meaning of each cell (i,j) -> min edit distance after editing previous i word1 chars and matches previous j chars of word2
+  - why difficult: what does transition from up/left/diagonal cell represent? (delete, insert, replace)
 
 
 --- 
