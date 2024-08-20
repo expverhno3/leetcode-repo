@@ -1895,18 +1895,22 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 136
 - name: single-number
 - tag: Bit Manipulation, Array
+- [duplicate](#只出现一次的数字)
 
 ### 多数元素
 
 - id: 169
 - name: majority-element
 - tag: Array, Hash Table, Divide and Conquer, Counting, Sorting
+- [duplicate](#多数元素)
 
 ### 颜色分类
 
 - id: 75
 - name: sort-colors
-- tag: Array, Two Pointers, Sorting
+- tag: Array, Two Pointers, Sorting, MARK
+- how
+  - use 3 pointers to indicate **boundary** of three regions, and use `mid` to iterate through entire array
 
 ### 下一个排列
 
