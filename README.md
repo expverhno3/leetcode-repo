@@ -1916,7 +1916,10 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 - id: 31
 - name: next-permutation
-- tag: Array, Two Pointers
+- tag: Array, Two Pointers, MARK
+- how
+  - find pattern! aka simulation
+  - swap element and reverse sub-array
 
 ### 寻找重复数
 
