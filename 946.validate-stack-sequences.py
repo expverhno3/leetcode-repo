@@ -24,7 +24,7 @@ class Solution:
                 stack.pop()
                 popped_pointer += 1
             
-            return stack == []
+        return stack == []
 
         #note
         # whole point is: "simulate" the process
