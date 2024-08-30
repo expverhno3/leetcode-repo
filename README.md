@@ -1948,18 +1948,32 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 27
 - name: remove-element
 - tag: Array, Two Pointers
+- how
+  - use two pointers
+    - `anchor` to indicate the position to fill
+    - `explorer` to iterate through the array, ignore elements equals to `val`, and swap non-val with `anchor`
 
 ### 删除有序数组中的重复项
 
 - id: 26
 - name: remove-duplicates-from-sorted-array
 - tag: Array, Two Pointers
+- how
+  - still similar way as previous question: use two pointers
+    - `anchor` to indicate the position that are duplicates
+    - `explorer` to iterate through the array, pass duplicates and swap non-duplicate with `anchor`
 
 ### 删除有序数组中的重复项 II
 
 - id: 80
 - name: remove-duplicates-from-sorted-array-ii
-- tag: Array, Two Pointers
+- tag: Array, Two Pointers, MARK
+- how
+  - what's special about this question
+    - sorted
+    - at most 2 duplicates
+    - doesn't matter how to deal with elements outside of wanted array
+  - so we can just iterate through the array and "rewrite" it
 
 ### 多数元素
 
