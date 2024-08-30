@@ -1975,53 +1975,25 @@ NOTE: if there's **MARK** in tag, need to revisit this question
     - doesn't matter how to deal with elements outside of wanted array
   - so we can just iterate through the array and "rewrite" it
 
-### 多数元素
-
-- id: 169
-- name: majority-element
-- tag: Array, Hash Table, Divide and Conquer, Counting, Sorting
-
-### 轮转数组
-
-- id: 189
-- name: rotate-array
-- tag: Array, Math, Two Pointers
-
-### 买卖股票的最佳时机
-
-- id: 121
-- name: best-time-to-buy-and-sell-stock
-- tag: Array, Dynamic Programming
-
-### 买卖股票的最佳时机 II
-
-- id: 122
-- name: best-time-to-buy-and-sell-stock-ii
-- tag: Greedy, Array, Dynamic Programming
-
-### 跳跃游戏
-
-- id: 55
-- name: jump-game
-- tag: Greedy, Array, Dynamic Programming
-
-### 跳跃游戏 II
-
-- id: 45
-- name: jump-game-ii
-- tag: Greedy, Array, Dynamic Programming
-
 ### H 指数
 
 - id: 274
 - name: h-index
-- tag: Array, Counting Sort, Sorting
+- tag: Array, Counting Sort, Sorting, MARK
+- how
+  - sort reversely
+  - iterate through the array and count how many papers have citations greater than i
+  - NOTE: methods of "count"
+    - counter (along with iteration)
+    - `sum(condition)`, used in this question
 
 ### O(1) 时间插入、删除和获取随机元素
 
 - id: 380
 - name: insert-delete-getrandom-o1
 - tag: Design, Array, Hash Table, Math, Randomized
+- how
+  - use two hash maps
 
 ### 除自身以外数组的乘积
 
