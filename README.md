@@ -1995,77 +1995,70 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - how
   - use two hash maps
 
-### 除自身以外数组的乘积
-
-- id: 238
-- name: product-of-array-except-self
-- tag: Array, Prefix Sum
-
 ### 加油站
 
 - id: 134
 - name: gas-station
-- tag: Greedy, Array
-
-### 分发糖果
-
-- id: 135
-- name: candy
-- tag: Greedy, Array
-
-### 接雨水
-
-- id: 42
-- name: trapping-rain-water
-- tag: Stack, Array, Two Pointers, Dynamic Programming, Monotonic Stack
+- tag: Greedy, Array, MARK
+- how
+  - if total gas is less than total cost, return -1
+  - otherwise, there must be a solution
+  - assume start from 0
+    - use `local_sums` to track current tank
+    - use `global_sums` to track total gas
+    - if at any point `local_sums < 0`, means we can't start from previous `start` to `i`, so we set `start = i+1` and reset `local_sums = 0` (tank)
 
 ### 罗马数字转整数
 
 - id: 13
 - name: roman-to-integer
 - tag: Hash Table, Math, String
+- how
+  - iterate through the string
+  - use `prev_num` to track previous number
+  - use `sums` to track sums
+  - if current number is greater than previous number, means we need to subtract it (e.g. IV = 4)
 
 ### 整数转罗马数字
 
 - id: 12
 - name: integer-to-roman
 - tag: Hash Table, Math, String
+- how
+  - iterate from large base numbers with stride 2
+  - deal with special cases: 4, 9, >= 5
 
 ### 最后一个单词的长度
 
 - id: 58
 - name: length-of-last-word
 - tag: String
+- how
+  - pointer + flag
 
 ### 最长公共前缀
 
 - id: 14
 - name: longest-common-prefix
 - tag: Trie, String
-
-### 反转字符串中的单词
-
-- id: 151
-- name: reverse-words-in-a-string
-- tag: Two Pointers, String
-
-### Z 字形变换
-
-- id: 6
-- name: zigzag-conversion
-- tag: String
+- how
+  - iterate, compare with first string's char at that index
 
 ### 找出字符串中第一个匹配项的下标
 
 - id: 28
 - name: find-the-index-of-the-first-occurrence-in-a-string
 - tag: Two Pointers, String, String Matching
+- how
+  - iterate haystack, compare with first char of needle, if same, compare substring with needle
 
 ### 文本左右对齐
 
 - id: 68
 - name: text-justification
 - tag: Array, String, Simulation
+- how
+  - divide word group (details in dealing with space of last word and single word)
 
 
 --- 
