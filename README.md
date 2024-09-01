@@ -2071,30 +2071,12 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 125
 - name: valid-palindrome
 - tag: Two Pointers, String
-
-### 判断子序列
-
-- id: 392
-- name: is-subsequence
-- tag: Two Pointers, String, Dynamic Programming
-
-### 两数之和 II - 输入有序数组
-
-- id: 167
-- name: two-sum-ii-input-array-is-sorted
-- tag: Array, Two Pointers, Binary Search
-
-### 盛最多水的容器
-
-- id: 11
-- name: container-with-most-water
-- tag: Greedy, Array, Two Pointers
-
-### 三数之和
-
-- id: 15
-- name: 3sum
-- tag: Array, Two Pointers, Sorting
+- how 
+  - use two pointers
+    - `left` to iterate forward
+    - `right` to iterate backward
+    - skip non-alphanumeric characters
+    - compare characters
 
 
 --- 
