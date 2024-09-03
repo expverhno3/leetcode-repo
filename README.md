@@ -2130,6 +2130,10 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 36
 - name: valid-sudoku
 - tag: Array, Hash Table, Matrix
+- how
+  - use a 9x9 grid to represent the Sudoku board, and check each row, column, and 3x3 block to ensure that each number from 1 to 9 appears only once in each unit
+  - how to know appear once: convert a list into a *set*, and compare their length
+  - a trick to take matrix's column: `for col in zip(*matrix):`
 
 ### 螺旋矩阵
 
