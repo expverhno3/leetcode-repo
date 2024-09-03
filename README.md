@@ -2089,24 +2089,35 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 209
 - name: minimum-size-subarray-sum
 - tag: Array, Binary Search, Prefix Sum, Sliding Window
-
-### 无重复字符的最长子串
-
-- id: 3
-- name: longest-substring-without-repeating-characters
-- tag: Hash Table, String, Sliding Window
+- how
+  - my impl
+    - use a `window` to track current window (a queue)
+    - use `current_sum` to track current sum of `window`
+    - init with empty window
+    - keep appending new elements along iteration
+    - if there's reach to `target`, calculate `diff` and pop leftmost element from `window` until `diff` is less than current `window`'s leftmost element
+  - better impl
+    - use two pointers indicating `window` boundary
+    - keep moving right pointer and calculate `current_sum`
+    - if `current_sum` is greater than `target`, move left pointer
+    - keep tracking min length
 
 ### 串联所有单词的子串
 
 - id: 30
 - name: substring-with-concatenation-of-all-words
 - tag: Hash Table, String, Sliding Window
-
-### 最小覆盖子串
-
-- id: 76
-- name: minimum-window-substring
-- tag: Hash Table, String, Sliding Window
+- how
+  - use two pointers (`left` and `right`) and a counter to track the frequency of words
+  - approach: 
+    1. create a frequency table for words in `words`
+    2. initialize `left` and `right` pointers to the start of `s`
+    3. move `right` pointer to the right and check if the substring `s[left:right+1]` is a permutation of `words`
+    4. if it is, increment the counter and move `left` pointer to the right
+    5. if not, move `left` pointer to the right based on the frequency table to find the next possible permutation
+  - note: 
+    - words in `s` may not be equal to words in `words` (e.g., words in `s` may be a permutation of words in `words`)
+    - moving `left` pointer based on the frequency table helps to avoid jumping to the right unnecessarily and reduces the time complexity
 
 
 --- 
