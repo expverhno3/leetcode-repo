@@ -2135,29 +2135,13 @@ NOTE: if there's **MARK** in tag, need to revisit this question
   - how to know appear once: convert a list into a *set*, and compare their length
   - a trick to take matrix's column: `for col in zip(*matrix):`
 
-### 螺旋矩阵
-
-- id: 54
-- name: spiral-matrix
-- tag: Array, Matrix, Simulation
-
-### 旋转图像
-
-- id: 48
-- name: rotate-image
-- tag: Array, Math, Matrix
-
-### 矩阵置零
-
-- id: 73
-- name: set-matrix-zeroes
-- tag: Array, Hash Table, Matrix
-
 ### 生命游戏
 
 - id: 289
 - name: game-of-life
 - tag: Array, Matrix, Simulation
+- how
+  - don't update status of "life" inplace once determined, just save it in a new array
 
 
 --- 
@@ -2170,54 +2154,41 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 383
 - name: ransom-note
 - tag: Hash Table, String, Counting
-
-### 同构字符串
-
-- id: 205
-- name: isomorphic-strings
-- tag: Hash Table, String
+- how
+  - use hash table to count the number of each character
+  - compare the counts
 
 ### 单词规律
 
 - id: 290
 - name: word-pattern
 - tag: Hash Table, String
-
-### 有效的字母异位词
-
-- id: 242
-- name: valid-anagram
-- tag: Hash Table, String, Sorting
-
-### 字母异位词分组
-
-- id: 49
-- name: group-anagrams
-- tag: Array, Hash Table, String, Sorting
-
-### 两数之和
-
-- id: 1
-- name: two-sum
-- tag: Array, Hash Table
+- how
+  - mapping one word to one char in pattern
+  - compare the following:
+    1. length of pattern & length of words
+    2. the mapping of pattern & words (one pattern to multiple words?)
+    3. mapping of words & pattern (one word to multiple pattern?)
 
 ### 快乐数
 
 - id: 202
 - name: happy-number
 - tag: Hash Table, Math, Two Pointers
+- how
+  - simulation
+  - save all previous results in a set
+  - if `n` is not a happy number, repeat the process until `n` becomes a happy number
+  - if previous result shows again -> there's a loop in this calculation -> `n` cannot be a happy number
 
 ### 存在重复元素 II
 
 - id: 219
 - name: contains-duplicate-ii
 - tag: Array, Hash Table, Sliding Window
-
-### 最长连续序列
-
-- id: 128
-- name: longest-consecutive-sequence
-- tag: Union Find, Array, Hash Table
+- how
+  - use a hash table to store the numbers we've seen and their most recent indices
+  - iterate through the array, and for each number, check if it's in the hash table and if its most recent index is within k places of the current index
 
 
 --- 
