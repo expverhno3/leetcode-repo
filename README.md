@@ -2201,18 +2201,22 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 228
 - name: summary-ranges
 - tag: Array
+- how
+  - simulation
+  - only keep track of `start`, and append range to `res` when `start` needs to change
 
-### 合并区间
-
-- id: 56
-- name: merge-intervals
-- tag: Array, Sorting
 
 ### 插入区间
 
 - id: 57
 - name: insert-interval
-- tag: Array
+- tag: Array, MARK
+- how
+  - consider the result containing 3 parts:
+    1. `left` -> largest of the intervals smaller than start of new "merged" interval
+    2. `merged` -> "merged" interval, its start comes from interval to be merged and `newInterval`'s start, its end comes from interval to be merged and `newInterval`'s end
+    3. `right` -> smallest start of intervals larger than end of new "merged" interval
+
 
 ### 用最少数量的箭引爆气球
 
