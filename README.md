@@ -2223,6 +2223,10 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 452
 - name: minimum-number-of-arrows-to-burst-balloons
 - tag: Greedy, Array, Sorting
+- how
+  - sort interval based on start
+  - maintain `prev_range` and a counter
+  - check if new interval's start is within previous range (aka. start <= previous_range's end)
 
 
 --- 
