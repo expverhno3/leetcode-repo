@@ -2234,35 +2234,32 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 ## 栈
 
-### 有效的括号
-
-- id: 20
-- name: valid-parentheses
-- tag: Stack, String
-
 ### 简化路径
 
 - id: 71
 - name: simplify-path
 - tag: Stack, String
-
-### 最小栈
-
-- id: 155
-- name: min-stack
-- tag: Stack, Design
+- how
+  - split based on "/"
+  - pop according to number of "."
 
 ### 逆波兰表达式求值
 
 - id: 150
 - name: evaluate-reverse-polish-notation
 - tag: Stack, Array, Math
+- how
+  - push not operands to stack
+  - meet operand: pop 2 ops from stack, perform operation
 
 ### 基本计算器
 
 - id: 224
 - name: basic-calculator
 - tag: Stack, Recursion, Math, String
+- how
+  - put things in one bracket in the stack
+  - if there's a "(" -> put current stack into another, replace things in this bracket to current stack, after done with processing current stack, pop previous stack back
 
 
 --- 
