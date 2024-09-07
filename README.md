@@ -2267,53 +2267,23 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 ## 链表
 
-### 环形链表
-
-- id: 141
-- name: linked-list-cycle
-- tag: Hash Table, Linked List, Two Pointers
-
-### 两数相加
-
-- id: 2
-- name: add-two-numbers
-- tag: Recursion, Linked List, Math
-
-### 合并两个有序链表
-
-- id: 21
-- name: merge-two-sorted-lists
-- tag: Recursion, Linked List
-
-### 随机链表的复制
-
-- id: 138
-- name: copy-list-with-random-pointer
-- tag: Hash Table, Linked List
-
 ### 反转链表 II
 
 - id: 92
 - name: reverse-linked-list-ii
-- tag: Linked List
-
-### K 个一组翻转链表
-
-- id: 25
-- name: reverse-nodes-in-k-group
-- tag: Recursion, Linked List
-
-### 删除链表的倒数第 N 个结点
-
-- id: 19
-- name: remove-nth-node-from-end-of-list
-- tag: Linked List, Two Pointers
+- tag: Linked List, MARK
+- how
+  - USE DUMMY node to indicate start of linked list rather than "dynamic" previous node
 
 ### 删除排序链表中的重复元素 II
 
 - id: 82
 - name: remove-duplicates-from-sorted-list-ii
 - tag: Linked List, Two Pointers
+- how
+  - `prevprev` -> previous unique number
+  - `prev` -> start of duplicate numbers
+  - `cur` -> explore, once find duplicate, move to next number, and use `prev` to delete these duplicates along its way to `cur`
 
 ### 旋转链表
 
