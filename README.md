@@ -2293,6 +2293,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - how
   - count total number of nodes
   - cut at new linked list's tail, remaining part's tail connect to old `head`
+  - better: just iterate through entire linked list, connect the tail to head to form a circle, then find new tail, and cut the circle
 
 
 --- 

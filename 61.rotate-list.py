@@ -24,37 +24,30 @@ class Solution:
             Optional[ListNode]: The new head of the rotated linked list.
         """
         if not head or k == 0:
-            # if the linked list is empty or k is 0, return the head
             return head
 
-        node_counter = 0
-        current_node = head
-        while current_node:
-            # count the number of nodes in the linked list
-            node_counter += 1
-            current_node = current_node.next
+        # Find the length of the linked list
+        length = 1
+        tail = head
+        while tail.next:
+            tail = tail.next
+            length += 1
 
-        total_nodes = node_counter
-        if total_nodes == 1 or k % total_nodes == 0:
-            # if there's only one node or the number of steps is a multiple of the number of nodes, return the head
-            return head
+        # Connect the tail to the head to form a circular linked list
+        tail.next = head
 
-        node_counter = 0
-        current_node = head
-        # move to the tail node of the new linked list
-        for _ in range(total_nodes - (k % total_nodes) - 1):
-            current_node = current_node.next
-        new_tail = current_node
-        new_head = current_node.next
-        current_node = new_head
+        # Find the new tail node
+        new_tail = head
+        for _ in range(length - k % length - 1):
+            new_tail = new_tail.next
+
+        # Find the new head node
+        new_head = new_tail.next
+
+        # Break the circular linked list at the new tail
         new_tail.next = None
-        while current_node.next:
-            current_node = current_node.next
-        current_node.next = head
-        # link the end of the new linked list to the original head
 
-        return new_head
-        
+        return new_head       
         
 # @lc code=end
 
