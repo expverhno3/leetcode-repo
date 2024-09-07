@@ -2290,18 +2290,9 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 61
 - name: rotate-list
 - tag: Linked List, Two Pointers
-
-### 分隔链表
-
-- id: 86
-- name: partition-list
-- tag: Linked List, Two Pointers
-
-### LRU 缓存
-
-- id: 146
-- name: lru-cache
-- tag: Design, Hash Table, Linked List, Doubly-Linked List
+- how
+  - count total number of nodes
+  - cut at new linked list's tail, remaining part's tail connect to old `head`
 
 
 --- 
