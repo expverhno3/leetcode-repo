@@ -2301,41 +2301,26 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 ## 二叉树
 
-### 二叉树的最大深度
-
-- id: 104
-- name: maximum-depth-of-binary-tree
-- tag: Tree, Depth-First Search, Breadth-First Search, Binary Tree
-
 ### 相同的树
 
 - id: 100
 - name: same-tree
 - tag: Tree, Depth-First Search, Breadth-First Search, Binary Tree
-
-### 翻转二叉树
-
-- id: 226
-- name: invert-binary-tree
-- tag: Tree, Depth-First Search, Breadth-First Search, Binary Tree
-
-### 对称二叉树
-
-- id: 101
-- name: symmetric-tree
-- tag: Tree, Depth-First Search, Breadth-First Search, Binary Tree
-
-### 从前序与中序遍历序列构造二叉树
-
-- id: 105
-- name: construct-binary-tree-from-preorder-and-inorder-traversal
-- tag: Tree, Array, Hash Table, Divide and Conquer, Binary Tree
+- how
+  - just traverse in the same order, keep comparing
 
 ### 从中序与后序遍历序列构造二叉树
 
 - id: 106
 - name: construct-binary-tree-from-inorder-and-postorder-traversal
-- tag: Tree, Array, Hash Table, Divide and Conquer, Binary Tree
+- tag: Tree, Array, Hash Table, Divide and Conquer, Binary Tree, MARK
+- how
+  - property of inorder and postorder
+    - inorder: left -> root -> right
+    - postorder: left -> right -> root
+  - utilize
+    - keep popping out postorder list -> get the root of tree/subtree
+    - since all values of tree are unique -> we can easily find the index of current node at inorder list -> easy to find the boundary of current node's left subtree and right subtree
 
 ### 填充每个节点的下一个右侧节点指针 II
 
