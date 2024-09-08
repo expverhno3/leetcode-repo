@@ -2327,24 +2327,28 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 117
 - name: populating-next-right-pointers-in-each-node-ii
 - tag: Tree, Depth-First Search, Breadth-First Search, Linked List, Binary Tree
-
-### 二叉树展开为链表
-
-- id: 114
-- name: flatten-binary-tree-to-linked-list
-- tag: Stack, Tree, Depth-First Search, Linked List, Binary Tree
+- how
+  - use queue, BFS
+  - connect last node's `next` to null, others to next node in queue
 
 ### 路径总和
 
 - id: 112
 - name: path-sum
 - tag: Tree, Depth-First Search, Breadth-First Search, Binary Tree
+- how
+  - DFS
+  - deal with False case at one place
+  - once there's a True, always return True along the depth
 
 ### 求根节点到叶节点数字之和
 
 - id: 129
 - name: sum-root-to-leaf-numbers
 - tag: Tree, Depth-First Search, Binary Tree
+- how
+  - dfs(root, cur_sum)
+  - avoid adding and reducing root.val in the dfs function, only when found that it is leaf node then add it to non local variable `res`
 
 ### 二叉树中的最大路径和
 
