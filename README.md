@@ -2350,17 +2350,15 @@ NOTE: if there's **MARK** in tag, need to revisit this question
   - dfs(root, cur_sum)
   - avoid adding and reducing root.val in the dfs function, only when found that it is leaf node then add it to non local variable `res`
 
-### 二叉树中的最大路径和
-
-- id: 124
-- name: binary-tree-maximum-path-sum
-- tag: Tree, Depth-First Search, Dynamic Programming, Binary Tree
-
 ### 二叉搜索树迭代器
 
 - id: 173
 - name: binary-search-tree-iterator
-- tag: Stack, Tree, Design, Binary Search Tree, Binary Tree, Iterator
+- tag: Stack, Tree, Design, Binary Search Tree, Binary Tree, Iterator, MARK
+- how
+  - in-order: left subtree -> root -> right subtree
+  - use stack to "remember" nodes to be visited later (found leftmost, and next step is root)
+  - using stack.pop() to pop out current node and root node, then add new nodes to stack, using same function to push leftmost nodes into stack
 
 ### 完全二叉树的节点个数
 
