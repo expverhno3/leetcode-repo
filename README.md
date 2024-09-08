@@ -2364,7 +2364,10 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 - id: 222
 - name: count-complete-tree-nodes
-- tag: Bit Manipulation, Tree, Binary Search, Binary Tree
+- tag: Bit Manipulation, Tree, Binary Search, Binary Tree, MARK
+- how
+  - count depth: recursively, only count left ("all nodes in the last level are as far left as possible")
+  - count nodes: also recursively, only count "full" tree (since it has formula), and count the not full subtree recursively
 
 ### 二叉树的最近公共祖先
 
