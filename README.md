@@ -2369,42 +2369,19 @@ NOTE: if there's **MARK** in tag, need to revisit this question
   - count depth: recursively, only count left ("all nodes in the last level are as far left as possible")
   - count nodes: also recursively, only count "full" tree (since it has formula), and count the not full subtree recursively
 
-### 二叉树的最近公共祖先
-
-- id: 236
-- name: lowest-common-ancestor-of-a-binary-tree
-- tag: Tree, Depth-First Search, Binary Tree
-
 
 --- 
 
 
 ## 二叉树层次遍历
 
-### 二叉树的右视图
-
-- id: 199
-- name: binary-tree-right-side-view
-- tag: Tree, Depth-First Search, Breadth-First Search, Binary Tree
-
 ### 二叉树的层平均值
 
 - id: 637
 - name: average-of-levels-in-binary-tree
 - tag: Tree, Depth-First Search, Breadth-First Search, Binary Tree
-
-### 二叉树的层序遍历
-
-- id: 102
-- name: binary-tree-level-order-traversal
-- tag: Tree, Breadth-First Search, Binary Tree
-
-### 二叉树的锯齿形层序遍历
-
-- id: 103
-- name: binary-tree-zigzag-level-order-traversal
-- tag: Tree, Breadth-First Search, Binary Tree
-
+- how
+  - level order
 
 --- 
 
@@ -2416,18 +2393,8 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 530
 - name: minimum-absolute-difference-in-bst
 - tag: Tree, Depth-First Search, Breadth-First Search, Binary Search Tree, Binary Tree
-
-### 二叉搜索树中第 K 小的元素
-
-- id: 230
-- name: kth-smallest-element-in-a-bst
-- tag: Tree, Depth-First Search, Binary Search Tree, Binary Tree
-
-### 验证二叉搜索树
-
-- id: 98
-- name: validate-binary-search-tree
-- tag: Tree, Depth-First Search, Binary Search Tree, Binary Tree
+- how
+  - in-order traverse
 
 
 --- 
@@ -2435,17 +2402,15 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 ## 图
 
-### 岛屿数量
-
-- id: 200
-- name: number-of-islands
-- tag: Depth-First Search, Breadth-First Search, Union Find, Array, Matrix
-
 ### 被围绕的区域
 
 - id: 130
 - name: surrounded-regions
-- tag: Depth-First Search, Breadth-First Search, Union Find, Array, Matrix
+- tag: Depth-First Search, Breadth-First Search, Union Find, Array, Matrix, MARK
+- how
+  - initial idea: find a "O", and find its adjacent "O"s to find if any of its neighbors are on border -> return False to make it invalid
+    - why this can't work: hard to mark visited and don't interfere validation
+  - better idea: directly search on border "O"s, and mark their neighbors. and keep these marks as "O"s, replace other with "X"
 
 ### 克隆图
 
