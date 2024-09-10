@@ -2417,18 +2417,20 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 133
 - name: clone-graph
 - tag: Depth-First Search, Breadth-First Search, Graph, Hash Table
+- how
+  - use a hash table to mapping old node -> new node
 
 ### 除法求值
 
 - id: 399
 - name: evaluate-division
-- tag: Depth-First Search, Breadth-First Search, Union Find, Graph, Array, String, Shortest Path
-
-### 课程表
-
-- id: 207
-- name: course-schedule
-- tag: Depth-First Search, Breadth-First Search, Graph, Topological Sort
+- tag: Depth-First Search, Breadth-First Search, Union Find, Graph, Array, String, Shortest Path, MARK
+- how
+  1. adjacent table
+    - build a adjacent table (`adj[i][j]` -> i / j)
+    - backtracking, using $x1 / x2 = (x1 / x3) \times (x3 / x2)$
+  2. graph
+    - graph: `dict[dict[str]]`, key: variable, `graph[key1][key2] = key1 / key2`
 
 ### 课程表 II
 
