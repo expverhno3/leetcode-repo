@@ -2449,9 +2449,13 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 ### 蛇梯棋
 
-- id: 945
+- id: 909
 - name: snakes-and-ladders
-- tag: Breadth-First Search, Array, Matrix
+- tag: Breadth-First Search, Array, Matrix, MARK
+- how
+  - use BFS: keep track of steps to reach each position
+  - make use of "dp" idea
+  - why not DFS: it's like backtracking, and there's too much to search: can be faster go backward
 
 ### 最小基因变化
 
