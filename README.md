@@ -2461,13 +2461,17 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 - id: 433
 - name: minimum-genetic-mutation
-- tag: Breadth-First Search, Hash Table, String
+- tag: Breadth-First Search, Hash Table, String, MARK
+- how
+  - brute search... just try to mutate every position of `startGene` and check if that mutation was in `bank`, if it is, then check if it's equal to `endGene`
 
 ### 单词接龙
 
 - id: 127
 - name: word-ladder
 - tag: Breadth-First Search, Hash Table, String
+- how
+  - same as previous problem...
 
 
 --- 
