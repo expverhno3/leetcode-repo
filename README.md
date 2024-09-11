@@ -2479,17 +2479,16 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 ## 字典树
 
-### 实现 Trie (前缀树)
-
-- id: 208
-- name: implement-trie-prefix-tree
-- tag: Design, Trie, Hash Table, String
-
 ### 添加与搜索单词 - 数据结构设计
 
 - id: 211
 - name: design-add-and-search-words-data-structure
-- tag: Depth-First Search, Design, Trie, String
+- tag: Depth-First Search, Design, Trie, String, MARK
+- how
+  - recursion
+  - use prefix dict, and *add a end indicator*
+  - meet "." -> recursion, if any returns True
+  - meet other char -> check if in dict, if it is, replace with new dict
 
 ### 单词搜索 II
 
