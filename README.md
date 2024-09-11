@@ -2436,7 +2436,10 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 - id: 210
 - name: course-schedule-ii
-- tag: Depth-First Search, Breadth-First Search, Graph, Topological Sort
+- tag: Depth-First Search, Breadth-First Search, Graph, Topological Sort, MARK
+- how
+  - try to reduce unused information as much as possible (do I need to know what kind of courses are prerequisite for a course? not really, all I need to know if a course can be finished is: how many prerequisites remaining for this course)
+  - check if one value or element in a set/list has VERY high cost!!
 
 
 --- 
