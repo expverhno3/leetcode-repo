@@ -2494,7 +2494,10 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 - id: 212
 - name: word-search-ii
-- tag: Trie, Array, String, Backtracking, Matrix
+- tag: Trie, Array, String, Backtracking, Matrix, MARK
+- how
+  - pass set to a function, the function can modify it **inplace**
+  - build a prefix dict, then search with saving visited positions
 
 
 --- 
