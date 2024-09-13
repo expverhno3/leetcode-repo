@@ -2505,47 +2505,25 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 ## 回溯
 
-### 电话号码的字母组合
-
-- id: 17
-- name: letter-combinations-of-a-phone-number
-- tag: Hash Table, String, Backtracking
-
 ### 组合
 
 - id: 77
 - name: combinations
-- tag: Backtracking
-
-### 全排列
-
-- id: 46
-- name: permutations
-- tag: Array, Backtracking
-
-### 组合总和
-
-- id: 39
-- name: combination-sum
-- tag: Array, Backtracking
+- tag: Backtracking, MARK
+- how
+  - a basic framework of backtracking
+  - use a stack as parameter, and pass it to backtrack
+  - then the only thing need to change at every choice to be made: where to start (using first element as "fixed" element and find combination of the following positions)
 
 ### N 皇后 II
 
 - id: 52
 - name: n-queens-ii
-- tag: Backtracking
-
-### 括号生成
-
-- id: 22
-- name: generate-parentheses
-- tag: String, Dynamic Programming, Backtracking
-
-### 单词搜索
-
-- id: 79
-- name: word-search
-- tag: Array, String, Backtracking, Matrix
+- tag: Backtracking, MARK
+- how
+  - revisit n-queen problem :)
+  - you can specify an *order* to fill in the queens -> save you from maintaining "row" position info and avoid queens placed at the same row
+  - therefore, all info required for this dfs function is: col + diag + reversed diag
 
 
 --- 
@@ -2553,21 +2531,9 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 ## 分治
 
-### 将有序数组转换为二叉搜索树
-
-- id: 108
-- name: convert-sorted-array-to-binary-search-tree
-- tag: Tree, Binary Search Tree, Array, Divide and Conquer, Binary Tree
-
-### 排序链表
-
-- id: 148
-- name: sort-list
-- tag: Linked List, Two Pointers, Divide and Conquer, Sorting, Merge Sort
-
 ### 建立四叉树
 
-- id: 772
+- id: 427
 - name: construct-quad-tree
 - tag: Tree, Array, Divide and Conquer, Matrix
 
