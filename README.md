@@ -2536,6 +2536,8 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 427
 - name: construct-quad-tree
 - tag: Tree, Array, Divide and Conquer, Matrix
+- how
+  - check if all cells are the same to reduce requirement for deep recursion (only deep recursion for nodes with many different parts)
 
 ### 合并 K 个升序链表
 
