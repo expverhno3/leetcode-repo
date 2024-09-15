@@ -2565,47 +2565,13 @@ NOTE: core idea of maximum sub-array
 
 ## 二分查找
 
-### 搜索插入位置
-
-- id: 35
-- name: search-insert-position
-- tag: Array, Binary Search
-
-### 搜索二维矩阵
-
-- id: 74
-- name: search-a-2d-matrix
-- tag: Array, Binary Search, Matrix
-
 ### 寻找峰值
 
 - id: 162
 - name: find-peak-element
 - tag: Array, Binary Search
-
-### 搜索旋转排序数组
-
-- id: 33
-- name: search-in-rotated-sorted-array
-- tag: Array, Binary Search
-
-### 在排序数组中查找元素的第一个和最后一个位置
-
-- id: 34
-- name: find-first-and-last-position-of-element-in-sorted-array
-- tag: Array, Binary Search
-
-### 寻找旋转排序数组中的最小值
-
-- id: 153
-- name: find-minimum-in-rotated-sorted-array
-- tag: Array, Binary Search
-
-### 寻找两个正序数组的中位数
-
-- id: 4
-- name: median-of-two-sorted-arrays
-- tag: Array, Binary Search, Divide and Conquer
+- how
+  - go through all possible cases to find peak
 
 
 --- 
