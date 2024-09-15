@@ -2539,30 +2539,26 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - how
   - check if all cells are the same to reduce requirement for deep recursion (only deep recursion for nodes with many different parts)
 
-### 合并 K 个升序链表
-
-- id: 23
-- name: merge-k-sorted-lists
-- tag: Linked List, Divide and Conquer, Heap (Priority Queue), Merge Sort
-
 
 --- 
 
 
 ## Kadane 算法
 
-### 最大子数组和
-
-- id: 53
-- name: maximum-subarray
-- tag: Array, Divide and Conquer, Dynamic Programming
+NOTE: core idea of maximum sub-array
+- iterate through every element: should this new element (`x`) be added to potential max sub-array or act as beginning of new sub-array?
+  - decided by: whether `x` + previous_sum > `x`
 
 ### 环形子数组的最大和
 
-- id: 954
+- id: 918
 - name: maximum-sum-circular-subarray
-- tag: Queue, Array, Divide and Conquer, Dynamic Programming, Monotonic Queue
-
+- tag: Queue, Array, Divide and Conquer, Dynamic Programming, Monotonic Queue, MARK
+- two cases
+  1. same as normal max subarray
+  2. one part at beginning, one part at ending (using circular characteristic)
+- consider case 2, manipulate this equation
+  - max_sum = prefix + suffix = total_sum - subarray_in_middle = total_sum - min(subarray_in_middle) -> problem converted to find min subarray (same algo)
 
 --- 
 
