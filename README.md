@@ -2579,17 +2579,15 @@ NOTE: core idea of maximum sub-array
 
 ## 堆
 
-### 数组中的第K个最大元素
-
-- id: 215
-- name: kth-largest-element-in-an-array
-- tag: Array, Divide and Conquer, Quickselect, Sorting, Heap (Priority Queue)
-
 ### IPO
 
 - id: 502
 - name: ipo
-- tag: Greedy, Array, Sorting, Heap (Priority Queue)
+- tag: Greedy, Array, Sorting, Heap (Priority Queue), MARK
+- how
+  - sort projects based on capital requirement
+  - push all projects' profit that meets capital requirement into a max heap
+  - pop out to get best project can be done with current capital had
 
 ### 查找和最小的 K 对数字
 
