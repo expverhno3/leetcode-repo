@@ -2594,12 +2594,9 @@ NOTE: core idea of maximum sub-array
 - id: 373
 - name: find-k-pairs-with-smallest-sums
 - tag: Array, Heap (Priority Queue)
-
-### 数据流的中位数
-
-- id: 295
-- name: find-median-from-data-stream
-- tag: Design, Two Pointers, Data Stream, Sorting, Heap (Priority Queue)
+- how
+  - use heap as a "vision"
+  - push all potential results into heap, and pop in the order wanted
 
 
 --- 
