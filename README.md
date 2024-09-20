@@ -2645,18 +2645,29 @@ NOTE: core idea of maximum sub-array
 - id: 9
 - name: palindrome-number
 - tag: Math
+- how
+  - if negative -> not a chance :)
+  - if positive -> convert to string -> two pointer
 
 ### 加一
 
 - id: 66
 - name: plus-one
 - tag: Array, Math
+- how
+  - iterate backward
+  - once meet 9 -> convert it to 0, and keep checking if previous digit is also 9, once it's not 9 -> plus 1
 
 ### 阶乘后的零
 
 - id: 172
 - name: factorial-trailing-zeroes
-- tag: Math
+- tag: Math, MARK
+- how
+  - where does all the zeros come from?
+    - 5 times 2 = 10
+    - and there's always more factor of 2 than factor of 5
+    - so the answer is the number of factor of 5 in n!
 
 ### x 的平方根 
 
