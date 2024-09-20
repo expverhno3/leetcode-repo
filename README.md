@@ -2690,49 +2690,17 @@ NOTE: core idea of maximum sub-array
 --- 
 
 
-## 一维动态规划
-
-### 爬楼梯
-
-- id: 70
-- name: climbing-stairs
-- tag: Memoization, Math, Dynamic Programming
-
-### 打家劫舍
-
-- id: 198
-- name: house-robber
-- tag: Array, Dynamic Programming
-
-### 单词拆分
-
-- id: 139
-- name: word-break
-- tag: Trie, Memoization, Array, Hash Table, String, Dynamic Programming
-
-### 零钱兑换
-
-- id: 322
-- name: coin-change
-- tag: Breadth-First Search, Array, Dynamic Programming
-
-### 最长递增子序列
-
-- id: 300
-- name: longest-increasing-subsequence
-- tag: Array, Binary Search, Dynamic Programming
-
-
---- 
-
-
 ## 多维动态规划
 
 ### 三角形最小路径和
 
 - id: 120
 - name: triangle
-- tag: Array, Dynamic Programming
+- tag: Array, Dynamic Programming, MARK
+- how
+  1. initial idea: use a 2D array just as the same size as triangle, then iterate from top to down, init with first row of triangle
+    - update using: `dp[i][j] = min(dp[i-1][j], dp[i-1][j-1]) + triangle[i][j]`
+  2. better idea: reduce memory usage. if we can build the dp table from *bottom to top* (why: because triangle has wider bottom than top), then the update formula would be (assume it's still 2D table): `dp[i][j] = min(dp[i+1][j], dp[i+1][j+1]) + triangle[i][j]`, which means at index `j`, it depends on current and next, and it will not be used when updating next dp cell -> use 1D!
 
 ### 最小路径和
 
