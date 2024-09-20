@@ -2674,18 +2674,17 @@ NOTE: core idea of maximum sub-array
 - id: 69
 - name: sqrtx
 - tag: Math, Binary Search
-
-### Pow(x, n)
-
-- id: 50
-- name: powx-n
-- tag: Recursion, Math
+- how
+  - binary search: sqrt(x) must within (1,x)
 
 ### 直线上最多的点数
 
 - id: 149
 - name: max-points-on-a-line
-- tag: Geometry, Array, Hash Table, Math
+- tag: Geometry, Array, Hash Table, Math, MARK
+- how
+  - count number of slope relative to a point, maintain a global max counts
+  - note: don't count repeatedly
 
 
 --- 
