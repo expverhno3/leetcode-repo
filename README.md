@@ -2720,17 +2720,14 @@ NOTE: core idea of maximum sub-array
   - init idea: s1 and s2 generates 2D matrix
   - optimize space: current cell only depends on previous row and previous column at the same row -> use 1D vector to represent them 
 
-### 编辑距离
-
-- id: 72
-- name: edit-distance
-- tag: String, Dynamic Programming
-
 ### 买卖股票的最佳时机 III
 
 - id: 123
 - name: best-time-to-buy-and-sell-stock-iii
-- tag: Array, Dynamic Programming
+- tag: Array, Dynamic Programming, MARK
+- how
+  - main problem: how to ensure at each step, the update of second buy is after the update of first buy?
+  - so we *integrate* first sell into second buy
 
 ### 买卖股票的最佳时机 IV
 
