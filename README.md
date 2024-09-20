@@ -2702,17 +2702,14 @@ NOTE: core idea of maximum sub-array
     - update using: `dp[i][j] = min(dp[i-1][j], dp[i-1][j-1]) + triangle[i][j]`
   2. better idea: reduce memory usage. if we can build the dp table from *bottom to top* (why: because triangle has wider bottom than top), then the update formula would be (assume it's still 2D table): `dp[i][j] = min(dp[i+1][j], dp[i+1][j+1]) + triangle[i][j]`, which means at index `j`, it depends on current and next, and it will not be used when updating next dp cell -> use 1D!
 
-### 最小路径和
-
-- id: 64
-- name: minimum-path-sum
-- tag: Array, Dynamic Programming, Matrix
-
 ### 不同路径 II
 
 - id: 63
 - name: unique-paths-ii
-- tag: Array, Dynamic Programming, Matrix
+- tag: Array, Dynamic Programming, Matrix, MARK
+- how
+  - init idea: 2D, sum cell in the left and above
+  - optimized space: 2 row (previous row and current row, and use odd even relation to update)
 
 ### 最长回文子串
 
