@@ -2609,36 +2609,30 @@ NOTE: core idea of maximum sub-array
 - id: 67
 - name: add-binary
 - tag: Bit Manipulation, Math, String, Simulation
+- how
+  - align two string to same length
+  - find sum
+  - immediate sum: `sum % 2`
+  - carry: `sum // 2`
 
 ### 颠倒二进制位
 
 - id: 190
 - name: reverse-bits
-- tag: Bit Manipulation, Divide and Conquer
-
-### 位1的个数
-
-- id: 191
-- name: number-of-1-bits
-- tag: Bit Manipulation, Divide and Conquer
-
-### 只出现一次的数字
-
-- id: 136
-- name: single-number
-- tag: Bit Manipulation, Array
-
-### 只出现一次的数字 II
-
-- id: 137
-- name: single-number-ii
-- tag: Bit Manipulation, Array
+- tag: Bit Manipulation, Divide and Conquer, MARK
+- how
+  - bit manipulation
+    - `n&1` -> if last bit is 1, then it's 1
+    - `+` -> binary add, `000010 + 001000 = 001010`
 
 ### 数字范围按位与
 
 - id: 201
 - name: bitwise-and-of-numbers-range
-- tag: Bit Manipulation
+- tag: Bit Manipulation, MARK
+- how
+  - property of AND
+  - basically see how many digits are different in the end, make them 0 and keep previous "same" digits
 
 
 --- 
