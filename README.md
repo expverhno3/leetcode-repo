@@ -2711,17 +2711,14 @@ NOTE: core idea of maximum sub-array
   - init idea: 2D, sum cell in the left and above
   - optimized space: 2 row (previous row and current row, and use odd even relation to update)
 
-### 最长回文子串
-
-- id: 5
-- name: longest-palindromic-substring
-- tag: Two Pointers, String, Dynamic Programming
-
 ### 交错字符串
 
 - id: 97
 - name: interleaving-string
 - tag: String, Dynamic Programming
+- how
+  - init idea: s1 and s2 generates 2D matrix
+  - optimize space: current cell only depends on previous row and previous column at the same row -> use 1D vector to represent them 
 
 ### 编辑距离
 
