@@ -12,9 +12,8 @@ from heapq import heappush, heappushpop
 """
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        """
-        [0,0,2,0,0,3,0,3]
-        """
+
+        # check this explanation: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/solutions/39611/is-it-best-solution-with-o-n-o-1/comments/242914
         buy1, buy2, sell1, sell2 = float('inf'), float('inf'), 0, 0
 
         for price in prices:
@@ -23,7 +22,6 @@ class Solution:
             #NOTE: buy2 must be after sell1 (buy2 is should be negative, and buy1 price has passed)
             buy2 = min(buy2, price - sell1)
             sell2 = max(sell2, price - buy2)
-            print(buy1, buy2, sell1, sell2)
 
         return sell2
 

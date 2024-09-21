@@ -2733,7 +2733,21 @@ NOTE: core idea of maximum sub-array
 
 - id: 188
 - name: best-time-to-buy-and-sell-stock-iv
-- tag: Array, Dynamic Programming
+- tag: Array, Dynamic Programming, MARK
+- how
+  - `dp[i][j]` -> i-th transaction, at j-th day can gain max profit
+  - first derive state transition function
+    - what can be done at this moment:
+      1. do nothing that can gain a profit. aka: same profit as previous day -> `dp[i][j-1]`
+      2. make a transaction! find a day (`t`) before `j` to bought stock. -> `max(price[j] - price[t] + dp[i-1][t-1])`
+         1. first part: max profit can gain given current price
+         2. second part: profit of previous transaction (since it must happen before we buy in at day `t`)
+  - how to optimize space efficiency
+    - every current state, `price[j]` is a constant, and `max(dp[i-1][t-1] - price[t])` can be maintained during we update dp table
+    - further optimization: if we change iteration direction? what can we do at current transaction of each day? (fix day `j` and change `i` transaction)
+      - consider cost and profit at i-th transaction: `dp[i][0]` and `dp[i][1]`
+        - cost: can buy previously `dp[i][0]`, OR `prices[j]-dp[i-1][1]` (NOTE price here: because if we buy now, previous transaction can't sell at this moment)
+        - profit: either sell previously `dp[i][1]`, OR sell now `prices[j] - dp[i][0]`
 
 ### 最大正方形
 
