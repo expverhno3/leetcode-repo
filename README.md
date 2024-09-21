@@ -2753,7 +2753,10 @@ NOTE: core idea of maximum sub-array
 
 - id: 221
 - name: maximal-square
-- tag: Array, Dynamic Programming, Matrix
+- tag: Array, Dynamic Programming, Matrix, MARK
+- how
+  - use right-bottom cell to indicate the max size of square
+    - [img](imgs/README-0921-143958.png)
 
 
 --- 
