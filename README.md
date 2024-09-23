@@ -2761,5 +2761,589 @@ NOTE: core idea of maximum sub-array
 
 --- 
 
+# Leetcode 75
+
+## 数组 / 字符串
+
+### 交替合并字符串
+
+- id: 1768
+- name: merge-strings-alternately
+- tag: Two Pointers, String
+
+### 字符串的最大公因子
+
+- id: 1146
+- name: greatest-common-divisor-of-strings
+- tag: Math, String
+
+### 拥有最多糖果的孩子
+
+- id: 1528
+- name: kids-with-the-greatest-number-of-candies
+- tag: Array
+
+### 种花问题
+
+- id: 605
+- name: can-place-flowers
+- tag: Greedy, Array
+
+### 反转字符串中的元音字母
+
+- id: 345
+- name: reverse-vowels-of-a-string
+- tag: Two Pointers, String
+
+### 反转字符串中的单词
+
+- id: 151
+- name: reverse-words-in-a-string
+- tag: Two Pointers, String
+
+### 除自身以外数组的乘积
+
+- id: 238
+- name: product-of-array-except-self
+- tag: Array, Prefix Sum
+
+### 递增的三元子序列
+
+- id: 334
+- name: increasing-triplet-subsequence
+- tag: Greedy, Array
+
+### 压缩字符串
+
+- id: 443
+- name: string-compression
+- tag: Two Pointers, String
+
+
+--- 
+
+
+## 双指针
+
+### 移动零
+
+- id: 283
+- name: move-zeroes
+- tag: Array, Two Pointers
+
+### 判断子序列
+
+- id: 392
+- name: is-subsequence
+- tag: Two Pointers, String, Dynamic Programming
+
+### 盛最多水的容器
+
+- id: 11
+- name: container-with-most-water
+- tag: Greedy, Array, Two Pointers
+
+### K 和数对的最大数目
+
+- id: 1798
+- name: max-number-of-k-sum-pairs
+- tag: Array, Hash Table, Two Pointers, Sorting
+
+
+--- 
+
+
+## 滑动窗口
+
+### 子数组最大平均数 I
+
+- id: 643
+- name: maximum-average-subarray-i
+- tag: Array, Sliding Window
+
+### 定长子串中元音的最大数目
+
+- id: 1567
+- name: maximum-number-of-vowels-in-a-substring-of-given-length
+- tag: String, Sliding Window
+
+### 最大连续1的个数 III
+
+- id: 1046
+- name: max-consecutive-ones-iii
+- tag: Array, Binary Search, Prefix Sum, Sliding Window
+
+### 删掉一个元素以后全为 1 的最长子数组
+
+- id: 1586
+- name: longest-subarray-of-1s-after-deleting-one-element
+- tag: Array, Dynamic Programming, Sliding Window
+
+
+--- 
+
+
+## 前缀和
+
+### 找到最高海拔
+
+- id: 1833
+- name: find-the-highest-altitude
+- tag: Array, Prefix Sum
+
+### 寻找数组的中心下标
+
+- id: 724
+- name: find-pivot-index
+- tag: Array, Prefix Sum
+
+
+--- 
+
+
+## 哈希表 / 哈希集合
+
+### 找出两数组的不同
+
+- id: 1392
+- name: find-the-difference-of-two-arrays
+- tag: Array, Hash Table
+
+### 独一无二的出现次数
+
+- id: 1319
+- name: unique-number-of-occurrences
+- tag: Array, Hash Table
+
+### 确定两个字符串是否接近
+
+- id: 1777
+- name: determine-if-two-strings-are-close
+- tag: Hash Table, String, Counting, Sorting
+
+### 相等行列对
+
+- id: 2428
+- name: equal-row-and-column-pairs
+- tag: Array, Hash Table, Matrix, Simulation
+
+
+--- 
+
+
+## 栈
+
+### 从字符串中移除星号
+
+- id: 2470
+- name: removing-stars-from-a-string
+- tag: Stack, String, Simulation
+
+### 小行星碰撞
+
+- id: 735
+- name: asteroid-collision
+- tag: Stack, Array, Simulation
+
+### 字符串解码
+
+- id: 394
+- name: decode-string
+- tag: Stack, Recursion, String
+
+
+--- 
+
+
+## 队列
+
+### 最近的请求次数
+
+- id: 969
+- name: number-of-recent-calls
+- tag: Design, Queue, Data Stream
+
+### Dota2 参议院
+
+- id: 649
+- name: dota2-senate
+- tag: Greedy, Queue, String
+
+
+--- 
+
+
+## 链表
+
+### 删除链表的中间节点
+
+- id: 2216
+- name: delete-the-middle-node-of-a-linked-list
+- tag: Linked List, Two Pointers
+
+### 奇偶链表
+
+- id: 328
+- name: odd-even-linked-list
+- tag: Linked List
+
+### 反转链表
+
+- id: 206
+- name: reverse-linked-list
+- tag: Recursion, Linked List
+
+### 链表最大孪生和
+
+- id: 2236
+- name: maximum-twin-sum-of-a-linked-list
+- tag: Stack, Linked List, Two Pointers
+
+
+--- 
+
+
+## 二叉树 - 深度优先搜索
+
+### 二叉树的最大深度
+
+- id: 104
+- name: maximum-depth-of-binary-tree
+- tag: Tree, Depth-First Search, Breadth-First Search, Binary Tree
+
+### 叶子相似的树
+
+- id: 904
+- name: leaf-similar-trees
+- tag: Tree, Depth-First Search, Binary Tree
+
+### 统计二叉树中好节点的数目
+
+- id: 1544
+- name: count-good-nodes-in-binary-tree
+- tag: Tree, Depth-First Search, Breadth-First Search, Binary Tree
+
+### 路径总和 III
+
+- id: 437
+- name: path-sum-iii
+- tag: Tree, Depth-First Search, Binary Tree
+
+### 二叉树中的最长交错路径
+
+- id: 1474
+- name: longest-zigzag-path-in-a-binary-tree
+- tag: Tree, Depth-First Search, Dynamic Programming, Binary Tree
+
+### 二叉树的最近公共祖先
+
+- id: 236
+- name: lowest-common-ancestor-of-a-binary-tree
+- tag: Tree, Depth-First Search, Binary Tree
+
+
+--- 
+
+
+## 二叉树 - 广度优先搜索
+
+### 二叉树的右视图
+
+- id: 199
+- name: binary-tree-right-side-view
+- tag: Tree, Depth-First Search, Breadth-First Search, Binary Tree
+
+### 最大层内元素和
+
+- id: 1116
+- name: maximum-level-sum-of-a-binary-tree
+- tag: Tree, Depth-First Search, Breadth-First Search, Binary Tree
+
+
+--- 
+
+
+## 二叉搜索树
+
+### 二叉搜索树中的搜索
+
+- id: 783
+- name: search-in-a-binary-search-tree
+- tag: Tree, Binary Search Tree, Binary Tree
+
+### 删除二叉搜索树中的节点
+
+- id: 450
+- name: delete-node-in-a-bst
+- tag: Tree, Binary Search Tree, Binary Tree
+
+
+--- 
+
+
+## 图 - 深度优先搜索
+
+### 钥匙和房间
+
+- id: 871
+- name: keys-and-rooms
+- tag: Depth-First Search, Breadth-First Search, Graph
+
+### 省份数量
+
+- id: 547
+- name: number-of-provinces
+- tag: Depth-First Search, Breadth-First Search, Union Find, Graph
+
+### 重新规划路线
+
+- id: 1576
+- name: reorder-routes-to-make-all-paths-lead-to-the-city-zero
+- tag: Depth-First Search, Breadth-First Search, Graph
+
+### 除法求值
+
+- id: 399
+- name: evaluate-division
+- tag: Depth-First Search, Breadth-First Search, Union Find, Graph, Array, String, Shortest Path
+
+
+--- 
+
+
+## 图 - 广度优先搜索
+
+### 迷宫中离入口最近的出口
+
+- id: 2038
+- name: nearest-exit-from-entrance-in-maze
+- tag: Breadth-First Search, Array, Matrix
+
+### 腐烂的橘子
+
+- id: 1036
+- name: rotting-oranges
+- tag: Breadth-First Search, Array, Matrix
+
+
+--- 
+
+
+## 堆 / 优先队列
+
+### 数组中的第K个最大元素
+
+- id: 215
+- name: kth-largest-element-in-an-array
+- tag: Array, Divide and Conquer, Quickselect, Sorting, Heap (Priority Queue)
+
+### 无限集中的最小数字
+
+- id: 2413
+- name: smallest-number-in-infinite-set
+- tag: Design, Hash Table, Heap (Priority Queue)
+
+### 最大子序列的分数
+
+- id: 2636
+- name: maximum-subsequence-score
+- tag: Greedy, Array, Sorting, Heap (Priority Queue)
+
+### 雇佣 K 位工人的总代价
+
+- id: 2553
+- name: total-cost-to-hire-k-workers
+- tag: Array, Two Pointers, Simulation, Heap (Priority Queue)
+
+
+--- 
+
+
+## 二分查找
+
+### 猜数字大小
+
+- id: 374
+- name: guess-number-higher-or-lower
+- tag: Binary Search, Interactive
+
+### 咒语和药水的成功对数
+
+- id: 2392
+- name: successful-pairs-of-spells-and-potions
+- tag: Array, Two Pointers, Binary Search, Sorting
+
+### 寻找峰值
+
+- id: 162
+- name: find-peak-element
+- tag: Array, Binary Search
+
+### 爱吃香蕉的珂珂
+
+- id: 907
+- name: koko-eating-bananas
+- tag: Array, Binary Search
+
+
+--- 
+
+
+## 回溯
+
+### 电话号码的字母组合
+
+- id: 17
+- name: letter-combinations-of-a-phone-number
+- tag: Hash Table, String, Backtracking
+
+### 组合总和 III
+
+- id: 216
+- name: combination-sum-iii
+- tag: Array, Backtracking
+
+
+--- 
+
+
+## 动态规划 - 一维
+
+### 第 N 个泰波那契数
+
+- id: 1236
+- name: n-th-tribonacci-number
+- tag: Memoization, Math, Dynamic Programming
+
+### 使用最小花费爬楼梯
+
+- id: 747
+- name: min-cost-climbing-stairs
+- tag: Array, Dynamic Programming
+
+### 打家劫舍
+
+- id: 198
+- name: house-robber
+- tag: Array, Dynamic Programming
+
+### 多米诺和托米诺平铺
+
+- id: 806
+- name: domino-and-tromino-tiling
+- tag: Dynamic Programming
+
+
+--- 
+
+
+## 动态规划 - 多维
+
+### 不同路径
+
+- id: 62
+- name: unique-paths
+- tag: Math, Dynamic Programming, Combinatorics
+
+### 最长公共子序列
+
+- id: 1250
+- name: longest-common-subsequence
+- tag: String, Dynamic Programming
+
+### 买卖股票的最佳时机含手续费
+
+- id: 714
+- name: best-time-to-buy-and-sell-stock-with-transaction-fee
+- tag: Greedy, Array, Dynamic Programming
+
+### 编辑距离
+
+- id: 72
+- name: edit-distance
+- tag: String, Dynamic Programming
+
+
+--- 
+
+
+## 位运算
+
+### 比特位计数
+
+- id: 338
+- name: counting-bits
+- tag: Bit Manipulation, Dynamic Programming
+
+### 只出现一次的数字
+
+- id: 136
+- name: single-number
+- tag: Bit Manipulation, Array
+
+### 或运算的最小翻转次数
+
+- id: 1441
+- name: minimum-flips-to-make-a-or-b-equal-to-c
+- tag: Bit Manipulation
+
+
+--- 
+
+
+## 前缀树
+
+### 实现 Trie (前缀树)
+
+- id: 208
+- name: implement-trie-prefix-tree
+- tag: Design, Trie, Hash Table, String
+
+### 搜索推荐系统
+
+- id: 1397
+- name: search-suggestions-system
+- tag: Trie, Array, String, Binary Search, Sorting, Heap (Priority Queue)
+
+
+--- 
+
+
+## 区间集合
+
+### 无重叠区间
+
+- id: 435
+- name: non-overlapping-intervals
+- tag: Greedy, Array, Dynamic Programming, Sorting
+
+### 用最少数量的箭引爆气球
+
+- id: 452
+- name: minimum-number-of-arrows-to-burst-balloons
+- tag: Greedy, Array, Sorting
+
+
+--- 
+
+
+## 单调栈
+
+### 每日温度
+
+- id: 739
+- name: daily-temperatures
+- tag: Stack, Array, Monotonic Stack
+
+### 股票价格跨度
+
+- id: 937
+- name: online-stock-span
+- tag: Stack, Design, Data Stream, Monotonic Stack
+
+
+--- 
+
+
 
 
