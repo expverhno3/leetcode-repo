@@ -2770,12 +2770,18 @@ NOTE: core idea of maximum sub-array
 - id: 1768
 - name: merge-strings-alternately
 - tag: Two Pointers, String
+- how
+  - two pointer
 
 ### 字符串的最大公因子
 
 - id: 1146
 - name: greatest-common-divisor-of-strings
 - tag: Math, String
+- how
+  - don't consider how to segment string perfectly -> use the length of string and convert it into a MATH problem
+  - algorithm of calculating GCD
+    - assume `a > b`, then update them by `a, b = b, a % b` until `b == 0`
 
 ### 拥有最多糖果的孩子
 
