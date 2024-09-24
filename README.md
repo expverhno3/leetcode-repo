@@ -2775,7 +2775,7 @@ NOTE: core idea of maximum sub-array
 
 ### 字符串的最大公因子
 
-- id: 1146
+- id: 1071
 - name: greatest-common-divisor-of-strings
 - tag: Math, String
 - how
@@ -2785,45 +2785,43 @@ NOTE: core idea of maximum sub-array
 
 ### 拥有最多糖果的孩子
 
-- id: 1528
+- id: 1431
 - name: kids-with-the-greatest-number-of-candies
 - tag: Array
+- how
+  - nothing interesting, just find max and linearly compare...
 
 ### 种花问题
 
 - id: 605
 - name: can-place-flowers
 - tag: Greedy, Array
+- how
+  - don't overthink this... Just compare with previous and next element
 
 ### 反转字符串中的元音字母
 
 - id: 345
 - name: reverse-vowels-of-a-string
 - tag: Two Pointers, String
-
-### 反转字符串中的单词
-
-- id: 151
-- name: reverse-words-in-a-string
-- tag: Two Pointers, String
-
-### 除自身以外数组的乘积
-
-- id: 238
-- name: product-of-array-except-self
-- tag: Array, Prefix Sum
+- how
+  - use two pointers, and when meets vowel, exchange
 
 ### 递增的三元子序列
 
 - id: 334
 - name: increasing-triplet-subsequence
-- tag: Greedy, Array
+- tag: Greedy, Array, MARK
+- how
+  - want 3 increasing numbers in order -> keep capturing numbers that smaller than candidates making up triplet and update them
 
 ### 压缩字符串
 
 - id: 443
 - name: string-compression
 - tag: Two Pointers, String
+- how
+  - compare with previous and maintain counter
 
 
 --- 
