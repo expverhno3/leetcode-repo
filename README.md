@@ -2829,29 +2829,13 @@ NOTE: core idea of maximum sub-array
 
 ## 双指针
 
-### 移动零
-
-- id: 283
-- name: move-zeroes
-- tag: Array, Two Pointers
-
-### 判断子序列
-
-- id: 392
-- name: is-subsequence
-- tag: Two Pointers, String, Dynamic Programming
-
-### 盛最多水的容器
-
-- id: 11
-- name: container-with-most-water
-- tag: Greedy, Array, Two Pointers
-
 ### K 和数对的最大数目
 
-- id: 1798
+- id: 1679
 - name: max-number-of-k-sum-pairs
-- tag: Array, Hash Table, Two Pointers, Sorting
+- tag: Array, Hash Table, Two Pointers, Sorting, MARK
+- how
+  - it's similar to Two Sum: use hash map to maintain frequency, and keep checking the diff between current number and sum wanted.
 
 
 --- 
