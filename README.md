@@ -2848,18 +2848,28 @@ NOTE: core idea of maximum sub-array
 - id: 643
 - name: maximum-average-subarray-i
 - tag: Array, Sliding Window
+- how
+  - add new and subtract oldest
 
 ### 定长子串中元音的最大数目
 
-- id: 1567
+- id: 1456
 - name: maximum-number-of-vowels-in-a-substring-of-given-length
 - tag: String, Sliding Window
+- how
+  - use queue to keep track of index that is a vowel, and check if it's within the window
 
 ### 最大连续1的个数 III
 
-- id: 1046
+- id: 1004
 - name: max-consecutive-ones-iii
-- tag: Array, Binary Search, Prefix Sum, Sliding Window
+- tag: Array, Binary Search, Prefix Sum, Sliding Window, MARK
+- how
+  - it's genius
+  - sliding window, considering following cases
+    - new number is 1 -> no need to flip -> k remains the same
+    - new number is 0 -> need to flip
+      - if after flipping, there's no quota for flipping -> move i forward, and if the i giving up is 0: fill back to flipping quota
 
 ### 删掉一个元素以后全为 1 的最长子数组
 
