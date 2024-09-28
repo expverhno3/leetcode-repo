@@ -2865,17 +2865,19 @@ NOTE: core idea of maximum sub-array
 - name: max-consecutive-ones-iii
 - tag: Array, Binary Search, Prefix Sum, Sliding Window, MARK
 - how
-  - it's genius
-  - sliding window, considering following cases
-    - new number is 1 -> no need to flip -> k remains the same
-    - new number is 0 -> need to flip
-      - if after flipping, there's no quota for flipping -> move i forward, and if the i giving up is 0: fill back to flipping quota
+  - it's **genius**
+  - convert question into: within window, only `k` 0s are allowed
+  - behavior of this two pointers:
+    - when right pointer meets 0 -> if we can allow it (`k>0`), just decrement `k`; if after decrement `k<0`: need to move left pointer (move along with right pointer)
+    - why this is valid: size of window is *guaranteed* to be valid, so if there's a new 0 enter window, as long as left pointer move along, the window size won't change
 
 ### 删掉一个元素以后全为 1 的最长子数组
 
-- id: 1586
+- id: 1493
 - name: longest-subarray-of-1s-after-deleting-one-element
 - tag: Array, Dynamic Programming, Sliding Window
+- how
+  - replace question above with k=1
 
 
 --- 
