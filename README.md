@@ -2887,15 +2887,11 @@ NOTE: core idea of maximum sub-array
 
 ### 找到最高海拔
 
-- id: 1833
+- id: 1732
 - name: find-the-highest-altitude
 - tag: Array, Prefix Sum
-
-### 寻找数组的中心下标
-
-- id: 724
-- name: find-pivot-index
-- tag: Array, Prefix Sum
+- how
+  - prefix sum and keep track of max
 
 
 --- 
@@ -2908,24 +2904,36 @@ NOTE: core idea of maximum sub-array
 - id: 1392
 - name: find-the-difference-of-two-arrays
 - tag: Array, Hash Table
+- how
+  - create two unique sets
+  - compare and append to list
 
 ### 独一无二的出现次数
 
 - id: 1319
 - name: unique-number-of-occurrences
 - tag: Array, Hash Table
+- how
+  - create a freq table
+  - get all values
+  - compare len(values) and len(set(values))
 
 ### 确定两个字符串是否接近
 
 - id: 1777
 - name: determine-if-two-strings-are-close
 - tag: Hash Table, String, Counting, Sorting
+- how
+  - similar -> same keys and same values distribution
 
 ### 相等行列对
 
-- id: 2428
+- id: 2352
 - name: equal-row-and-column-pairs
 - tag: Array, Hash Table, Matrix, Simulation
+- how
+  - create a frequency table for each row
+  - then transpose grid and iterate through columns, check if there's a match, and add the frequency to result
 
 
 --- 
