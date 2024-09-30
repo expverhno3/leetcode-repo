@@ -2943,21 +2943,19 @@ NOTE: core idea of maximum sub-array
 
 ### 从字符串中移除星号
 
-- id: 2470
+- id: 2390
 - name: removing-stars-from-a-string
-- tag: Stack, String, Simulation
+- tag: Stack, String, Simulation, MARK (focus on how to come up with using **Stack**)
+- how
+  - use stack, just put non-star chars in, and pop when meets star
 
 ### 小行星碰撞
 
 - id: 735
 - name: asteroid-collision
 - tag: Stack, Array, Simulation
-
-### 字符串解码
-
-- id: 394
-- name: decode-string
-- tag: Stack, Recursion, String
+- how
+  - stack + (if else)
 
 
 --- 
