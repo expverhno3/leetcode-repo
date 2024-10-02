@@ -2965,15 +2965,21 @@ NOTE: core idea of maximum sub-array
 
 ### 最近的请求次数
 
-- id: 969
+- id: 933
 - name: number-of-recent-calls
 - tag: Design, Queue, Data Stream
+- how
+  - use a queue and a int to keep track of newest requests and its number
+  - utilize "popleft" property of queue
 
 ### Dota2 参议院
 
 - id: 649
 - name: dota2-senate
-- tag: Greedy, Queue, String
+- tag: Greedy, Queue, String, MARK (new pattern of using queue)
+- how
+  - use two queues to simulate "voting" process
+  - put winner at the end and label it with larger numbers to simulate new round of vote (brilliant design)
 
 
 --- 
