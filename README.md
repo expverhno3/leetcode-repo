@@ -2989,27 +2989,30 @@ NOTE: core idea of maximum sub-array
 
 ### 删除链表的中间节点
 
-- id: 2216
+- id: 2095
 - name: delete-the-middle-node-of-a-linked-list
 - tag: Linked List, Two Pointers
+- how
+  - find middle node (fast & slow)
+  - keep track of a node before slow
 
 ### 奇偶链表
 
 - id: 328
 - name: odd-even-linked-list
 - tag: Linked List
-
-### 反转链表
-
-- id: 206
-- name: reverse-linked-list
-- tag: Recursion, Linked List
+- how
+  - remember to cut ending link to avoid cycle
 
 ### 链表最大孪生和
 
-- id: 2236
+- id: 2130
 - name: maximum-twin-sum-of-a-linked-list
 - tag: Stack, Linked List, Two Pointers
+- how
+  - fast & slow find middle node
+  - reverse previous half
+  - goes back
 
 
 --- 
