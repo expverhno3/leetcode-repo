@@ -3020,41 +3020,31 @@ NOTE: core idea of maximum sub-array
 
 ## 二叉树 - 深度优先搜索
 
-### 二叉树的最大深度
-
-- id: 104
-- name: maximum-depth-of-binary-tree
-- tag: Tree, Depth-First Search, Breadth-First Search, Binary Tree
-
 ### 叶子相似的树
 
-- id: 904
+- id: 872
 - name: leaf-similar-trees
 - tag: Tree, Depth-First Search, Binary Tree
+- how
+  - dfs
+  - when encounter leaves: append it to a list
+  - compare list at the end
 
 ### 统计二叉树中好节点的数目
 
-- id: 1544
+- id: 1448
 - name: count-good-nodes-in-binary-tree
 - tag: Tree, Depth-First Search, Breadth-First Search, Binary Tree
-
-### 路径总和 III
-
-- id: 437
-- name: path-sum-iii
-- tag: Tree, Depth-First Search, Binary Tree
+- how
+  - keep track of max path node value and pass it as argument to dfs
 
 ### 二叉树中的最长交错路径
 
-- id: 1474
+- id: 1372
 - name: longest-zigzag-path-in-a-binary-tree
 - tag: Tree, Depth-First Search, Dynamic Programming, Binary Tree
-
-### 二叉树的最近公共祖先
-
-- id: 236
-- name: lowest-common-ancestor-of-a-binary-tree
-- tag: Tree, Depth-First Search, Binary Tree
+- how
+  - dfs, find if I can run zigzag from left, and search if I can zigzag from right, then assume children nodes as starting of zigzag path, repeat
 
 
 --- 
