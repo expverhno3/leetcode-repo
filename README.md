@@ -3052,17 +3052,13 @@ NOTE: core idea of maximum sub-array
 
 ## 二叉树 - 广度优先搜索
 
-### 二叉树的右视图
-
-- id: 199
-- name: binary-tree-right-side-view
-- tag: Tree, Depth-First Search, Breadth-First Search, Binary Tree
-
 ### 最大层内元素和
 
 - id: 1116
 - name: maximum-level-sum-of-a-binary-tree
 - tag: Tree, Depth-First Search, Breadth-First Search, Binary Tree
+- how
+  - normal bfs
 
 
 --- 
