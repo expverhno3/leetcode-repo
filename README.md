@@ -3054,7 +3054,7 @@ NOTE: core idea of maximum sub-array
 
 ### 最大层内元素和
 
-- id: 1116
+- id: 1161
 - name: maximum-level-sum-of-a-binary-tree
 - tag: Tree, Depth-First Search, Breadth-First Search, Binary Tree
 - how
@@ -3071,12 +3071,19 @@ NOTE: core idea of maximum sub-array
 - id: 783
 - name: search-in-a-binary-search-tree
 - tag: Tree, Binary Search Tree, Binary Tree
+- how
+  - utilize property
 
 ### 删除二叉搜索树中的节点
 
 - id: 450
 - name: delete-node-in-a-bst
 - tag: Tree, Binary Search Tree, Binary Tree
+- how
+  - utilize binary search tree's property to find target node quickly
+  - think about 2 cases when `root.val == key`:
+    - root only has one child -> just place root.right to root's position
+    - root has 2 child -> find closest element, delete it, and run delete node to get that
 
 
 --- 
