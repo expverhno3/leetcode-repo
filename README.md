@@ -3093,15 +3093,21 @@ NOTE: core idea of maximum sub-array
 
 ### 钥匙和房间
 
-- id: 871
+- id: 841
 - name: keys-and-rooms
 - tag: Depth-First Search, Breadth-First Search, Graph
+- how
+  - use deque to save keys waiting to open new room, and a set to save all rooms visited
+  - then compare number of rooms visited with number of total rooms
 
 ### 省份数量
 
 - id: 547
 - name: number-of-provinces
 - tag: Depth-First Search, Breadth-First Search, Union Find, Graph
+- how
+  - when a node connected with other nodes, keep finding other nodes in the same group, and mark them as visited
+  - after this depth-first search, group_counter += 1
 
 ### 重新规划路线
 
