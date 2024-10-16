@@ -3121,12 +3121,6 @@ NOTE: core idea of maximum sub-array
     - start from node 0, and all nodes connected to node 0 should pointed to node 0, if it's not -> need one reverse
     - recursion comes from this: all nodes next to node 0 should be pointed to
 
-### 除法求值
-
-- id: 399
-- name: evaluate-division
-- tag: Depth-First Search, Breadth-First Search, Union Find, Graph, Array, String, Shortest Path
-
 
 --- 
 
@@ -3137,7 +3131,11 @@ NOTE: core idea of maximum sub-array
 
 - id: 2038
 - name: nearest-exit-from-entrance-in-maze
-- tag: Breadth-First Search, Array, Matrix
+- tag: Breadth-First Search, Array, Matrix, MARK
+- how
+  - use queue
+  - pay attention to WHEN mark visited
+    - mark when pop out queue -> there will a lot of duplicate positions are appended to queue
 
 ### 腐烂的橘子
 
