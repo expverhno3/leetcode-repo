@@ -3111,9 +3111,15 @@ NOTE: core idea of maximum sub-array
 
 ### 重新规划路线
 
-- id: 1576
+- id: 1466
 - name: reorder-routes-to-make-all-paths-lead-to-the-city-zero
-- tag: Depth-First Search, Breadth-First Search, Graph
+- tag: Depth-First Search, Breadth-First Search, Graph, MARK
+- how
+  - construct adjacent list, and use pos / neg to indicate direction
+    - adjacent list: `arr[i]` shows all nodes that connect directly to node `i`
+  - intuition: what kinds of edges need to reverse
+    - start from node 0, and all nodes connected to node 0 should pointed to node 0, if it's not -> need one reverse
+    - recursion comes from this: all nodes next to node 0 should be pointed to
 
 ### 除法求值
 
