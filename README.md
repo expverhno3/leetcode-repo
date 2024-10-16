@@ -3129,7 +3129,7 @@ NOTE: core idea of maximum sub-array
 
 ### 迷宫中离入口最近的出口
 
-- id: 2038
+- id: 1926
 - name: nearest-exit-from-entrance-in-maze
 - tag: Breadth-First Search, Array, Matrix, MARK
 - how
@@ -3137,29 +3137,22 @@ NOTE: core idea of maximum sub-array
   - pay attention to WHEN mark visited
     - mark when pop out queue -> there will a lot of duplicate positions are appended to queue
 
-### 腐烂的橘子
-
-- id: 1036
-- name: rotting-oranges
-- tag: Breadth-First Search, Array, Matrix
-
 
 --- 
 
 
 ## 堆 / 优先队列
 
-### 数组中的第K个最大元素
-
-- id: 215
-- name: kth-largest-element-in-an-array
-- tag: Array, Divide and Conquer, Quickselect, Sorting, Heap (Priority Queue)
-
 ### 无限集中的最小数字
 
-- id: 2413
+- id: 2336
 - name: smallest-number-in-infinite-set
 - tag: Design, Hash Table, Heap (Priority Queue)
+- how
+  - keep track of "frontier" of naturally pop out numbers
+  - use heap to save all numbers that add back and smaller than "naturally pop"
+  - and for add back, only smaller than frontier makes sense and should be added to the heap
+  - also pay attention to the set that avoid duplicates in the heap
 
 ### 最大子序列的分数
 
