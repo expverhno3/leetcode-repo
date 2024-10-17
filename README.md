@@ -3166,7 +3166,7 @@ NOTE: core idea of maximum sub-array
 
 ### 雇佣 K 位工人的总代价
 
-- id: 2553
+- id: 2462
 - name: total-cost-to-hire-k-workers
 - tag: Array, Two Pointers, Simulation, Heap (Priority Queue)
 - how
@@ -3185,12 +3185,16 @@ NOTE: core idea of maximum sub-array
 - id: 374
 - name: guess-number-higher-or-lower
 - tag: Binary Search, Interactive
+- how
+  - boring
 
 ### 咒语和药水的成功对数
 
-- id: 2392
+- id: 2300
 - name: successful-pairs-of-spells-and-potions
-- tag: Array, Two Pointers, Binary Search, Sorting
+- tag: Array, Two Pointers, Binary Search, Sorting, MARK
+- how
+  - focus on how to implement `bisect_left`
 
 ### 寻找峰值
 
