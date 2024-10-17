@@ -3156,9 +3156,13 @@ NOTE: core idea of maximum sub-array
 
 ### 最大子序列的分数
 
-- id: 2636
+- id: 2542
 - name: maximum-subsequence-score
-- tag: Greedy, Array, Sorting, Heap (Priority Queue)
+- tag: Greedy, Array, Sorting, Heap (Priority Queue), MARK
+- how
+  - combine nums1 and nums2 into pairs, and sort this pair array based on descending order of nums2
+  - use heap to keep track of current min element of nums1 (whose paired element in nums2 will be guaranteed to be larger than current smallest one), which will be discard when heap exceeds capacity
+  - every current iteration, current element of nums2 will be the smallest
 
 ### 雇佣 K 位工人的总代价
 
