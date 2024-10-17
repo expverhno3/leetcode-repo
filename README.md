@@ -3169,6 +3169,10 @@ NOTE: core idea of maximum sub-array
 - id: 2553
 - name: total-cost-to-hire-k-workers
 - tag: Array, Two Pointers, Simulation, Heap (Priority Queue)
+- how
+  - use two heaps, and maintain them to ensure no overlap
+  - when one heap running out of candidates, we should choose from another heap
+  - at each session, we just add candidates to heap to ensure there are `candidates` number of candidates to choose from
 
 
 --- 
