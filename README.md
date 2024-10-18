@@ -3196,17 +3196,14 @@ NOTE: core idea of maximum sub-array
 - how
   - focus on how to implement `bisect_left`
 
-### 寻找峰值
-
-- id: 162
-- name: find-peak-element
-- tag: Array, Binary Search
-
 ### 爱吃香蕉的珂珂
 
 - id: 907
 - name: koko-eating-bananas
 - tag: Array, Binary Search
+- how
+  - first, lower bound of k is: when there's only one pile, it can eat equally per hour; upper bound is: ensure each hour eat one pile
+  - then apply bisect_left
 
 
 --- 
