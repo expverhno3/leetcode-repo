@@ -3211,17 +3211,14 @@ NOTE: core idea of maximum sub-array
 
 ## 回溯
 
-### 电话号码的字母组合
-
-- id: 17
-- name: letter-combinations-of-a-phone-number
-- tag: Hash Table, String, Backtracking
-
 ### 组合总和 III
 
 - id: 216
 - name: combination-sum-iii
 - tag: Array, Backtracking
+- how
+  - keep track of path, start search from last element + 1
+  - once the length of path and sum meets requirement, record this path in a global variable
 
 
 --- 
