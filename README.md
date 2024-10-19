@@ -3228,27 +3228,30 @@ NOTE: core idea of maximum sub-array
 
 ### 第 N 个泰波那契数
 
-- id: 1236
+- id: 1137
 - name: n-th-tribonacci-number
 - tag: Memoization, Math, Dynamic Programming
+- how
+  - define basic elements
+  - update them at the same time
 
 ### 使用最小花费爬楼梯
 
-- id: 747
+- id: 746
 - name: min-cost-climbing-stairs
 - tag: Array, Dynamic Programming
-
-### 打家劫舍
-
-- id: 198
-- name: house-robber
-- tag: Array, Dynamic Programming
+- how
+  - `dp[i]` represents min cost to get here
+  - `dp[i] = min(dp[i-2] + cost[i-2], dp[i-1] + cost[i-1])`
 
 ### 多米诺和托米诺平铺
 
-- id: 806
+- id: 790
 - name: domino-and-tromino-tiling
-- tag: Dynamic Programming
+- tag: Dynamic Programming, MARK
+- how
+  - just list first 10
+  - find pattern in it [ref](https://leetcode.com/problems/domino-and-tromino-tiling/solutions/116581/detail-and-explanation-of-o-n-solution-why-dp-n-2-d-n-1-dp-n-3/?source=vscode)
 
 
 --- 
