@@ -3259,23 +3259,18 @@ NOTE: core idea of maximum sub-array
 
 ## 动态规划 - 多维
 
-### 不同路径
-
-- id: 62
-- name: unique-paths
-- tag: Math, Dynamic Programming, Combinatorics
-
-### 最长公共子序列
-
-- id: 1250
-- name: longest-common-subsequence
-- tag: String, Dynamic Programming
-
 ### 买卖股票的最佳时机含手续费
 
 - id: 714
 - name: best-time-to-buy-and-sell-stock-with-transaction-fee
-- tag: Greedy, Array, Dynamic Programming
+- tag: Greedy, Array, Dynamic Programming, MARK
+- how
+  - CHECK THIS [link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/solutions/108870/most-consistent-ways-of-dealing-with-the-series-of-stock-problems/?source=vscode)
+  - only three actions are possible: rest, buy or sell
+  - model is: `dp[i][k][n]`
+    - i -> ith day
+    - k -> how many transactions are allowed
+    - n -> how many stocks you have now AFTER action at i-th day (must had 1 stock to sell, and must had 0 stock to buy)
 
 ### 编辑距离
 
