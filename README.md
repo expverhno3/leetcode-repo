@@ -3272,12 +3272,6 @@ NOTE: core idea of maximum sub-array
     - k -> how many transactions are allowed
     - n -> how many stocks you have now AFTER action at i-th day (must had 1 stock to sell, and must had 0 stock to buy)
 
-### 编辑距离
-
-- id: 72
-- name: edit-distance
-- tag: String, Dynamic Programming
-
 
 --- 
 
@@ -3288,19 +3282,20 @@ NOTE: core idea of maximum sub-array
 
 - id: 338
 - name: counting-bits
-- tag: Bit Manipulation, Dynamic Programming
-
-### 只出现一次的数字
-
-- id: 136
-- name: single-number
-- tag: Bit Manipulation, Array
+- tag: Bit Manipulation, Dynamic Programming, MARK
+- how 
+  - counting bits -> number (`i`) of 1s in bit representation
+  - pattern
+    - even number: as same as `i//2` (or `i >> 1`) (all 0s in the tail)
+    - odd number: `i//2` will definitely lose one 1 at the end: compensate with calculate `i % 2`
 
 ### 或运算的最小翻转次数
 
 - id: 1441
 - name: minimum-flips-to-make-a-or-b-equal-to-c
-- tag: Bit Manipulation
+- tag: Bit Manipulation, MARK
+- how
+  - when iterating bit by bit, shift mask rather than the numbers themselves will be faster
 
 
 --- 
