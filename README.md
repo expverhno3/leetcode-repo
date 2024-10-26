@@ -3324,7 +3324,12 @@ NOTE: core idea of maximum sub-array
 
 - id: 435
 - name: non-overlapping-intervals
-- tag: Greedy, Array, Dynamic Programming, Sorting
+- tag: Greedy, Array, Dynamic Programming, Sorting, MARK
+- how
+  - what kind of intervals should be removed? longest ones -> keep shortest intervals as possible
+  - sort `intervals` by end, we just want to make sure next step is as close as this step
+  - build a dict to indicate all starts of intervals in the `intervals`
+  - start from lowest end, and this lowest end indicates next start, break loop once the end is greater than largest start
 
 ### 用最少数量的箭引爆气球
 
