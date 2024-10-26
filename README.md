@@ -3303,17 +3303,16 @@ NOTE: core idea of maximum sub-array
 
 ## 前缀树
 
-### 实现 Trie (前缀树)
-
-- id: 208
-- name: implement-trie-prefix-tree
-- tag: Design, Trie, Hash Table, String
-
 ### 搜索推荐系统
 
 - id: 1397
 - name: search-suggestions-system
-- tag: Trie, Array, String, Binary Search, Sorting, Heap (Priority Queue)
+- tag: Trie, Array, String, Binary Search, Sorting, Heap (Priority Queue), MARK
+- how
+  - things to notice
+    - how to construct trie dict
+    - construct dfs
+    - after user inputting char outside of dict, should set cur_dict with empty to avoid matching at wrong position
 
 
 --- 
