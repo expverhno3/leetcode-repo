@@ -3237,3 +3237,197 @@ NOTE: core idea of maximum sub-array
     - only keep the higher prices ones in stack, smaller in the middle can be merged by higher ones
 
 ---
+
+# Claude Suggestions
+
+## 双指针
+
+### 两数之和 II - 输入有序数组
+
+- id: 2130
+- name: maximum-twin-sum-of-a-linked-list
+- tag: Stack, Linked List, Two Pointers
+
+## 二叉树 - 深度优先搜索
+
+### 叶子相似的树
+
+- id: 872
+- name: leaf-similar-trees
+- tag: Tree, Depth-First Search, Binary Tree
+
+### 统计二叉树中好节点的数目
+
+- id: 1448
+- name: count-good-nodes-in-binary-tree
+- tag: Tree, Depth-First Search, Breadth-First Search, Binary Tree
+
+### 二叉树中的最长交错路径
+
+- id: 1372
+- name: longest-zigzag-path-in-a-binary-tree
+- tag: Tree, Depth-First Search, Dynamic Programming, Binary Tree
+
+## 二叉树 - 广度优先搜索
+
+### 最大层内元素和
+
+- id: 1161
+- name: maximum-level-sum-of-a-binary-tree
+- tag: Tree, Depth-First Search, Breadth-First Search, Binary Tree
+
+## 二叉搜索树
+
+### 二叉搜索树中的搜索
+
+- id: 783
+- name: search-in-a-binary-search-tree
+- tag: Tree, Binary Search Tree, Binary Tree
+
+### 删除二叉搜索树中的节点
+
+- id: 450
+- name: delete-node-in-a-bst
+- tag: Tree, Binary Search Tree, Binary Tree
+
+## 图 - 深度优先搜索
+
+### 钥匙和房间
+
+- id: 841
+- name: keys-and-rooms
+- tag: Depth-First Search, Breadth-First Search, Graph
+
+### 省份数量
+
+- id: 547
+- name: number-of-provinces
+- tag: Depth-First Search, Breadth-First Search, Union Find, Graph
+
+### 重新规划路线
+
+- id: 1466
+- name: reorder-routes-to-make-all-paths-lead-to-the-city-zero
+- tag: Depth-First Search, Breadth-First Search, Graph, MARK
+
+## 图 - 广度优先搜索
+
+### 迷宫中离入口最近的出口
+
+- id: 1926
+- name: nearest-exit-from-entrance-in-maze
+- tag: Breadth-First Search, Array, Matrix, MARK
+
+## 堆 / 优先队列
+
+### 无限集中的最小数字
+
+- id: 2336
+- name: smallest-number-in-infinite-set
+- tag: Design, Hash Table, Heap (Priority Queue)
+
+### 最大子序列的分数
+
+- id: 2542
+- name: maximum-subsequence-score
+- tag: Greedy, Array, Sorting, Heap (Priority Queue), MARK
+
+### 雇佣 K 位工人的总代价
+
+- id: 2462
+- name: total-cost-to-hire-k-workers
+- tag: Array, Two Pointers, Simulation, Heap (Priority Queue)
+
+## 二分查找
+
+### 猜数字大小
+
+- id: 374
+- name: guess-number-higher-or-lower
+- tag: Binary Search, Interactive
+
+### 咒语和药水的成功对数
+
+- id: 2300
+- name: successful-pairs-of-spells-and-potions
+- tag: Array, Two Pointers, Binary Search, Sorting, MARK
+
+### 爱吃香蕉的珂珂
+
+- id: 907
+- name: koko-eating-bananas
+- tag: Array, Binary Search
+
+## 回溯
+
+### 组合总和 III
+
+- id: 216
+- name: combination-sum-iii
+- tag: Array, Backtracking
+
+## 动态规划 - 一维
+
+### 第 N 个泰波那契数
+
+- id: 1137
+- name: n-th-tribonacci-number
+- tag: Memoization, Math, Dynamic Programming
+
+### 使用最小花费爬楼梯
+
+- id: 746
+- name: min-cost-climbing-stairs
+- tag: Array, Dynamic Programming
+
+### 多米诺和托米诺平铺
+
+- id: 790
+- name: domino-and-tromino-tiling
+- tag: Dynamic Programming, MARK
+
+## 动态规划 - 多维
+
+### 买卖股票的最佳时机含手续费
+
+- id: 714
+- name: best-time-to-buy-and-sell-stock-with-transaction-fee
+- tag: Greedy, Array, Dynamic Programming, MARK
+
+## 位运算
+
+### 比特位计数
+
+- id: 338
+- name: counting-bits
+- tag: Bit Manipulation, Dynamic Programming, MARK
+
+### 或运算的最小翻转次数
+
+- id: 1441
+- name: minimum-flips-to-make-a-or-b-equal-to-c
+- tag: Bit Manipulation, MARK
+
+## 前缀树
+
+### 搜索推荐系统
+
+- id: 1397
+- name: search-suggestions-system
+- tag: Trie, Array, String, Binary Search, Sorting, Heap (Priority Queue), MARK
+
+## 区间集合
+
+### 无重叠区间
+
+- id: 435
+- name: non-overlapping-intervals
+- tag: Greedy, Array, Dynamic Programming, Sorting, MARK
+
+## 单调栈
+
+### 股票价格跨度
+
+- id: 901
+- name: online-stock-span
+- tag: Stack, Design, Data Stream, Monotonic Stack, MARK
