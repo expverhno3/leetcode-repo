@@ -971,9 +971,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
   - how do i know its length:
     - keep tracking if (current_number + 1) is in array
 
-
---- 
-
+---
 
 ## 双指针
 
@@ -1017,9 +1015,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
   - iterate from right to left, count sinks like (3,0,2,0,1)
   - sum left result and right result
 
-
---- 
-
+---
 
 ## 滑动窗口
 
@@ -1042,9 +1038,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
   - if char in window in `p`: char_freq --
   - each time check if char_freq values are all 0: anagrams, record `i`
 
-
---- 
-
+---
 
 ## 子串
 
@@ -1076,9 +1070,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
      1. use a `counter` to "count" how many chars are remained to be matched
      2. once matched, calculate the width of window. then shrink the window while keep it valid by moving `start` pointer
 
-
---- 
-
+---
 
 ## 普通数组
 
@@ -1125,9 +1117,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
   - how to indicate presence: at `nums[i]`, its value should be `i+1`
   - but at place `i+1`, its value is modified -> use swap
 
-
---- 
-
+---
 
 ## 矩阵
 
@@ -1160,9 +1150,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - tag: Array, Binary Search, Divide and Conquer, Matrix
 - [duplicate](#搜索二维矩阵-ii)
 
-
---- 
-
+---
 
 ## 链表
 
@@ -1289,9 +1277,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
   - `_connect`: connect linked list in two dictionary
   - `_append`: add new key to the "end" of linked list (where just before the `tail`)
 
-
---- 
-
+---
 
 ## 二叉树
 
@@ -1309,7 +1295,6 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - name: maximum-depth-of-binary-tree
 - tag: Tree, Depth-First Search, Breadth-First Search, Binary Tree
 - [duplicate](#二叉树的最大深度)
-
 
 ### 翻转二叉树
 
@@ -1358,7 +1343,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - how
   - don't just compare left or right with root, use upper_bound and lower_bound to compare
 
-### 二叉搜索树中第K小的元素
+### 二叉搜索树中第 K 小的元素
 
 - id: 230
 - name: kth-smallest-element-in-a-bst
@@ -1423,9 +1408,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
   - but we also want max path (no necessarily passing root) -> max path sum = node.val + left_gain + right_gain
     - then update a "global" variable keep track of max value
 
-
---- 
-
+---
 
 ## 图论
 
@@ -1466,9 +1449,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
     - full words -> use set (hash table)
     - prefix chars -> nested dictionary
 
-
---- 
-
+---
 
 ## 回溯
 
@@ -1547,9 +1528,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
   - each row -> a new depth of recursion
   - at each depth of recursion: try one column that is valid (not occurring in previous "state")
 
-
---- 
-
+---
 
 ## 二分查找
 
@@ -1609,9 +1588,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
     - so the assuming max of left half should between `(nums1[partition_x-1], nums2[partition_y-1])`, and min of left half should be in `(nums1[partition_x], nums2[partition_y])`
   - if left_max < right_min -> our guess succeed! we can find median!
 
-
---- 
-
+---
 
 ## 栈
 
@@ -1642,7 +1619,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - name: daily-temperatures
 - tag: Stack, Array, Monotonic Stack, MARK
 - how
-  - keep the stack as *index of higher temp*
+  - keep the stack as _index of higher temp_
   - if found a temp > temperature at index of top of stack: pop stack, calculate how many days since it to today
 
 ### 柱状图中最大的矩形
@@ -1651,17 +1628,15 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - name: largest-rectangle-in-histogram
 - tag: Stack, Array, Monotonic Stack, MARK
 - how
-  - keep track of height that in *ascending* order
+  - keep track of height that in _ascending_ order
   - so when height start to drop, we can know that at the from top of stack to previous bar, the limiting height is the height at top of stack
   - width: previous bar (i-1) - one bar before top of stack (stack\[-1\])
 
-
---- 
-
+---
 
 ## 堆
 
-### 数组中的第K个最大元素
+### 数组中的第 K 个最大元素
 
 - id: 215
 - name: kth-largest-element-in-an-array
@@ -1684,8 +1659,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - tag: Design, Two Pointers, Data Stream, Sorting, Heap (Priority Queue)
 - [duplicate](#数据流的中位数)
 
---- 
-
+---
 
 ## 贪心算法
 
@@ -1726,9 +1700,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
   - build a dict to save where each character last shows (rightmost position)
   - keep track of one partition's rightmost, when reach that: create a new partition
 
-
---- 
-
+---
 
 ## 动态规划
 
@@ -1801,8 +1773,8 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - how
   - maximum product comes from
     - num itself
-    - previous max product * self
-    - previous min product (very negative) * self (which is also a negative)
+    - previous max product \* self
+    - previous min product (very negative) \* self (which is also a negative)
   - all we need to track:
     - max_product_so_far
     - min_product_so_far
@@ -1824,7 +1796,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - tag: Stack, String, Dynamic Programming, MARK
 - how
   - most important: what does `dp[i]` represent?
-    - longest valid parentheses *ends* at i
+    - longest valid parentheses _ends_ at i
   - how can we know? when to update?
     - only two cases:
       - meet ")", and there's "(" just before it
@@ -1832,9 +1804,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
         - why: meet the end of like ...())
         - what's the case dp can update: there's a "(" at the very beginning to wrap ...()
 
-
---- 
-
+---
 
 ## 多维动态规划
 
@@ -1884,9 +1854,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
     - meaning of each cell (i,j) -> min edit distance after editing previous i word1 chars and matches previous j chars of word2
   - why difficult: what does transition from up/left/diagonal cell represent? (delete, insert, replace)
 
-
---- 
-
+---
 
 ## 技巧
 
@@ -1928,8 +1896,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - tag: Bit Manipulation, Array, Two Pointers, Binary Search
 - [duplicate](#寻找重复数)
 
-
---- 
+---
 
 # Top Interview 150
 
@@ -2060,9 +2027,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - how
   - divide word group (details in dealing with space of last word and single word)
 
-
---- 
-
+---
 
 ## 双指针
 
@@ -2071,16 +2036,14 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - id: 125
 - name: valid-palindrome
 - tag: Two Pointers, String
-- how 
+- how
   - use two pointers
     - `left` to iterate forward
     - `right` to iterate backward
     - skip non-alphanumeric characters
     - compare characters
 
-
---- 
-
+---
 
 ## 滑动窗口
 
@@ -2109,19 +2072,17 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - tag: Hash Table, String, Sliding Window
 - how
   - use two pointers (`left` and `right`) and a counter to track the frequency of words
-  - approach: 
+  - approach:
     1. create a frequency table for words in `words`
     2. initialize `left` and `right` pointers to the start of `s`
     3. move `right` pointer to the right and check if the substring `s[left:right+1]` is a permutation of `words`
     4. if it is, increment the counter and move `left` pointer to the right
     5. if not, move `left` pointer to the right based on the frequency table to find the next possible permutation
-  - note: 
+  - note:
     - words in `s` may not be equal to words in `words` (e.g., words in `s` may be a permutation of words in `words`)
     - moving `left` pointer based on the frequency table helps to avoid jumping to the right unnecessarily and reduces the time complexity
 
-
---- 
-
+---
 
 ## 矩阵
 
@@ -2132,7 +2093,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - tag: Array, Hash Table, Matrix
 - how
   - use a 9x9 grid to represent the Sudoku board, and check each row, column, and 3x3 block to ensure that each number from 1 to 9 appears only once in each unit
-  - how to know appear once: convert a list into a *set*, and compare their length
+  - how to know appear once: convert a list into a _set_, and compare their length
   - a trick to take matrix's column: `for col in zip(*matrix):`
 
 ### 生命游戏
@@ -2143,9 +2104,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - how
   - don't update status of "life" inplace once determined, just save it in a new array
 
-
---- 
-
+---
 
 ## 哈希表
 
@@ -2190,9 +2149,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
   - use a hash table to store the numbers we've seen and their most recent indices
   - iterate through the array, and for each number, check if it's in the hash table and if its most recent index is within k places of the current index
 
-
---- 
-
+---
 
 ## 区间
 
@@ -2205,7 +2162,6 @@ NOTE: if there's **MARK** in tag, need to revisit this question
   - simulation
   - only keep track of `start`, and append range to `res` when `start` needs to change
 
-
 ### 插入区间
 
 - id: 57
@@ -2217,7 +2173,6 @@ NOTE: if there's **MARK** in tag, need to revisit this question
     2. `merged` -> "merged" interval, its start comes from interval to be merged and `newInterval`'s start, its end comes from interval to be merged and `newInterval`'s end
     3. `right` -> smallest start of intervals larger than end of new "merged" interval
 
-
 ### 用最少数量的箭引爆气球
 
 - id: 452
@@ -2228,9 +2183,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
   - maintain `prev_range` and a counter
   - check if new interval's start is within previous range (aka. start <= previous_range's end)
 
-
---- 
-
+---
 
 ## 栈
 
@@ -2261,9 +2214,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
   - put things in one bracket in the stack
   - if there's a "(" -> put current stack into another, replace things in this bracket to current stack, after done with processing current stack, pop previous stack back
 
-
---- 
-
+---
 
 ## 链表
 
@@ -2295,9 +2246,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
   - cut at new linked list's tail, remaining part's tail connect to old `head`
   - better: just iterate through entire linked list, connect the tail to head to form a circle, then find new tail, and cut the circle
 
-
---- 
-
+---
 
 ## 二叉树
 
@@ -2369,9 +2318,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
   - count depth: recursively, only count left ("all nodes in the last level are as far left as possible")
   - count nodes: also recursively, only count "full" tree (since it has formula), and count the not full subtree recursively
 
-
---- 
-
+---
 
 ## 二叉树层次遍历
 
@@ -2383,8 +2330,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - how
   - level order
 
---- 
-
+---
 
 ## 二叉搜索树
 
@@ -2396,9 +2342,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - how
   - in-order traverse
 
-
---- 
-
+---
 
 ## 图
 
@@ -2427,10 +2371,10 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - tag: Depth-First Search, Breadth-First Search, Union Find, Graph, Array, String, Shortest Path, MARK
 - how
   1. adjacent table
-    - build a adjacent table (`adj[i][j]` -> i / j)
-    - backtracking, using $x1 / x2 = (x1 / x3) \times (x3 / x2)$
+  - build a adjacent table (`adj[i][j]` -> i / j)
+  - backtracking, using $x1 / x2 = (x1 / x3) \times (x3 / x2)$
   2. graph
-    - graph: `dict[dict[str]]`, key: variable, `graph[key1][key2] = key1 / key2`
+  - graph: `dict[dict[str]]`, key: variable, `graph[key1][key2] = key1 / key2`
 
 ### 课程表 II
 
@@ -2441,9 +2385,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
   - try to reduce unused information as much as possible (do I need to know what kind of courses are prerequisite for a course? not really, all I need to know if a course can be finished is: how many prerequisites remaining for this course)
   - check if one value or element in a set/list has VERY high cost!!
 
-
---- 
-
+---
 
 ## 图的广度优先搜索
 
@@ -2473,9 +2415,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - how
   - same as previous problem...
 
-
---- 
-
+---
 
 ## 字典树
 
@@ -2486,7 +2426,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - tag: Depth-First Search, Design, Trie, String, MARK
 - how
   - recursion
-  - use prefix dict, and *add a end indicator*
+  - use prefix dict, and _add a end indicator_
   - meet "." -> recursion, if any returns True
   - meet other char -> check if in dict, if it is, replace with new dict
 
@@ -2499,9 +2439,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
   - pass set to a function, the function can modify it **inplace**
   - build a prefix dict, then search with saving visited positions
 
-
---- 
-
+---
 
 ## 回溯
 
@@ -2522,12 +2460,10 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - tag: Backtracking, MARK
 - how
   - revisit n-queen problem :)
-  - you can specify an *order* to fill in the queens -> save you from maintaining "row" position info and avoid queens placed at the same row
+  - you can specify an _order_ to fill in the queens -> save you from maintaining "row" position info and avoid queens placed at the same row
   - therefore, all info required for this dfs function is: col + diag + reversed diag
 
-
---- 
-
+---
 
 ## 分治
 
@@ -2539,13 +2475,12 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - how
   - check if all cells are the same to reduce requirement for deep recursion (only deep recursion for nodes with many different parts)
 
-
---- 
-
+---
 
 ## Kadane 算法
 
 NOTE: core idea of maximum sub-array
+
 - iterate through every element: should this new element (`x`) be added to potential max sub-array or act as beginning of new sub-array?
   - decided by: whether `x` + previous_sum > `x`
 
@@ -2560,8 +2495,7 @@ NOTE: core idea of maximum sub-array
 - consider case 2, manipulate this equation
   - max_sum = prefix + suffix = total_sum - subarray_in_middle = total_sum - min(subarray_in_middle) -> problem converted to find min subarray (same algo)
 
---- 
-
+---
 
 ## 二分查找
 
@@ -2573,9 +2507,7 @@ NOTE: core idea of maximum sub-array
 - how
   - go through all possible cases to find peak
 
-
---- 
-
+---
 
 ## 堆
 
@@ -2598,9 +2530,7 @@ NOTE: core idea of maximum sub-array
   - use heap as a "vision"
   - push all potential results into heap, and pop in the order wanted
 
-
---- 
-
+---
 
 ## 位运算
 
@@ -2634,9 +2564,7 @@ NOTE: core idea of maximum sub-array
   - property of AND
   - basically see how many digits are different in the end, make them 0 and keep previous "same" digits
 
-
---- 
-
+---
 
 ## 数学
 
@@ -2669,7 +2597,7 @@ NOTE: core idea of maximum sub-array
     - and there's always more factor of 2 than factor of 5
     - so the answer is the number of factor of 5 in n!
 
-### x 的平方根 
+### x 的平方根
 
 - id: 69
 - name: sqrtx
@@ -2686,9 +2614,7 @@ NOTE: core idea of maximum sub-array
   - count number of slope relative to a point, maintain a global max counts
   - note: don't count repeatedly
 
-
---- 
-
+---
 
 ## 多维动态规划
 
@@ -2699,8 +2625,8 @@ NOTE: core idea of maximum sub-array
 - tag: Array, Dynamic Programming, MARK
 - how
   1. initial idea: use a 2D array just as the same size as triangle, then iterate from top to down, init with first row of triangle
-    - update using: `dp[i][j] = min(dp[i-1][j], dp[i-1][j-1]) + triangle[i][j]`
-  2. better idea: reduce memory usage. if we can build the dp table from *bottom to top* (why: because triangle has wider bottom than top), then the update formula would be (assume it's still 2D table): `dp[i][j] = min(dp[i+1][j], dp[i+1][j+1]) + triangle[i][j]`, which means at index `j`, it depends on current and next, and it will not be used when updating next dp cell -> use 1D!
+  - update using: `dp[i][j] = min(dp[i-1][j], dp[i-1][j-1]) + triangle[i][j]`
+  2. better idea: reduce memory usage. if we can build the dp table from _bottom to top_ (why: because triangle has wider bottom than top), then the update formula would be (assume it's still 2D table): `dp[i][j] = min(dp[i+1][j], dp[i+1][j+1]) + triangle[i][j]`, which means at index `j`, it depends on current and next, and it will not be used when updating next dp cell -> use 1D!
 
 ### 不同路径 II
 
@@ -2718,7 +2644,7 @@ NOTE: core idea of maximum sub-array
 - tag: String, Dynamic Programming
 - how
   - init idea: s1 and s2 generates 2D matrix
-  - optimize space: current cell only depends on previous row and previous column at the same row -> use 1D vector to represent them 
+  - optimize space: current cell only depends on previous row and previous column at the same row -> use 1D vector to represent them
 
 ### 买卖股票的最佳时机 III
 
@@ -2727,7 +2653,7 @@ NOTE: core idea of maximum sub-array
 - tag: Array, Dynamic Programming, MARK
 - how
   - main problem: how to ensure at each step, the update of second buy is after the update of first buy?
-  - so we *integrate* first sell into second buy
+  - so we _integrate_ first sell into second buy
 
 ### 买卖股票的最佳时机 IV
 
@@ -2758,8 +2684,7 @@ NOTE: core idea of maximum sub-array
   - use right-bottom cell to indicate the max size of square
     - [img](imgs/README-0921-143958.png)
 
-
---- 
+---
 
 # Leetcode 75
 
@@ -2823,9 +2748,7 @@ NOTE: core idea of maximum sub-array
 - how
   - compare with previous and maintain counter
 
-
---- 
-
+---
 
 ## 双指针
 
@@ -2837,9 +2760,7 @@ NOTE: core idea of maximum sub-array
 - how
   - it's similar to Two Sum: use hash map to maintain frequency, and keep checking the diff between current number and sum wanted.
 
-
---- 
-
+---
 
 ## 滑动窗口
 
@@ -2859,7 +2780,7 @@ NOTE: core idea of maximum sub-array
 - how
   - use queue to keep track of index that is a vowel, and check if it's within the window
 
-### 最大连续1的个数 III
+### 最大连续 1 的个数 III
 
 - id: 1004
 - name: max-consecutive-ones-iii
@@ -2869,7 +2790,7 @@ NOTE: core idea of maximum sub-array
   - convert question into: within window, only `k` 0s are allowed
   - behavior of this two pointers:
     - when right pointer meets 0 -> if we can allow it (`k>0`), just decrement `k`; if after decrement `k<0`: need to move left pointer (move along with right pointer)
-    - why this is valid: size of window is *guaranteed* to be valid, so if there's a new 0 enter window, as long as left pointer move along, the window size won't change
+    - why this is valid: size of window is _guaranteed_ to be valid, so if there's a new 0 enter window, as long as left pointer move along, the window size won't change
 
 ### 删掉一个元素以后全为 1 的最长子数组
 
@@ -2879,9 +2800,7 @@ NOTE: core idea of maximum sub-array
 - how
   - replace question above with k=1
 
-
---- 
-
+---
 
 ## 前缀和
 
@@ -2893,9 +2812,7 @@ NOTE: core idea of maximum sub-array
 - how
   - prefix sum and keep track of max
 
-
---- 
-
+---
 
 ## 哈希表 / 哈希集合
 
@@ -2935,9 +2852,7 @@ NOTE: core idea of maximum sub-array
   - create a frequency table for each row
   - then transpose grid and iterate through columns, check if there's a match, and add the frequency to result
 
-
---- 
-
+---
 
 ## 栈
 
@@ -2957,9 +2872,7 @@ NOTE: core idea of maximum sub-array
 - how
   - stack + (if else)
 
-
---- 
-
+---
 
 ## 队列
 
@@ -2981,9 +2894,7 @@ NOTE: core idea of maximum sub-array
   - use two queues to simulate "voting" process
   - put winner at the end and label it with larger numbers to simulate new round of vote (brilliant design)
 
-
---- 
-
+---
 
 ## 链表
 
@@ -3014,9 +2925,7 @@ NOTE: core idea of maximum sub-array
   - reverse previous half
   - goes back
 
-
---- 
-
+---
 
 ## 二叉树 - 深度优先搜索
 
@@ -3046,9 +2955,7 @@ NOTE: core idea of maximum sub-array
 - how
   - dfs, find if I can run zigzag from left, and search if I can zigzag from right, then assume children nodes as starting of zigzag path, repeat
 
-
---- 
-
+---
 
 ## 二叉树 - 广度优先搜索
 
@@ -3060,9 +2967,7 @@ NOTE: core idea of maximum sub-array
 - how
   - normal bfs
 
-
---- 
-
+---
 
 ## 二叉搜索树
 
@@ -3085,9 +2990,7 @@ NOTE: core idea of maximum sub-array
     - root only has one child -> just place root.right to root's position
     - root has 2 child -> find closest element, delete it, and run delete node to get that
 
-
---- 
-
+---
 
 ## 图 - 深度优先搜索
 
@@ -3121,9 +3024,7 @@ NOTE: core idea of maximum sub-array
     - start from node 0, and all nodes connected to node 0 should pointed to node 0, if it's not -> need one reverse
     - recursion comes from this: all nodes next to node 0 should be pointed to
 
-
---- 
-
+---
 
 ## 图 - 广度优先搜索
 
@@ -3137,9 +3038,7 @@ NOTE: core idea of maximum sub-array
   - pay attention to WHEN mark visited
     - mark when pop out queue -> there will a lot of duplicate positions are appended to queue
 
-
---- 
-
+---
 
 ## 堆 / 优先队列
 
@@ -3174,9 +3073,7 @@ NOTE: core idea of maximum sub-array
   - when one heap running out of candidates, we should choose from another heap
   - at each session, we just add candidates to heap to ensure there are `candidates` number of candidates to choose from
 
-
---- 
-
+---
 
 ## 二分查找
 
@@ -3205,9 +3102,7 @@ NOTE: core idea of maximum sub-array
   - first, lower bound of k is: when there's only one pile, it can eat equally per hour; upper bound is: ensure each hour eat one pile
   - then apply bisect_left
 
-
---- 
-
+---
 
 ## 回溯
 
@@ -3220,9 +3115,7 @@ NOTE: core idea of maximum sub-array
   - keep track of path, start search from last element + 1
   - once the length of path and sum meets requirement, record this path in a global variable
 
-
---- 
-
+---
 
 ## 动态规划 - 一维
 
@@ -3253,9 +3146,7 @@ NOTE: core idea of maximum sub-array
   - just list first 10
   - find pattern in it [ref](https://leetcode.com/problems/domino-and-tromino-tiling/solutions/116581/detail-and-explanation-of-o-n-solution-why-dp-n-2-d-n-1-dp-n-3/?source=vscode)
 
-
---- 
-
+---
 
 ## 动态规划 - 多维
 
@@ -3272,9 +3163,7 @@ NOTE: core idea of maximum sub-array
     - k -> how many transactions are allowed
     - n -> how many stocks you have now AFTER action at i-th day (must had 1 stock to sell, and must had 0 stock to buy)
 
-
---- 
-
+---
 
 ## 位运算
 
@@ -3283,7 +3172,7 @@ NOTE: core idea of maximum sub-array
 - id: 338
 - name: counting-bits
 - tag: Bit Manipulation, Dynamic Programming, MARK
-- how 
+- how
   - counting bits -> number (`i`) of 1s in bit representation
   - pattern
     - even number: as same as `i//2` (or `i >> 1`) (all 0s in the tail)
@@ -3297,9 +3186,7 @@ NOTE: core idea of maximum sub-array
 - how
   - when iterating bit by bit, shift mask rather than the numbers themselves will be faster
 
-
---- 
-
+---
 
 ## 前缀树
 
@@ -3314,9 +3201,7 @@ NOTE: core idea of maximum sub-array
     - construct dfs
     - after user inputting char outside of dict, should set cur_dict with empty to avoid matching at wrong position
 
-
---- 
-
+---
 
 ## 区间集合
 
@@ -3331,33 +3216,24 @@ NOTE: core idea of maximum sub-array
   - build a dict to indicate all starts of intervals in the `intervals`
   - start from lowest end, and this lowest end indicates next start, break loop once the end is greater than largest start
 
-### 用最少数量的箭引爆气球
-
-- id: 452
-- name: minimum-number-of-arrows-to-burst-balloons
-- tag: Greedy, Array, Sorting
-
-
---- 
-
+---
 
 ## 单调栈
 
-### 每日温度
-
-- id: 739
-- name: daily-temperatures
-- tag: Stack, Array, Monotonic Stack
-
 ### 股票价格跨度
 
-- id: 937
+- id: 901
 - name: online-stock-span
-- tag: Stack, Design, Data Stream, Monotonic Stack
+- tag: Stack, Design, Data Stream, Monotonic Stack, MARK
+- how
+  - what is in stack: (price, res)
+  - take a look at top of stack
+    - if new `price` >= previous price
+      - smaller than `price`: just pop out stack, keep look at stack top
+      - greater than `price`: end of loop
+    - new `price` < previous price
+      - append
+  - intuition
+    - only keep the higher prices ones in stack, smaller in the middle can be merged by higher ones
 
-
---- 
-
-
-
-
+---
