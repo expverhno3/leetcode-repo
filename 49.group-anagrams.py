@@ -22,7 +22,5 @@ class Solution:
                 value2idx[value] = [s]
             else:
                 value2idx[value].append(s)
-        print(value2idx.keys())
         return [value2idx[value] for value in value2idx.keys()]
 # @lc code=end
-

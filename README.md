@@ -1051,13 +1051,6 @@ NOTE: if there's **MARK** in tag, need to revisit this question
   - combine prefix sum with frequency table
   - check how many times the prefix sum == (current_prefix_sum - target_value), and add this frequency to result
 
-### 滑动窗口最大值
-
-- id: 239
-- name: sliding-window-maximum
-- tag: Queue, Array, Sliding Window, Monotonic Queue, Heap (Priority Queue)
-- [duplicate](#滑动窗口最大值) (MARK)
-
 ### 最小覆盖子串
 
 - id: 76
@@ -1154,20 +1147,6 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 ## 链表
 
-### 相交链表
-
-- id: 160
-- name: intersection-of-two-linked-lists
-- tag: Hash Table, Linked List, Two Pointers
-- [duplicate](#相交链表)
-
-### 反转链表
-
-- id: 206
-- name: reverse-linked-list
-- tag: Recursion, Linked List
-- [duplicate](#反转链表)
-
 ### 回文链表
 
 - id: 234
@@ -1185,20 +1164,6 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 - tag: Hash Table, Linked List, Two Pointers
 - how
   - fast-slow pointers
-
-### 环形链表 II
-
-- id: 142
-- name: linked-list-cycle-ii
-- tag: Hash Table, Linked List, Two Pointers
-- [duplicate](#环形链表-II)
-
-### 合并两个有序链表
-
-- id: 21
-- name: merge-two-sorted-lists
-- tag: Recursion, Linked List
-- [duplicate](#合并两个有序链表)
 
 ### 两数相加
 
@@ -1584,34 +1549,13 @@ NOTE: if there's **MARK** in tag, need to revisit this question
   - to find median -> which element is at the middle of two merged array (which divide merged array into 2 parts, i.e. `left` half and `right` half)
     - but merge and sort two arrays cost too much, how to avoid?
   - use two pointers to indicate the beginning of `right` half of array at `nums1` and `nums2`
-    - how to init pointers? put first pointer (`partition_x`) at middle of shorter array (let's say `nums1` is shorter), then second includes remaining amount of elements at `nums2`
-    - so the assuming max of left half should between `(nums1[partition_x-1], nums2[partition_y-1])`, and min of left half should be in `(nums1[partition_x], nums2[partition_y])`
+    - how to init pointers? put first pointer (`partition_x`) at middle of shorter array (let's say `nums1` is shorter), then second includes remaining elements at `nums2`
+    - so the assuming max of left half should between `(nums1[partition_x-1], nums2[partition_y-1])`, and min of right half should be in `(nums1[partition_x], nums2[partition_y])`
   - if left_max < right_min -> our guess succeed! we can find median!
 
 ---
 
 ## 栈
-
-### 有效的括号
-
-- id: 20
-- name: valid-parentheses
-- tag: Stack, String
-- [duplicate](#有效的括号)
-
-### 最小栈
-
-- id: 155
-- name: min-stack
-- tag: Stack, Design
-- [duplicate](#最小栈)
-
-### 字符串解码
-
-- id: 394
-- name: decode-string
-- tag: Stack, Recursion, String
-- [duplicate](#字符串解码)
 
 ### 每日温度
 
@@ -1662,13 +1606,6 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 ---
 
 ## 贪心算法
-
-### 买卖股票的最佳时机
-
-- id: 121
-- name: best-time-to-buy-and-sell-stock
-- tag: Array, Dynamic Programming
-- [duplicate](#买卖股票的最佳时机)
 
 ### 跳跃游戏
 
@@ -3238,196 +3175,33 @@ NOTE: core idea of maximum sub-array
 
 ---
 
-# Claude Suggestions
-
-## 双指针
-
-### 两数之和 II - 输入有序数组
-
-- id: 2130
-- name: maximum-twin-sum-of-a-linked-list
-- tag: Stack, Linked List, Two Pointers
-
-## 二叉树 - 深度优先搜索
-
-### 叶子相似的树
-
-- id: 872
-- name: leaf-similar-trees
-- tag: Tree, Depth-First Search, Binary Tree
-
-### 统计二叉树中好节点的数目
-
-- id: 1448
-- name: count-good-nodes-in-binary-tree
-- tag: Tree, Depth-First Search, Breadth-First Search, Binary Tree
-
-### 二叉树中的最长交错路径
-
-- id: 1372
-- name: longest-zigzag-path-in-a-binary-tree
-- tag: Tree, Depth-First Search, Dynamic Programming, Binary Tree
-
-## 二叉树 - 广度优先搜索
-
-### 最大层内元素和
-
-- id: 1161
-- name: maximum-level-sum-of-a-binary-tree
-- tag: Tree, Depth-First Search, Breadth-First Search, Binary Tree
-
-## 二叉搜索树
-
-### 二叉搜索树中的搜索
-
-- id: 783
-- name: search-in-a-binary-search-tree
-- tag: Tree, Binary Search Tree, Binary Tree
-
-### 删除二叉搜索树中的节点
-
-- id: 450
-- name: delete-node-in-a-bst
-- tag: Tree, Binary Search Tree, Binary Tree
-
-## 图 - 深度优先搜索
-
-### 钥匙和房间
-
-- id: 841
-- name: keys-and-rooms
-- tag: Depth-First Search, Breadth-First Search, Graph
-
-### 省份数量
-
-- id: 547
-- name: number-of-provinces
-- tag: Depth-First Search, Breadth-First Search, Union Find, Graph
-
-### 重新规划路线
-
-- id: 1466
-- name: reorder-routes-to-make-all-paths-lead-to-the-city-zero
-- tag: Depth-First Search, Breadth-First Search, Graph, MARK
-
-## 图 - 广度优先搜索
-
-### 迷宫中离入口最近的出口
-
-- id: 1926
-- name: nearest-exit-from-entrance-in-maze
-- tag: Breadth-First Search, Array, Matrix, MARK
-
-## 堆 / 优先队列
-
-### 无限集中的最小数字
-
-- id: 2336
-- name: smallest-number-in-infinite-set
-- tag: Design, Hash Table, Heap (Priority Queue)
-
-### 最大子序列的分数
-
-- id: 2542
-- name: maximum-subsequence-score
-- tag: Greedy, Array, Sorting, Heap (Priority Queue), MARK
-
-### 雇佣 K 位工人的总代价
-
-- id: 2462
-- name: total-cost-to-hire-k-workers
-- tag: Array, Two Pointers, Simulation, Heap (Priority Queue)
-
-## 二分查找
-
-### 猜数字大小
-
-- id: 374
-- name: guess-number-higher-or-lower
-- tag: Binary Search, Interactive
-
-### 咒语和药水的成功对数
-
-- id: 2300
-- name: successful-pairs-of-spells-and-potions
-- tag: Array, Two Pointers, Binary Search, Sorting, MARK
-
-### 爱吃香蕉的珂珂
-
-- id: 907
-- name: koko-eating-bananas
-- tag: Array, Binary Search
-
-## 回溯
-
-### 组合总和 III
-
-- id: 216
-- name: combination-sum-iii
-- tag: Array, Backtracking
-
-## 动态规划 - 一维
-
-### 第 N 个泰波那契数
-
-- id: 1137
-- name: n-th-tribonacci-number
-- tag: Memoization, Math, Dynamic Programming
-
-### 使用最小花费爬楼梯
-
-- id: 746
-- name: min-cost-climbing-stairs
-- tag: Array, Dynamic Programming
-
-### 多米诺和托米诺平铺
-
-- id: 790
-- name: domino-and-tromino-tiling
-- tag: Dynamic Programming, MARK
-
-## 动态规划 - 多维
-
-### 买卖股票的最佳时机含手续费
-
-- id: 714
-- name: best-time-to-buy-and-sell-stock-with-transaction-fee
-- tag: Greedy, Array, Dynamic Programming, MARK
-
-## 位运算
-
-### 比特位计数
-
-- id: 338
-- name: counting-bits
-- tag: Bit Manipulation, Dynamic Programming, MARK
-
-### 或运算的最小翻转次数
-
-- id: 1441
-- name: minimum-flips-to-make-a-or-b-equal-to-c
-- tag: Bit Manipulation, MARK
-
-## 前缀树
-
-### 搜索推荐系统
-
-- id: 1397
-- name: search-suggestions-system
-- tag: Trie, Array, String, Binary Search, Sorting, Heap (Priority Queue), MARK
-
-## 区间集合
-
-### 无重叠区间
-
-- id: 435
-- name: non-overlapping-intervals
-- tag: Greedy, Array, Dynamic Programming, Sorting, MARK
-
-## 单调栈
-
-### 股票价格跨度
-
-- id: 901
-- name: online-stock-span
-- tag: Stack, Design, Data Stream, Monotonic Stack, MARK
+# random problems
+
+## adobe
+
+### Minimum Processing Time
+
+- id: 2895
+- name: minimum-processing-time
+- how
+  - sort two array
+  - match min `processorTime` with max `task` time
+
+### random pick with weight
+
+- id: 528
+- tags: random, simulation, MARK
+- how
+  - [ref](https://leetcode.com/problems/random-pick-with-weight/solutions/154044/java-accumulated-freq-sum-binary-search/?source=vscode)
+  - use prefix sum (determine interval of each weight)
+    - eg. `[1,2,3,4,5]` -> `[1,3,6,10,15]`; intervals to return index: `[(1,1), (2,3), (4,6), (7,10), (11,15)]`
+    - then use binary search to get the index
+    
+### count pairs of similar strings
+
+- id: 2506
+- name: count-pairs-of-similar-strings
+- tag: hash table, string
+- how
+  - use hash table to store unique chars, then count the number of words with same unique chars
+  - note: unique chars need to be sorted
