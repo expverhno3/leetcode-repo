@@ -3335,3 +3335,20 @@ NOTE: core idea of maximum sub-array
 - tag: array, hash table, greedy, MARK
 - how
   - see code :(, can't understand yet
+  
+
+# weekly contest
+
+### maximum-area-rectangle-with-point-constraints-i
+
+- id: 3380
+- tag: MARK
+- how
+  - sort points by x, then by y
+  - then iterate through points from bottom left.
+    - assume next point is top left, then iterate through points after next point to find two points at the right
+      - condition: y of these two points should be within the range of top left and bottom left
+    - put these four points into a helper function to check if these points are valid:
+      - condition: some at one coordinate each pair
+      - if valid, calculate area
+    - update max area
