@@ -6,6 +6,8 @@
 
 # @lc code=start
 from typing import List
+
+
 class Solution:
     def lengthOfLIS(self, nums: List[int]) -> int:
         tails = [0] * len(nums) # use a tail list to record values of longest increasing subsequence

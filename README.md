@@ -34,7 +34,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 - id: 237
 - name: delete-node-in-a-linked-list
-- tag: Linked List
+- tag: Linked List, MARK
 - how
   - !trick: no need to copy each node one by one
   - just copy the value of next node, then skip the next node!
@@ -1007,7 +1007,7 @@ NOTE: if there's **MARK** in tag, need to revisit this question
 
 - id: 42
 - name: trapping-rain-water
-- tag: Stack, Array, Two Pointers, Dynamic Programming, Monotonic Stack
+- tag: Stack, Array, Two Pointers, Dynamic Programming, Monotonic Stack, MARK
 - how
   - pattern: high1 -> low -> high2, where high2 >= high1
   - $O(N)$
@@ -3175,7 +3175,27 @@ NOTE: core idea of maximum sub-array
 
 ---
 
-# random problems
+# advanced topics
+
+## minimum spanning tree
+
+### connecting cities with minimum cost
+
+- id: 1135
+- name: connecting-cities-with-minimum-cost
+- tag: Graph, Minimum Spanning Tree, Kruskal's Algorithm, Union Find, MARK
+- how
+  - use Kruskal's algorithm
+    - sort edges according to their cost in ascending order
+    - for each edge, check if adding this edge will create cycle
+      - if yes -> ignore and move on to next edge
+      - if no -> add this edge, merge trees of these two nodes
+    - continue until no more edge and all nodes are connected
+  - init: all nodes are their own roots
+
+
+---
+# company tagged problems
 
 ## adobe
 
@@ -3196,7 +3216,7 @@ NOTE: core idea of maximum sub-array
   - use prefix sum (determine interval of each weight)
     - eg. `[1,2,3,4,5]` -> `[1,3,6,10,15]`; intervals to return index: `[(1,1), (2,3), (4,6), (7,10), (11,15)]`
     - then use binary search to get the index
-    
+
 ### count pairs of similar strings
 
 - id: 2506
@@ -3205,3 +3225,113 @@ NOTE: core idea of maximum sub-array
 - how
   - use hash table to store unique chars, then count the number of words with same unique chars
   - note: unique chars need to be sorted
+
+### divide intervals into minimum number of groups
+
+- id: 2406
+- tag: greedy, MARK
+- how
+  - same as meeting rooms II (253)
+  - One approach: sort by first element, then iteratively remove meetings can be in one room, then count (But need to iterate through intervals many times)
+  - Or, consider it in _reality_: why we need another room? because there's a meeting happening now! ➡ put all meeting start & end time in sorted list, iterate in the order (`s` pointer in `starts` and `e` in `ends`):
+    - `start < end`: need a new room, `room += 1`
+    - `start > end`: don't need a new room, move `e += 1`
+    - no matter what, `s += 1`
+
+### Remove Duplicates from Sorted List
+
+- id: 83
+- tag: linked list
+- how
+  - use two pointers
+    - `prev` -> previous unique number
+    - `cur` -> if same as prev, `prev.next = cur.next`; else, `prev = cur`
+    - keep moving `cur` forward
+
+### add digits
+
+- id: 258
+- how: while loop :)
+
+### Missing Number
+
+- id: 268
+- how: set1.difference(set2)
+
+### Nim Game
+
+- id: 292
+- how
+  - n % 4 != 0 -> I win
+  - n % 4 == 0 -> I lose
+  - why:
+    - first three: I win
+    - fourth: I will definitely lose
+    - dp update: `dp[i] = (not dp[i-1]) or (not dp[i-2]) or (not dp[i-3])`
+    - which means only when all previous three are True, I will lose (repeat in period of 4)
+    - therefore, no need to build dp table -> just check remainder
+
+### kth largest element in a stream
+
+- id: 703
+- tag: heap
+- how
+  - using heap :)
+
+### Preimage Size of Factorial Zeroes Function
+
+- id: 793
+- tag: math
+- how
+  - fuck math :(
+  <!-- todo -->
+
+### Smallest Range I
+
+- id: 908
+- how
+  - score = max - min
+  - after min score: max - k and min + k, overall: max - min + 2 \* k, but need to limit it non-negative
+
+### Smallest Range II
+
+- id: 910
+- tag: Math, MARK
+- how
+  - core idea: make smaller larger and make larger smaller
+  - how to do this:
+    - smaller larger (1):`A[i] + K, A[0] + K`
+    - larger smaller (2): `A[i + 1] - K, A[-1] - K`
+  - when will meet the min difference:
+    - when (1) becomes max and (2) becomes min, then it's potentially min difference.
+
+### Reverse Substrings Between Each Pair of Parentheses
+
+- id: 1190
+- tag: Stack
+- how
+  - similar approach to other decoding string with brackets
+
+### Count Ways to Build Rooms in an Ant Colony
+
+- id: 1916
+- tag: DFS, MARK
+- [ref](https://leetcode.com/problems/count-ways-to-build-rooms-in-an-ant-colony/solutions/1299540/python-c-clean-dfs-solution-with-explanation/?source=vscode)
+<!-- todo -->
+
+## tiktok
+
+### word break II
+
+- id: 140
+- tag: Backtracking, MARK
+- how
+  - backtracking, keep track of current path
+  - trick: use path as args, and when goes to next depth, pass `path + [word]` to avoid complexity of undo choice
+
+### rearranging fruits
+
+- id: 2561
+- tag: array, hash table, greedy, MARK
+- how
+  - see code :(, can't understand yet
