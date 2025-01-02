@@ -16,18 +16,30 @@ class Solution:
         # (0,3,1) <, (0,0,1) -> 1
         # (0,3,1) >, (2,3,2) >, (3,3,2) -> 4
 
-        while left < right:
-            mid = (left + right) // 2
-            if nums[mid] < target:
-                left = mid + 1
-            elif nums[mid] == target:
-                return mid
+        # left closed, right open
+        # while left < right:
+        #     mid = (left + right) // 2
+        #     if nums[mid] < target:
+        #         left = mid + 1
+        #     elif nums[mid] == target:
+        #         return mid
+        #     else:
+        #         right = mid - 1
+        # if nums[left] >= target:
+        #     return left
+        # elif nums[left] < target:
+        #     return left + 1
+        
+        # left, right are both closed
+        while left <= right:
+            middle = (left + right) // 2
+            if nums[middle] == target:
+                return middle
+            elif nums[middle] > target:
+                right = middle - 1
             else:
-                right = mid - 1
-        if nums[left] >= target:
-            return left
-        elif nums[left] < target:
-            return left + 1
+                left = middle + 1
+        return left
             
         
 # @lc code=end

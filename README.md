@@ -3352,3 +3352,112 @@ NOTE: core idea of maximum sub-array
       - condition: some at one coordinate each pair
       - if valid, calculate area
     - update max area
+
+# 代码随想录
+
+## Array - bisect
+
+### 35. search insert position
+
+- tag: bisect
+- how
+  - bisect if target is found in the array
+  - but if not found in array: where will it be? (assume it's a left and right both closed interval)
+    - when the interval is invalid (aka no element in interval), the left > right (`nums[left-1] < target` and `nums[right+1] > target`), then `left` points to the position we need!
+
+### 34. find first and last position of element in sorted array
+
+- tag: bisect
+- how
+  - still: bisect
+  - one small detail needs to handle: move the left to the leftmost index where it's equal to target (also apply to right)
+
+### 69. Sqrt(x)
+
+### 367. Valid Perfect Square
+
+## Array - remove element
+
+### 27. Remove Element
+
+### 26 remove duplicates from sorted array
+
+### 283. Move Zeroes
+
+### 844. Backspace String Compare
+
+### 977. Squares of a Sorted Array
+
+- tag: MARK
+- how
+  - for negative numbers: the smaller, its square is larger
+  - for positive numbers: the larger, its square is larger
+  - init two pointers at two end of array
+    - compare `-nums[left]` and `nums[right]`
+      - why is this:
+        - if all pos: always take right (correct)
+        - if all neg: always take left (correct)
+        - if neg and pos: comparison makes sense to square
+    - put the larger one to right of `ans`
+
+
+## Linked List
+
+### 203. Remove Linked List Elements
+
+### 707. Design Linked List
+
+### 206. Reverse Linked List
+
+### 24. Swap Nodes in Pairs
+
+### 19. Remove Nth Node From End of List
+
+### 160. Intersection of Two Linked Lists
+
+### 142. Linked List Cycle II
+
+## hash table
+
+### 242. Valid Anagram
+
+### 349. Intersection of Two Arrays
+
+### 202. Happy Number
+
+### 1. Two Sum
+
+### 454. 4Sum II
+
+- tag: hashmap
+- how
+  - build sum freq table for first two arrays
+  - then for the last two arrays, find if the require sum in freq table: if yes, put that freq count to result
+
+### 383. Ransom Note
+
+### 15. 3Sum
+
+- how
+  - hash table is actually not the optimal here (too much detail to keep track)
+  - use two pointers
+    - `i`: iterate through nums, indicate first element of 3sum
+    - `left`: 1 element right of `i`, indicate second element of 3sum
+    - `right`: last element of nums, indicate third element of 3sum
+    - according to sum, move `left` or `right`
+
+
+## string
+
+### 28. Find the Index of the First Occurrence in a String
+
+### 459. repeated substring pattern
+
+- tag: MARK
+- how
+  1. KMP
+     1. denote length of longest common prefix and suffix is `k`, then check if `len(s) % (len(s) - k) == 0`
+     2. why: longest common prefix/suffix will be `s` exclude the first/last repeated pattern
+  2. moving matching
+     1. concatenate two `s`, remove first and last chars, then see if this concatenated string has `s` appear, if yes: there's repeated pattern within `s`
+
