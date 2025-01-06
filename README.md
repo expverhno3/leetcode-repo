@@ -3461,3 +3461,33 @@ NOTE: core idea of maximum sub-array
   2. moving matching
      1. concatenate two `s`, remove first and last chars, then see if this concatenated string has `s` appear, if yes: there's repeated pattern within `s`
 
+## two pointers
+
+### 977. Squares of a Sorted Array
+
+- how
+  - array is sorted -> max square must be at two ends -> put two pointers at the two ends and move towards middle
+
+
+## Stack & Queue
+
+### 239. sliding window maximum
+
+- how
+  - classic monotonic queue!
+    - "monotonic": increase or decrease in one direction
+  - only keeps elements that potentially can be max within sliding window
+  - in this problem: queue elements should be decreasing: greater element shows at first must be max of sliding window
+
+## binary tree
+
+### 101. Symmetric Tree
+
+### 100. Same Tree
+
+### 572. Subtree of Another Tree
+
+- tag: MARK
+- how
+  - recursion function just check if two tree is the same
+  - main function do DFS
