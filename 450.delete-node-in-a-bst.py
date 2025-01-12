@@ -22,10 +22,15 @@ class Solution:
             if not root.left: return root.right
             
             if root.left and root.right:
-                temp = root.right
-                while temp.left: temp = temp.left # find node's value closest to root.val, swap with root, and delete it at leaf
-                root.val = temp.val
-                root.right = self.deleteNode(root.right, root.val)
+                # temp = root.right
+                # while temp.left: temp = temp.left # find node's value closest to root.val, swap with root, and delete it at leaf
+                # root.val = temp.val
+                # root.right = self.deleteNode(root.right, root.val)
+                cur = root.right
+                while cur.left:
+                    cur = cur.left
+                cur.left = root.left
+                return root.right
 
         elif root.val > key:
             root.left = self.deleteNode(root.left, key)

@@ -3539,3 +3539,26 @@ NOTE: core idea of maximum sub-array
     - if count == max_count, append to result
     - if count > max_count, update max_count and clear result
     - update prev to root.val
+
+### 701. Insert into a Binary Search Tree
+
+- how
+  - different cases:
+    - root is None: return new node
+    - if at leaf node: insert new node as child
+    - if not at leaf node: go to left or right
+
+### 669. Trim a Binary Search Tree
+
+- how
+  - different cases:
+    - root is None: return None
+    - root.val < low: return right subtree (trimmed)
+    - root.val > high: return left subtree (trimmed)
+    - else: trim left and right, then return root
+
+### 538. Convert BST to Greater Tree
+
+- how
+  - dfs, reverse in-order
+  - keep track of prev value, add it to current node's value (accumulate)
