@@ -21,6 +21,7 @@ class Solution:
         def dfs(root: Optional[TreeNode]):
             if not root:
                 return 0
+            # it's post-order
             return max(dfs(root.left), dfs(root.right)) + 1
 
         return dfs(root)

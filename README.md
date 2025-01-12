@@ -3491,3 +3491,51 @@ NOTE: core idea of maximum sub-array
 - how
   - recursion function just check if two tree is the same
   - main function do DFS
+
+### 559. Maximum Depth of N-ary Tree
+
+- how
+  - recursion, root's height = max(left_height, right_height) + 1
+  - within this formula, it implies that traverse order should be post-order
+  
+### 111. Minimum Depth of Binary Tree
+
+- how
+  - details matter! need to think clear about each case:
+    - it's leaf node: return 1
+    - has both left and right: return min one + 1
+    - only left or right: return its depth + 1
+
+### 110. Balanced Binary Tree
+
+- notes
+  - dfs function has two duties:
+    - return the depth of current node
+    - compare if sub-tree is balanced, if not, just return -1 to indicate unbalanced
+  
+
+### 513. Find Bottom Left Tree Value
+
+- how
+  - dfs, pre-order
+  - keep track of max depth, first max depth value is the answer
+
+### 617. Merge Two Binary Trees
+
+- how
+  - recursion, pre-order
+  - if one of the tree is None, return the other one
+  - if both are None, return None
+  - else, create a new node with value of two trees' root value, and recursively merge left and right subtrees
+
+### 501. Find Mode in Binary Search Tree
+
+- how
+  - dfs, pre-order
+  - keep track of prev value, count, max_count, result
+    - if prev is None, count = 1
+    - if prev == root.val, count += 1
+    - else, count = 1
+    - if count == max_count, append to result
+    - if count > max_count, update max_count and clear result
+    - update prev to root.val
