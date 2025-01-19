@@ -3562,3 +3562,22 @@ NOTE: core idea of maximum sub-array
 - how
   - dfs, reverse in-order
   - keep track of prev value, add it to current node's value (accumulate)
+
+## backtracking
+
+### 93. Restore IP Address
+
+- how
+  - backtracking(string, startIndex, dot_number)
+    - end with: check if there's 3 dots, and the last string is valid -> put into result
+    - search logic: check 3 chars, if valid, add dot, do recursion
+  - check valid field
+    - within range and not 0 -> valid
+    - 0 and len(s) == 0 -> valid
+  
+### 491. Non-decreasing Subsequences
+
+- how
+  - backtracking, keep track of current path
+  - trick: use set to avoid duplicates at same level (duplicate only appears at different level)
+
