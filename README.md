@@ -3581,3 +3581,16 @@ NOTE: core idea of maximum sub-array
   - backtracking, keep track of current path
   - trick: use set to avoid duplicates at same level (duplicate only appears at different level)
 
+### 46. Permutations
+
+- how
+  - use a `used` array to keep track of which element has been used, instead of swapping in the previous solution :)
+
+### 332. Reconstruct Itinerary
+
+- how (dfs or backtracking)
+  1. build a dictionary to store all the tickets, key is the departure, value is a list of destinations
+  2. sort the destinations for each departure
+  3. at same depth, just search one destination for once, if it doesn't work, backtrack and try another destination (important to avoid infinite loop)
+
+
