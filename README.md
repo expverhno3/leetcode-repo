@@ -3593,4 +3593,20 @@ NOTE: core idea of maximum sub-array
   2. sort the destinations for each departure
   3. at same depth, just search one destination for once, if it doesn't work, backtrack and try another destination (important to avoid infinite loop)
 
+### 37. Sudoku Solver
+
+- tag: MARK
+- how
+  - maybe the most difficult backtracking problem :) (2D backtracking)
+  - use three hash table to keep track of used numbers in row, col, and box
+  - backtracking function:
+    - if row == 9: whooo! found solution!
+    - find next empty element
+      - try fill in number 1-9
+      - check if this number is valid:
+        - not in row
+        - not in col
+        - not in box
+      - if valid, fill in, do recursion, if not, try next number
+      - if not, backtrack (remove the number from hash table and board), try next number
 
