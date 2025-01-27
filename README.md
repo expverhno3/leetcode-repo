@@ -1911,6 +1911,9 @@ NOTE: if there's **MARK** in tag, need to revisit this question
     - use `local_sums` to track current tank
     - use `global_sums` to track total gas
     - if at any point `local_sums < 0`, means we can't start from previous `start` to `i`, so we set `start = i+1` and reset `local_sums = 0` (tank)
+      - why this will work:
+        - if there's another point in the second half where `local_sums < 0`: just reset again
+        - as long as global sum is greater than 0, there must be a solution
 
 ### 罗马数字转整数
 
@@ -3610,3 +3613,72 @@ NOTE: core idea of maximum sub-array
       - if valid, fill in, do recursion, if not, try next number
       - if not, backtrack (remove the number from hash table and board), try next number
 
+## greedy
+
+### 455. Assign Cookies
+
+- how
+  - sort both arrays
+  - iterate through children, assign cookie to the child with the smallest size that can satisfy the child
+
+### 376. Wiggle Subsequence
+
+- tag: MARK
+- how
+  - greedy
+    - 3 cases:
+      - up and down -> record the peaks & vallies
+      - monotonic up -> take two ends
+      - up plateau down (or reversed shape) -> take two vallies and one peak
+
+### 1005. Maximize Sum of Array After K Negations
+
+- how
+  - sort by abs value
+  - distribute k to negate negative numbers with largest abs value first
+  - if k is still greater than 0, negate the smallest value if k is odd
+
+### 860. Lemonade Change
+
+- how
+  - use three variables to keep track of five, ten
+  - greed on change for 20:
+    - use ten first, and then five
+  - if at any point, five or ten is less than 0, indicating no solution
+
+### 406. Queue Reconstruction by Height
+
+- tag: MARK
+- how
+  - sort by height then index, then insert by index
+  - idea: take care of one dimension first (height), then the other
+  - why this works:
+    - sort by height, then iterating from largest height to smallest
+      - when it's the case, then insertion based on index is guaranteed to be correct (highest will be inserted first, so highest ones will at the front)
+
+
+### 738. Monotone Increasing Digits
+
+- tag: MARK
+- how
+  - find greedy algo: 32 -> 29, then all we need is to
+    - find digit that is not monotone increasing
+    - change it to one less
+    - change all digits right to it to 9 (guarantee monotonic increasing and as large as possible)
+  - implementation:
+    - iterate from right to left, find the first digit that is not monotone increasing
+    - change it to one less
+    - move a `flag` to indicate where after it all digits should be 9
+
+### 968. Binary Tree Cameras
+
+- tag: MARK
+- how
+  - dfs, post-order
+  - greedy: camera are placed from bottom to top
+  - 0: not covered
+  - 1: has camera at this node
+  - 2: node is covered
+  - if left or right is not covered, then this node must have camera
+  - if left or right has camera, then this node is covered
+  - if left and right are covered, then this node is not covered (left and right are covered by their children)

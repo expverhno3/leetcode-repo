@@ -11,18 +11,19 @@ from typing import List
 class Solution:
     def jump(self, nums: List[int]) -> int:
         # --- impl from https://leetcode.com/problems/jump-game-ii/solutions/18014/concise-o-n-one-loop-java-solution-based-on-greedy
-        
+        # NOTE: greedy, increase coverage range with least jump
+
         jump_number = 0
-        
+
         if len(nums) == 1:
             return jump_number
 
         # range of current jump: [current_pointer(i), curEnd] (including both side)
         curEnd = 0
-        curFarthest = 0 # farthest idx this jump can get
+        curFarthest = 0  # farthest idx this jump can get
 
         for i in range(len(nums)):
-            curFarthest = max(curFarthest, i+nums[i])
+            curFarthest = max(curFarthest, i + nums[i])
 
             if i == curEnd:
                 # has to give another jump
@@ -32,8 +33,6 @@ class Solution:
                 if curEnd >= len(nums) - 1:
                     return jump_number
         return jump_number
-
-
 
         # --- my impl, somehow like dp table :(, slow
         # from collections import defaultdict
@@ -51,9 +50,5 @@ class Solution:
         #             min_step_table[j] = cur_min_step+1
         # return min_step_table[n-1]
 
-                
-
-            
 
 # @lc code=end
-

@@ -10,22 +10,21 @@ from typing import List
 
 class Solution:
     def canJump(self, nums: List[int]) -> bool:
+        # find largest coverage range, if it contains last position, then we are good to go :)
         n = len(nums) - 1
-        if n == 0 :
+        if n == 0:
             return True
         i = 0
         farmost_idx = 0
-        while i <= n-1:
+        while i <= n - 1:
             num = nums[i]
-            farmost_idx = max(farmost_idx, i+num)
+            farmost_idx = max(farmost_idx, i + num)
             if farmost_idx >= n:
                 return True
             if i == farmost_idx and nums[i] == 0:
                 return False
             i += 1
         return False
-            
 
 
 # @lc code=end
-
