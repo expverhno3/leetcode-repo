@@ -3682,3 +3682,16 @@ NOTE: core idea of maximum sub-array
   - if left or right is not covered, then this node must have camera
   - if left or right has camera, then this node is covered
   - if left and right are covered, then this node is not covered (left and right are covered by their children)
+
+## dynamic programming
+
+### 96. Unique Binary Search Trees
+
+- tag: MARK
+- how
+  - dp\[i\]: number of unique BST for integer i
+  - initialization: dp\[0\] = 1, others 0
+  - state transfer (this is crazy :(): dp\[i\] = sum(dp\[j-1\] \* dp\[i-j\]) for j from 1 to i
+    - why: for each integer i, it can be the root, and the number of unique BST is the product of possible structures of left and right subtrees
+
+
