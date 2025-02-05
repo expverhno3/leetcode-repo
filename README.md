@@ -3694,4 +3694,24 @@ NOTE: core idea of maximum sub-array
   - state transfer (this is crazy :(): dp\[i\] = sum(dp\[j-1\] \* dp\[i-j\]) for j from 1 to i
     - why: for each integer i, it can be the root, and the number of unique BST is the product of possible structures of left and right subtrees
 
+### 416. Partition Equal Subset Sum
 
+- tag: MARK
+- how
+  - convert this problem to a 0/1 knapsack problem
+    - each number is a object with weight == value
+    - if we can fill a backpack with capacity of sum//2 with value sum//2 -> True
+  - outer for loop: iterate through all numbers (objects)
+  - inner for loop: iterate through all capacities from target to current object's weight (reverse order)
+      - why reverse order: state transfer equation is dp\[j\] = max(dp\[j\], dp\[j-weight\] + value), current state depends on previous object's state, if iterate from small to large, then previous state will be updated
+
+### 1049. Last Stone Weight II
+
+- tag: MARK
+- how
+  - convert this problem to a 0/1 knapsack problem (similar to question above)
+    - each stone is a object with weight == value
+  - goal is to divide stones into two groups with closest sum
+  - so we use a dp to represent a backpack with half of the total weight, and find the max value (dp\[-1\]) it can be filled with
+  - the other group of stones will have total weight: stone_weight_sum - dp\[-1\]
+  - so the result is the difference between the two groups: stone_weight_sum - 2 \* dp\[-1\]
